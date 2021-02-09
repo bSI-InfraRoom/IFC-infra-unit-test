@@ -19,8 +19,9 @@ jobs:
         run: |
           source .github/workflows/texlive_install.sh
           cp .github/workflows/texmf.cnf /tmp/texlive/texmf.cnf
-          texliveonfly --arguments='-shell-escape' Report/UnitTest_Report.tex
-          source .github/workflows/texlive_compile.sh Report/UnitTest_Report
+          cd Report
+          texliveonfly --arguments='-shell-escape' ./UnitTest_Report.tex
+          source ../.github/workflows/texlive_compile.sh ./UnitTest_Report
       - name: Set filename
         id: output_file
         run: |
