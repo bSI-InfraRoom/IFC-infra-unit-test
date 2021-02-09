@@ -1,0 +1,26 @@
+% original contents (as of 2020-12-27)
+% (Public domain.)
+% This texmf.cnf file should contain only your personal changes from the
+% original texmf.cnf (for example, as chosen in the installer).
+%
+% That is, if you need to make changes to texmf.cnf, put your custom
+% settings in this file, which is .../texlive/YYYY/texmf.cnf, rather than
+% the distributed file (which is .../texlive/YYYY/texmf-dist/web2c/texmf.cnf).
+% And include *only* your changed values, not a copy of the whole thing!
+%
+TEXMFLOCAL = $SELFAUTOPARENT/texmf-local
+TEXMFVAR = ~/.texlive/texmf-var
+TEXMFCONFIG = ~/.texlive/texmf-config
+
+% added from https://tex.stackexchange.com/questions/26205/increase-latex-capacity/26213#26213
+main_memory = 9000000       % words
+extra_mem_top = 6000000     % extra high memory for chars, tokens, etc.
+extra_mem_bot = 6000000     % extra low memory for boxes, glue, breakpoints,
+
+% Extra space for the hash table of control sequences (which allows 10K
+% names as distributed).
+hash_extra = 200000
+
+% Max number of characters in all strings, including all error messages,
+% help texts, font names, control sequences.  These values apply to TeX and MP.
+pool_size = 3850000
