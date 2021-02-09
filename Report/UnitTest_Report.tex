@@ -1,0 +1,87 @@
+\documentclass{scrartcl}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{babel}
+
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.markings,arrows,positioning,fit,intersections,patterns,scopes,datavisualization,backgrounds}
+\usetikzlibrary{shapes.geometric,decorations.pathreplacing,shadings,3d,spy,tikzmark,decorations.text}
+
+\usepackage{hyperref}
+\usepackage[footnotes,definitionLists,smartEllipses,hybrid,pipeTables=true,shiftHeadings=1,tableCaptions=true]{markdown}
+\usepackage[edges]{forest}
+
+\usepackage{cleveref}
+
+\title{Appendix A: Unit Test Documentation}
+\author{InfraRoom: IFC Infrastructure Extension Deployment project}
+\date{document automatically generated on: \today}
+
+\begin{document}
+
+\maketitle
+
+\section{Summary}
+\label{sec:summary}
+
+This is a summary document of all approved unit tests during the IFC Infrastructure Extensions Deployment project.
+
+This document has been automatically produced from the \texttt{readme} files of individual unit tests.
+The originating documentation together with all mentioned files can be obtained
+ from the project's official GitHub repository: \url{https://github.com/bSI-InfraRoom/IFC-infra-unit-test}.
+
+\emph{Note to the reader}: The way the automatic procedure currently works,
+ there is no known way to remove the duplication of headings for each unit test section
+ while retaining the connections in \Cref{sec:schematics}.
+
+\section{Schematics}
+\label{sec:schematics}
+
+The following figure represents the dependencies between the individual unit tests.
+Unit tests are represented as boxes, while the arrows point from the dependant to the independent unit test.
+Each unit test has a link to the corresponding section of this document in the upper right corner.
+
+\tikzset{every label/.style={xshift=1ex, text width=10ex, align=left, 
+                             inner sep=1pt, font=\footnotesize}}
+  \begin{forest}
+    for tree={              % style of tree nodes
+      font=\footnotesize,
+      draw, semithick, rounded corners,
+            align = center,
+        inner sep = 2mm,
+                            % style of tree (edges, distances, direction)
+             edge = {draw, semithick, latex'-},
+    parent anchor = east,
+     child anchor = west,
+             grow = south,
+    forked edge,            % for forked edge
+            l sep = 12mm,   % level distance
+         fork sep = 6mm,    % distance from parent to branching point
+                }
+    [Setup-1,name=boiler1,label=\labelcref{sec:project_setup_1}
+      [TIN-1,name=tin1,label=\labelcref{sec:tin_1}
+        [GeoRef-1,name=georef1,label=\labelcref{sec:georeferencing_1}] {
+          \draw[-latex'] () to[out=north east,in=south east] (boiler1);
+        }
+      ]
+    ]  
+  \end{forest}
+
+
+\section{Project Setup 1}
+\label{sec:project_setup_1}
+\markdownInput{../ProjectSetup-1/readme.md}
+
+\section{TIN 1}
+\label{sec:tin_1}
+\markdownInput{../Tin-1/readme.md}
+
+\section{Georeferencing 1}
+\label{sec:georeferencing_1}
+\markdownInput{../Georeferencing-1/readme.md}
+
+
+\end{document}
