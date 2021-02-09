@@ -15,8 +15,4 @@ fi
 name=$1
 
 pdflatex -shell-escape -synctex=1 -extra-mem-top=10000000 $name.tex
-bibtex $name
-makeglossaries $name
-makeindex $name
-pdflatex -shell-escape -synctex=1 -extra-mem-top=10000000 $name.tex
 pdflatex -shell-escape -synctex=1 -extra-mem-top=10000000 $name.tex
