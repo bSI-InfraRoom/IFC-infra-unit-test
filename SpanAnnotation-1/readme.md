@@ -1,5 +1,5 @@
 
-## SpanAnnotation_1
+## SpanAnnotation 1
 
 ### Intent
 
@@ -12,7 +12,7 @@ The annotation adds additional semantic data to a given alignment segments.
 This scenario builds upon following other scenarios:
 
 - ProjectSetup
-- Alignment according to IFC4x3_RC2
+- Alignment according to `IFC4x3_RC2`
 
 ### Content
 
@@ -31,5 +31,5 @@ Following files correspond to this scenario:
 
 | Filename                          | Description                                             |
 |-----------------------------------|---------------------------------------------------------|
-| UTSpanAnnotation1.ifc             | the desired IFC content acc. to IFC4X3\_RC2             |
+| UTSpanAnnotation1.ifc             | the desired IFC content acc. to `IFC4X3_RC2`            |
 
