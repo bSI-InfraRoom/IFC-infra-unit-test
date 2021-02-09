@@ -47,7 +47,7 @@ Please open an issue here: https://github.com/buildingSMART/IFC/issues.
 
 ### How do I interpret the results from the checking procedure?
 
-Consult [schema check documentation](./docs/schema_check.md). 
+Consult [schema check documentation](./docs/ifc-and-md-check.md). 
 
 **tl;dr**:
 
