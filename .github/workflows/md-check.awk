@@ -54,12 +54,14 @@ BEGIN {
         haserrors=haserrors+1
     }
     inheading=""
+    recentheading=""
     inlist=1
     emptyline=""
     next
 }
 !NF {
     inheading=""
+    recentheading=""
     inlist=""
     listdepth=0
     emptyline=1
@@ -67,6 +69,7 @@ BEGIN {
 }
 /^\s*$/ {
     inheading=""
+    recentheading=""
     inlist=""
     listdepth=0
     emptyline=1
@@ -74,6 +77,7 @@ BEGIN {
 }
 /^[ \t]*$/ {
     inheading=""
+    recentheading=""
     inlist=""
     listdepth=0
     emptyline=1
@@ -85,6 +89,7 @@ BEGIN {
         haserrors=haserrors+1
     }
     inheading=""
+    recentheading=""
     inlist=""
     listdepth=0
     emptyline=1
