@@ -15,7 +15,7 @@ if ! command -v texlua > /dev/null; then
   cd install-tl-20*
 
   # Install a minimal system
-  ./install-tl --profile=../texlive/texlive.profile
+  ./install-tl --profile=../.github/workflows/texlive.profile
 
   cd ..
   rm install-tl-unx.tar.gz
@@ -28,7 +28,7 @@ tlmgr update --self --all --no-auto-install
 tlmgr install luatex
 
 # We specify the directory in which it is located texlive_packages
-tlmgr install $(sed 's/\s*#.*//;/^\s*$/d' texlive/texlive_packages)
+tlmgr install $(sed 's/\s*#.*//;/^\s*$/d' .github/workflows/texlive_packages)
 
 # Keep no backups (not required, simply makes cache bigger)
 tlmgr option -- autobackup 0
