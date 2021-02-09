@@ -1,6 +1,4 @@
 
-# *unit-test-name-nr*
-
 ### Intent
 
 *Include a short description of the unit test scenario(s).*

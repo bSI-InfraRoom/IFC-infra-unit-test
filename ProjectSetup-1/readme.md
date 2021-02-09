@@ -1,6 +1,4 @@
 
-# ProjectSetup 1 #
-
 ### Intent
 
 This scenario encapsulates the model set up with correct units and project context.

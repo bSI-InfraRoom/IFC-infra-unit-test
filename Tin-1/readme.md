@@ -1,6 +1,4 @@
 
-# Tin 1
-
 ### Intent
 
 This scenario has a simple TIN with some holes/voids. 

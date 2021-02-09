@@ -1,6 +1,4 @@
 
-# Georeferencing-1
-
 ### Intent
 
 This scenario encapsulates the model set up with correct georeferencing. 
