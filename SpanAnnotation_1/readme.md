@@ -10,12 +10,14 @@ The annotation adds additional semantic data to a given alignment segments.
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
+
 - ProjectSetup
 - Alignment according to IFC4x3_RC2
 
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
+
 - `IfcProject`
 - `IfcSite`
 - `IfcAlignment` with basic horizontal and vertical segments
@@ -29,5 +31,5 @@ Following files correspond to this scenario:
 
 | Filename                          | Description                                             |
 |-----------------------------------|---------------------------------------------------------|
-| UT_SpanAnnotation_1.ifc           | the desired IFC content acc. to IFC4X3_RC1              |
+| UTSpanAnnotation1.ifc             | the desired IFC content acc. to IFC4X3\_RC2             |
 
