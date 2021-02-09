@@ -1,0 +1,36 @@
+name: GenerateReport
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Cache installation
+        id: cache-texlive
+        uses: actions/cache@v2
+        with:
+          path: |
+            /tmp/texlive
+            $HOME/.texlive
+          key: ${{ runner.os }}-texlive
+      - name: Install
+        run: |
+          source .github/workflows/texlive_install.sh
+          cp .github/workflows/texmf.cnf /tmp/texlive/texmf.cnf
+          texliveonfly --arguments='-shell-escape' Report/UnitTest_Report.tex
+          source .github/workflows/texlive_compile.sh Report/UnitTest_Report
+      - name: Set filename
+        id: output_file
+        run: |
+          echo ::set-output name=OUTPUT_FILE::Report/UnitTest_Report.pdf
+      - name: Upload pdf
+        uses: actions/upload-artifact@v2
+        with:
+          name: UnitTest_Report.pdf
+          path: ${{ steps.output_file.outputs.OUTPUT_FILE }}
+      - name: Logging
+        if: ${{ failure() }}
+        run: |
+          cat Report/UnitTest_Report.log
