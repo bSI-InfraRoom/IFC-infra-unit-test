@@ -5,6 +5,7 @@ IFC 4x3 RC2
 This scenario has a simple alignment with left arc in horizontal and no vertical.
 
 That is it has Civil Horizontal Geometry (HG):
+
 - straight
 - an arc with ifc positive radius of curvature
 - a straight
