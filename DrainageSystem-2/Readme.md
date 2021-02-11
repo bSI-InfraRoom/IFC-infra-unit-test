@@ -2,7 +2,7 @@
 
 This UT implements IfcDistributionSystem for road drainage with a culvert and open side ditches.
 
-It is based on storyline bSFi_IR_SLRD-DD (https://app.box.com/s/x9q3q62tcc77hdqpdw0vjncj7bg3byay).
+It is based on storyline `bSFi_IR_SLRD-DD` (https://app.box.com/s/x9q3q62tcc77hdqpdw0vjncj7bg3byay).
 
 ### Prerequisites
 
@@ -13,21 +13,21 @@ This scenario builds upon following other scenarios:
 
 This scenario covers the following concepts and/or IFC entities:
 - spatial structure and containment
-  - `IfcSite`
-  - `IfcRoad`
-  - `IfcFacilityPart` with correct `PredefinedType`
-  - `IfcRelContainedInSpatialStructure`
-  - `IfcRelReferencedInSpatialStructure`
+    - `IfcSite`
+    - `IfcRoad`
+    - `IfcFacilityPart` with correct `PredefinedType`
+    - `IfcRelContainedInSpatialStructure`
+    - `IfcRelReferencedInSpatialStructure`
 - system structure
-  - `IfcDistributionSystem` with correct `PredefinedType`
-  - `IfcRelReferencedInSpatialStructure` to assign system to spatial element(s) it services
-  - `IfcRelAssignsToGroup` to assign physical elements to the system
-  - `IfcRelNests` to relate ports to physical elements
-  - `IfcDistributionPort` with correct `PredefinedType` and `FlowDirection`
-  - `IfcRelConnectsPorts` 
+    - `IfcDistributionSystem` with correct `PredefinedType`
+    - `IfcRelReferencedInSpatialStructure` to assign system to spatial element(s) it services
+    - `IfcRelAssignsToGroup` to assign physical elements to the system
+    - `IfcRelNests` to relate ports to physical elements
+    - `IfcDistributionPort` with correct `PredefinedType` and `FlowDirection`
+    - `IfcRelConnectsPorts` 
 - physical elements 
-  - `IfcDistributionChamberElement` with correct `PredefinedType`
-  - `IfcPipeSegment` with correct`PredefinedType`
+    - `IfcDistributionChamberElement` with correct `PredefinedType`
+    - `IfcPipeSegment` with correct`PredefinedType`
 
 #### Situation
 
@@ -35,7 +35,7 @@ The start situation is described in the UT SpatialStructure-4 output (SpatialStr
 In addition, DrainageSystem-2-2.xml provides top surface of road structures for reference.
 The drainage system elements are given in DrainageSystem-2-1.xml.
 Note: the open ditches are modeled here as LandXML Channel elements, roughly following the 
-correcponding ditch bottom breakline in the surface model, but the number of bends, modeled as
+corresponding ditch bottom breakline in the surface model, but the number of bends, modeled as
 Connections, is reduced for practical reasons. Also, the Channel dimensions do not necessarily 
 match the slopes in the surface model.
 

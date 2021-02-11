@@ -2,7 +2,7 @@
 
 This UT implements IfcDistributionSystem for road drainage with gullies/manholes and piped sewers.
 
-It is based on storyline bSFi_IR_SLRD-DD (https://app.box.com/s/x9q3q62tcc77hdqpdw0vjncj7bg3byay).
+It is based on storyline `bSFi_IR_SLRD-DD` (https://app.box.com/s/x9q3q62tcc77hdqpdw0vjncj7bg3byay).
 
 ### Prerequisites
 
@@ -13,21 +13,21 @@ This scenario builds upon following other scenarios:
 
 This scenario covers the following concepts and/or IFC entities:
 - spatial structure and containment
-  - `IfcSite`
-  - `IfcRoad`
-  - `IfcFacilityPart` with correct `PredefinedType`
-  - `IfcRelContainedInSpatialStructure`
-  - `IfcRelReferencedInSpatialStructure`
+    - `IfcSite`
+    - `IfcRoad`
+    - `IfcFacilityPart` with correct `PredefinedType`
+    - `IfcRelContainedInSpatialStructure`
+    - `IfcRelReferencedInSpatialStructure`
 - system structure
-  - `IfcDistributionSystem` with correct `PredefinedType`
-  - `IfcRelReferencedInSpatialStructure` to assign system to spatial element(s) it services
-  - `IfcRelAssignsToGroup` to assign physical elements to the system
-  - `IfcRelNests` to relate ports to physical elements
-  - `IfcDistributionPort` with correct `PredefinedType` and `FlowDirection`
-  - `IfcRelConnectsPorts` 
+    - `IfcDistributionSystem` with correct `PredefinedType`
+    - `IfcRelReferencedInSpatialStructure` to assign system to spatial element(s) it services
+    - `IfcRelAssignsToGroup` to assign physical elements to the system
+    - `IfcRelNests` to relate ports to physical elements
+    - `IfcDistributionPort` with correct `PredefinedType` and `FlowDirection`
+    - `IfcRelConnectsPorts` 
 - physical elements 
-  - `IfcDistributionChamberElement` with correct `PredefinedType`
-  - `IfcPipeSegment` with correct`PredefinedType`
+    - `IfcDistributionChamberElement` with correct `PredefinedType`
+    - `IfcPipeSegment` with correct`PredefinedType`
 
 #### Situation
 
