@@ -6,12 +6,15 @@ This scenario has a tin with coordinates for IfcTriangulatedIrregularNetwork usi
 IfcMapConversion is used to translate data to the correct (Easting, Northing, Height) for the map projection.
 The data is already in map units so Scale is 1.
 
+Special Note: the data is NOT in local engineering coordinates.
+The units for x and y are map units and not ground units. 
+
 The tin has just one colour for all the triangles. 
 There are no voids.
 
-The Horizontal and Vertical datums are specified in 'IfcProjectedCRS'.
+The Horizontal and Vertical datums are specified in `IfcProjectedCRS`.
 
-The ifc file was written by 12d Model. 
+The ifc file was written by 12d Model.
 
 ### Prerequisites
 
@@ -23,7 +26,8 @@ This scenario builds upon the other scenarios:
 
 This scenario covers the additional concepts and/or IFC entities:
 
-- 'IfcMapConversion' is used to translate the data to map coordindates
+- `IfcMapConversion` is used to translate the data from truncated map coordinates (a local origin) to map coordindates
+- Special Note: the data is NOT in local engineering coordinates. The units for x and y are map units and not ground units.  
 
 ### Supporting files
 
