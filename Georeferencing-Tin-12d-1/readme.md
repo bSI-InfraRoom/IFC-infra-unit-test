@@ -4,7 +4,7 @@
 IFC 4x3 RC2
 This scenario has a tin (only 1.5K triangles) with just one colour for all the triangles. 
 The coordinates are in Easting, Northing and AHD for the map projection MGA94 Zone 56.
-The Horizontal and Vertical datums are specified in 'IfcProjectedCRS'.
+The Horizontal and Vertical datums are specified in `IfcProjectedCRS`.
 
 The ifc file was written by 12d Model. 
 
@@ -18,9 +18,9 @@ This scenario builds upon following other scenarios:
 
 This scenario covers the following concepts and/or IFC entities:
 
-- 'IfcTriangulatedIrregularNetwork'
-- 'IfcSolidStratum'
-- 'IfcIndexedColourMap'
+- `IfcTriangulatedIrregularNetwork`
+- `IfcSolidStratum`
+- `IfcIndexedColourMap`
 
 ### Supporting files
 
