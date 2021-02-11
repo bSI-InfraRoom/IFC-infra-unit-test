@@ -34,3 +34,4 @@ Following files correspond to this scenario:
 | `UT_GeoRef_1.ifc`                 | the exported content as IFC document      |
 | `UT_GeoRef_1_1.png`               | screen shot of the entrance to TUM from BayernAtlas |
 | `UT_GeoRef_1_2.jpg`               | schematic representation of georeferencing entities |
+| `UT_GeoRef_1_12d.png`             | 'UT_GeoRef_1_ifc' read into 12d Model                 |
