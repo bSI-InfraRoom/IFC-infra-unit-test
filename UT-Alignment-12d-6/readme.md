@@ -32,7 +32,7 @@ This scenario builds upon the scenarios:
 
 This scenario covers the additional concepts and/or IFC entities:
 
-- `IfcAlignmentVerticalSegment` with `PredefinedType=CIRCULARARC` for sag arc
+- `IfcAlignmentVerticalSegment` with `PredefinedType=CIRCULARARC` for crest and sag arc
 
 ### Supporting files
 
