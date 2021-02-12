@@ -15,7 +15,7 @@ The IFC file was written by 12d Model.
 
 This scenario builds upon the other scenarios:
 
-- UT-Georeferencing-Tin-1
+- UT-Georeferencing-Tin-12d-1
 
 ### Content
 
