@@ -36,7 +36,7 @@ This scenario covers the following concepts and/or IFC entities:
 Following files correspond to this scenario:
 
 | Filename                          | Description                               |
-|-----------------------------------|-------------------------------------------|
+|:----------------------------------|-------------------------------------------|
 | `UT_Tin_1.ifc`                    | the exported content as IFC document      |
 | `UT_Tin_1_1.png`                  | screen shot from 12d Model                |
 | `UT_Tin_1_2.png`                  | screen shot from OpenInfraPlatform        |

@@ -35,7 +35,7 @@ This scenario covers the following concepts and/or IFC entities:
 Following files correspond to this scenario:
 
 | Filename                          | Description                               |
-|-----------------------------------|-------------------------------------------|
+|:----------------------------------|-------------------------------------------|
 | `ProjectSetup-1.ifc`              | the IFC document                          |
 
 ### Additional explanation

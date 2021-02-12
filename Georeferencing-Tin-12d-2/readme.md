@@ -33,7 +33,7 @@ This scenario covers the additional concepts and/or IFC entities:
 Following files correspond to this scenario:
 
 | Filename                                         | Description                               |
-|--------------------------------------------------|-------------------------------------------|
+|:-------------------------------------------------|-------------------------------------------|
 | `UT-Georeferencing-Tin-12d-2.ifc` | the exported content as IFC document      |
 | `UT-Georeferencing-Tin-12d-2.png` | screen shot from 12d Model                |
 
