@@ -35,14 +35,14 @@ jobs:
       - name: Check for IFC changes
         id: check_results
         run: |
-          if [[ $HOME/files.json ]] && cat $HOME/files.json | grep -q .ifc; then 
+          if [[ $HOME/files.json ]] && grep -qiF .ifc $HOME/files.json; then 
             echo ::set-output name=HASIFCS::true; 
             echo 'IFC changes determined!';
           else 
             echo ::set-output name=HASIFCS::false; 
             echo 'No IFC changes determined!';
           fi
-          if [[ $HOME/files.json ]] && cat $HOME/files.json | grep -q .md; then 
+          if [[ $HOME/files.json ]] && grep -qiF .md $HOME/files.json; then 
             echo ::set-output name=HASMDS::true; 
             echo 'MD changes determined!';
           else 
