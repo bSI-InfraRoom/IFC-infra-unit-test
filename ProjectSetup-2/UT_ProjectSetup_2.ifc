@@ -30,8 +30,9 @@ DATA;
 #25 = IFCSIUNIT(*, .MASSUNIT., .KILO., .GRAM.);
 #26 = IFCSIUNIT(*, .TIMEUNIT., $, .SECOND.);
 #27 = IFCMONETARYUNIT('EUR');
-#28 = IFCGEOMETRICREPRESENTATIONCONTEXT($, 'Model', 3, 1.E-6, #29, #3);
+#28 = IFCGEOMETRICREPRESENTATIONCONTEXT($, 'Model', 3, 1.E-6, #29, #30);
 #29 = IFCAXIS2PLACEMENT3D(#5, #4, #2);
+#30 = IFCDIRECTION((0.,1.));
 
 /* ------- UT ProjectSetup-2 ------------------------------------------------------------------- */
 /* ------- IfcOwnerHistory contain information about the person and organization --------------- */
