@@ -52,14 +52,14 @@ To represent the project breakdown for this unit test, we envision the following
             - A.a.2.2 IfcFacilityPart
                 - `PredefinedType=IfcFacilityPartCommonTypeEnum.LEVELCROSSING`
                 - `UsageType=LONGITUDINAL`
-             - A.a.2.3 IfcFacilityPart
+            - A.a.2.3 IfcFacilityPart
                 - `PredefinedType=IfcRailwayPartTypeEnum.TRACKSTRUCTUREPART`
                 - `UsageType=LONGITUDINAL`
 - `IfcRelInterferesElements`
-      - `InterferenceType="Crosses"`
-      - `RelatingElement` = reference to A.a.1.2
-      - `RelatedElement` = reference to A.a.2.2
-      - `InterferenceGeometry` = optional for this unit test
+    - `InterferenceType="Crosses"`
+    - `RelatingElement` = reference to A.a.1.2
+    - `RelatedElement` = reference to A.a.2.2
+    - `InterferenceGeometry` = optional for this unit test
 
 
 ### Expected Results
