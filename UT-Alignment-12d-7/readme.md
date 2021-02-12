@@ -2,7 +2,7 @@
 ### Intent
 
 IFC 4x3 RC2
-This scenario has an alignment with left arc in horizontal and crest and sag parabolas for vertical
+This scenario has an alignment with left arc in horizontal and crest and sag parabolas for vertical.
 
 That is, it has 
 Civil Horizontal Geometry (HG):
