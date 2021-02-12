@@ -2,19 +2,18 @@
 ### Intent
 
 IFC 4x3 RC2
-This scenario has a tin with coordinates for IfcTriangulatedIrregularNetwork using a local origin of (256400.0, 7011600.0, 0.0).
+This scenario has a tin with coordinates for IfcTriangulatedIrregularNetwork in map units (map metres)
+ but using a local origin of (256400.0, 7011600.0, 0.0) to truncate the coordidnates.
 IfcMapConversion is used to translate data to the correct (Easting, Northing, Height) for the map projection.
-The data is already in map units so Scale is 1.
-
-Special Note: the data is NOT in local engineering coordinates.
-The units for x and y are map units and not ground units. 
-
-The tin has just one colour for all the triangles. 
-There are no voids.
-
+The data is already in map units (map metres) so Scale is 1.
 The Horizontal and Vertical datums are specified in `IfcProjectedCRS`.
 
-The ifc file was written by 12d Model.
+The tin has one colour for all the triangles and there are no voids in the tin.
+
+Special Note: the data is NOT in local engineering coordinates.
+The units for x and y are map units (map metres) and not ground units. 
+
+The IFC file was written by 12d Model.
 
 ### Prerequisites
 
