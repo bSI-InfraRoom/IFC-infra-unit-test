@@ -3,19 +3,20 @@
 
 IFC 4x3 RC2
 This scenario has an alignment with left and right arcs and left and right leading and trailing clothoid transitions in horizontal
- and no vertical
+ and no vertical alignment.
+ 
 That is, it has 
-Civil Horizontal Geometry (HG):
+Civil Horizontal Geometry (HG) which is shown in `UT-Alignment-12d-5.png`:
 
 - straight of length 38.292
 - left clothoid transition of length 20 with IFC positive radius of curvature going from 0 to 150
 - left arc of length 74.118 with IFC positive radius of curvature
-- left clothoid transition of length 30 with IFC positive radius of curvature going from 150 to 0,
+- left clothoid transition of length 30 with IFC positive radius of curvature going from 150 to 0
 - straight of length 14.9
 - left arc of length 12.45 with IFC positive radius of curvature 40
 - straight of length 47.26,
 - leading right clothoid transition of length 10 with IFC negative radius of curvature going from 0 to -75
-- right arc of length 26.798 with IFC negative radius of curvature -75,
+- right arc of length 26.798 with IFC negative radius of curvature -75
 - trailing right clothoid transition of length 30 with IFC negative radius of curvature going from -75 to 0
 - straight of length 54.426
 
