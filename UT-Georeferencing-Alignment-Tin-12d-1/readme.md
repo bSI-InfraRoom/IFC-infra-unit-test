@@ -16,8 +16,8 @@ But being a real Civil project I suspect they are truncated map coordindates.
 
 The TUM IFC 4x1 data consists of two tins and 5 alignments:
 
- - the tins are simple tins with no holes and just one colour
- - the alignments include:
+- the tins are simple tins with no holes and just one colour
+- the alignments include:
      horizontal alignment: straights, IFC clothoids and arcs
      vertical alignment:   straights and parabolas
 
@@ -40,7 +40,7 @@ This scenario builds upon the scenarios:
 
 - Georeferencing-1
 - Tin-1
-- UT-Georeferencing_Tin-12d-1
+- UT-Georeferencing-Tin-12d-1
 - UT-Georeferencing-Tin-12d-2
 - UT-Alignment-12d-1
 - UT-Alignment-12d-3
