@@ -35,7 +35,7 @@ This scenario covers the additional concepts and/or IFC entities:
 
 - the vertical starts after the horizontal and stops before the end of the horizontal. 
 
-## Supporting files
+### Supporting files
 
 Following files correspond to this scenario:
 
