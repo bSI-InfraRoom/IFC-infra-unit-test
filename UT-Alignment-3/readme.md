@@ -1,5 +1,4 @@
 
-## Alignment_3
 
 ### Intent
 
@@ -54,4 +53,3 @@ Following files correspond to this scenario:
 | `UT_Alignment_3_1.jpg`			| screenshot from the KIT FZK Viewer		|
 | `UT_Alignment_3_2.jpg`			| screenshot from Civil 3D             		|
 | `UT_Alignment_3.dwg`	    		| originating Civil 3D file					|
-
