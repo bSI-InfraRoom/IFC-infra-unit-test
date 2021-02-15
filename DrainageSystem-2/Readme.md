@@ -7,11 +7,13 @@ It is based on storyline `bSFi_IR_SLRD-DD` (https://app.box.com/s/x9q3q62tcc77hd
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
+
 - SpatialStructure-4
 
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
+
 - spatial structure and containment
     - `IfcSite`
     - `IfcRoad`
