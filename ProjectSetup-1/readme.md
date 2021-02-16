@@ -40,7 +40,7 @@ Following files correspond to this scenario:
 
 ### Additional explanation
 
-This UT establishes the **bare minimum** of IFC content within an IFC file.
+This UT establishes the *bare minimum* of IFC content within an IFC file.
 There are no products, geometries, properties or anything inside.
 
-The main purpose of this UT is to have a basis for all UTs, where this **boilerplate** content must be included, but is not explained in detail.
+The main purpose of this UT is to have a basis for all UTs, where this *boilerplate* content must be included, but is not explained in detail.

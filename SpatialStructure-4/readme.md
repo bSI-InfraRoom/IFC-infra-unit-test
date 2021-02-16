@@ -40,98 +40,98 @@ The figures below shows the spatial breakdown of the project into IfcFacility (b
 #### Project Breakdown
 
 To represent the project breakdown for this unit test, we envision the following project structure.
-`IfcProject` (A.) contains `IfcSite` (A.a) with `Representation=IfcBoundingBox`, which in turn contains:
+`IfcProject` (A`.) contains `IfcSite` (A.a) with ``Representation=IfcBoundingBox`, which in turn contains:
 
-- A.a.1 IfcRoad (Sammalammintie)
-    - Representation=IfcExtrudedAreaSolid
-    - A.a.1.1 IfcFacilityPart (Sammalammintie segment 150 - 230)
-        - Representation=IfcExtrudedAreaSolid
-        - PredefinedType*=IfcRoadPartTypeEnum.ROADSEGMENT*
-        - UsageType=LONGITUDINAL
-    - A.a.1.2 IfcFacilityPart (Sammalammintie Päijänteentie intersection)
-        - Representation=IfcExtrudedAreaSolid
-        - PredefinedType*=IfcFacilityPartCommonTypeEnum.INTERSECTION*
-        - UsageType=LONGITUDINAL
-    - A.a.1.3 IfcFacilityPart (Sammalammintie segment 247 - 270)
-        - Representation=IfcExtrudedAreaSolid
-        - PredefinedType*=IfcRoadPartTypeEnum.ROADSEGMENT*
-        - UsageType=LONGITUDINAL
-    - A.a.1.4 IfcFacilityPart (Sammalammintie safety equipment road intersection)
-        - Representation=IfcExtrudedAreaSolid
-        - PredefinedType*=IfcRoadPartTypeEnum.INTERSECTION*
-        - UsageType=LONGITUDINAL
-    - A.a.1.5 IfcFacilityPart (Sammalamminitie level crossing)
-        - Representation=IfcExtrudedAreaSolid
-        - PredefinedType*=IfcRoadPartTypeEnum.RAILWAYCROSSING*
-        - UsageType=LONGITUDINAL
-    - A.a.1.6 IfcFacilityPart (Sammalammimtie segment 315 - 358)
-        - Representation=IfcExtrudedAreaSolid
-        - PredefinedType*=IfcRoadPartTypeEnum.ROADSEGMENT*
-        - UsageType=LONGITUDINAL
-    - A.a.1.7 IfcFacilityPart (Sammalammintie Road2 intersection)
-        - Representation=IfcExtrudedAreaSolid
-        - PredefinedType*=IfcRoadPartTypeEnum.INTERSECTION*
-        - UsageType=LONGITUDINAL
-    - A.a.1.8 IfcFacilityPart (Sammalammintie segment 386 - 620)
-        - Representation=IfcExtrudedAreaSolid
-        - PredefinedType*=IfcRoadPartTypeEnum.ROADSEGMENT*
-        - UsageType=LONGITUDINAL
-- A.a.2 IfcRoad (Safety equipment road)
-    - Representation=IfcExtrudedAreaSolid
-    - A.a.2.1 IfcFacilityPart (Safety equipment terminal)
-        - Representation=IfcExtrudedAreaSolid
-        - PredefinedType*=IfcFacilityPartCommonTypeEnum.TERMINAL*
-        - UsageType=LONGITUDINAL
-    - A.a.2.2 IfcFacilityPart (Sammalammintie safety equipment road intersection)
-        - Representation=IfcExtrudedAreaSolid - Shared with A.a.1.4
-        - PredefinedType*=IfcRoadPartTypeEnum.INTERSECTION*
-        - UsageType=LONGITUDINAL
-        - IfcRelInterferesElements
-            - InterferenceType=Crosses
-            - RelatingElement = reference to A.a.1.4
-            - RelatedElement = reference to A.a.2.2
-- A.a.3 IfcRoad (Road2)
-    - Representation=IfcExtrudedAreaSolid
-    - A.a.3.1 IfcFacilityPart (Road2 segment 18 - 36)
-        - Representation=IfcExtrudedAreaSolid
-        - PredefinedType*=IfcRoadPartTypeEnum.ROADSEGMENT*
-        - UsageType=LONGITUDINAL
-    - A.a.3.2 IfcFacilityPart (Sammalammintie Road2 intersection)
-        - Representation=IfcExtrudedAreaSolid - Shared with A.a.1.7
-        - PredefinedType*=IfcRoadPartTypeEnum.INTERSECTION*
-        - UsageType=LONGITUDINAL
-        - IfcRelInterferesElements
-            - InterferenceType=Crosses
-            - RelatingElement = reference to A.a.1.7
-            - RelatedElement = reference to A.a.3.2
-- A.a.4 IfcRailway (Railway)
-    - IfcExtrudedAreaSolid
-    - A.a.4.1 IfcFacilityPart (Railway part 1)
-        - Representation=-
-        - PredefinedType*=IfcRailwayPartTypeEnum.TRACKSTUCTUREPART*
-        - UsageType=LONGITUDINAL
-    - A.a.4.2 IfcFacilityPart (Sammalamminitie level crossing)
-        - Representation=IfcExtrudedAreaSolid - Shared with A.a.1.5
-        - PredefinedType*=IfcFacilityPartCommonTypeEnum.LEVELCROSSING*
-        - UsageType=LONGITUDINAL
-        - IfcRelInterferesElements
-            - InterferenceType=Crosses
-            - RelatingElement = reference to A.a.1.5
-            - RelatedElement = reference to A.a.4.2
-    - A.a.4.3 IfcFacilityPart (Railway part 3)
-        - Representation=-
-        - PredefinedType*=IfcRailwayPartTypeEnum.TRACKSTUCTUREPART*
-        - UsageType=LONGITUDINAL
-    - A.a.4.4 IfcFacilityPart (Turvalaite Terminal)
-        - Representation=IfcExtrudedAreaSolid - Shared with A.1.2.1
-        - PredefinedType*=IfcFacilityPartCommonTypeEnum.TERMINAL*
-        - UsageType=LONGITUDINAL
-        - IfcRelInterferesElements
-            - InterferenceType=Crosses
-            - RelatingElement = reference to A.a.2.1
-            - RelatedElement = reference to A.a.4.4
+- A.a.1 `IfcRoad` (Sammalammintie)
+    - `Representation=IfcExtrudedAreaSolid`
+    - A.a.1.1 `IfcFacilityPart` (Sammalammintie segment 150 - 230)
+        - `Representation=IfcExtrudedAreaSolid`
+        - `PredefinedType=IfcRoadPartTypeEnum.ROADSEGMENT`
+        - `UsageType=LONGITUDINAL`
+    - A.a.1.2 `IfcFacilityPart` (Sammalammintie Päijänteentie intersection)
+        - `Representation=IfcExtrudedAreaSolid`
+        - `PredefinedType=IfcFacilityPartCommonTypeEnum.INTERSECTION`
+        - `UsageType=LONGITUDINAL`
+    - A.a.1.3 `IfcFacilityPart` (Sammalammintie segment 247 - 270)
+        - `Representation=IfcExtrudedAreaSolid`
+        - `PredefinedType=IfcRoadPartTypeEnum.ROADSEGMENT`
+        - `UsageType=LONGITUDINAL`
+    - A.a.1.4 `IfcFacilityPart` (Sammalammintie safety equipment road intersection)
+        - `Representation=IfcExtrudedAreaSolid`
+        - `PredefinedType=IfcRoadPartTypeEnum.INTERSECTION`
+        - `UsageType=LONGITUDINAL`
+    - A.a.1.5 `IfcFacilityPart` (Sammalamminitie level crossing)
+        - `Representation=IfcExtrudedAreaSolid`
+        - `PredefinedType=IfcRoadPartTypeEnum.RAILWAYCROSSING`
+        - `UsageType=LONGITUDINAL`
+    - A.a.1.6 `IfcFacilityPart` (Sammalammimtie segment 315 - 358)
+        - `Representation=IfcExtrudedAreaSolid`
+        - `PredefinedType=IfcRoadPartTypeEnum.ROADSEGMENT`
+        - `UsageType=LONGITUDINAL`
+    - A.a.1.7 `IfcFacilityPart` (Sammalammintie Road2 intersection)
+        - `Representation=IfcExtrudedAreaSolid`
+        - `PredefinedType=IfcRoadPartTypeEnum.INTERSECTION`
+        - `UsageType=LONGITUDINAL`
+    - A.a.1.8 `IfcFacilityPart` (Sammalammintie segment 386 - 620)
+        - `Representation=IfcExtrudedAreaSolid`
+        - `PredefinedType=IfcRoadPartTypeEnum.ROADSEGMENT`
+        - `UsageType=LONGITUDINAL`
+- A.a.2 `IfcRoad` (Safety equipment road)
+    - `Representation=IfcExtrudedAreaSolid`
+    - A.a.2.1 `IfcFacilityPart` (Safety equipment terminal)
+        - `Representation=IfcExtrudedAreaSolid`
+        - `PredefinedType=IfcFacilityPartCommonTypeEnum.TERMINAL`
+        - `UsageType=LONGITUDINAL`
+    - A.a.2.2 `IfcFacilityPart` (Sammalammintie safety equipment road intersection)
+        - `Representation=IfcExtrudedAreaSolid` - Shared with A.a.1.4
+        - `PredefinedType=IfcRoadPartTypeEnum.INTERSECTION`
+        - `UsageType=LONGITUDINAL`
+        - `IfcRelInterferesElements`
+            - `InterferenceType='Crosses'`
+            - `RelatingElement` = reference to A.a.1.4
+            - `RelatedElement` = reference to A.a.2.2
+- A.a.3 `IfcRoad` (Road2)
+    - `Representation=IfcExtrudedAreaSolid`
+    - A.a.3.1 `IfcFacilityPart` (Road2 segment 18 - 36)
+        - `Representation=IfcExtrudedAreaSolid`
+        - `PredefinedType=IfcRoadPartTypeEnum.ROADSEGMENT`
+        - `UsageType=LONGITUDINAL`
+    - A.a.3.2 `IfcFacilityPart` (Sammalammintie Road2 intersection)
+        - `Representation=IfcExtrudedAreaSolid` - Shared with A.a.1.7
+        - `PredefinedType=IfcRoadPartTypeEnum.INTERSECTION`
+        - `UsageType=LONGITUDINAL`
+        - `IfcRelInterferesElements`
+            - `InterferenceType='Crosses'`
+            - `RelatingElement` = reference to A.a.1.7
+            - `RelatedElement` = reference to A.a.3.2
+- A.a.4 `IfcRailway` (Railway)
+    - `IfcExtrudedAreaSolid`
+    - A.a.4.1 `IfcFacilityPart` (Railway part 1)
+        - `Representation=` none
+        - `PredefinedType=IfcRailwayPartTypeEnum.TRACKSTUCTUREPART`
+        - `UsageType=LONGITUDINAL`
+    - A.a.4.2 `IfcFacilityPart` (Sammalamminitie level crossing)
+        - `Representation=IfcExtrudedAreaSolid` - Shared with A.a.1.5
+        - `PredefinedType=IfcFacilityPartCommonTypeEnum.LEVELCROSSING`
+        - `UsageType=LONGITUDINAL`
+        - `IfcRelInterferesElements`
+            - `InterferenceType='Crosses'`
+            - `RelatingElement` = reference to A.a.1.5
+            - `RelatedElement` = reference to A.a.4.2
+    - A.a.4.3 `IfcFacilityPart` (Railway part 3)
+        - `Representation=` none
+        - `PredefinedType=IfcRailwayPartTypeEnum.TRACKSTUCTUREPART`
+        - `UsageType=LONGITUDINAL`
+    - A.a.4.4 `IfcFacilityPart` (Turvalaite Terminal)
+        - `Representation=IfcExtrudedAreaSolid` - Shared with A.1.2.1
+        - `PredefinedType=IfcFacilityPartCommonTypeEnum.TERMINAL`
+        - `UsageType=LONGITUDINAL`
+        - `IfcRelInterferesElements`
+            - `InterferenceType='Crosses'`
+            - `RelatingElement` = reference to A.a.2.1
+            - `RelatedElement` = reference to A.a.4.4
 
-the PredefinedType enumeration is selected through "IfcFacilityPartTypeSelect".
+The `PredefinedType` enumeration is selected through `IfcFacilityPartTypeSelect`.
 
 ### Expected Results
 
