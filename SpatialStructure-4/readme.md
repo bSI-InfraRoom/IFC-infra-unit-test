@@ -40,7 +40,7 @@ Figures \ref{fig:spatial4-borders,fig:spatial4-borders2} show the spatial breakd
 #### Project Breakdown
 
 To represent the project breakdown for this unit test, we envision the following project structure.
-`IfcProject` (A`.) contains `IfcSite` (A.a) with ``Representation=IfcBoundingBox`, which in turn contains:
+`IfcProject` (A.) contains `IfcSite` (A.a) with `Representation=IfcBoundingBox`, which in turn contains:
 
 - A.a.1 `IfcRoad` (Sammalammintie)
     - `Representation=IfcExtrudedAreaSolid`
