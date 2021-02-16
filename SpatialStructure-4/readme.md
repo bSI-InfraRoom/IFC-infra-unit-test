@@ -27,15 +27,15 @@ This scenario covers the following concepts and/or IFC entities:
 
 ### Situation
 
-The figure below shows the extent of the IfcSite and its georeferenced location.
+Figure \ref{fig:spatial4-situation} shows the extent of the `IfcSite` and its georeferenced location.
 
-![](../SpatialStructure-4/Figure1-Situation.PNG)
+![spatial4-situation](../SpatialStructure-4/Figure1-Situation.PNG "Caption")
 
-The figures below shows the spatial breakdown of the project into IfcFacility (blue) and IfcFacilityPart (turquoise).
+Figures \ref{fig:spatial4-borders,fig:spatial4-borders2} show the spatial breakdown of the project into `IfcFacility` (blue) and `IfcFacilityPart` (turquoise).
 
-![](../SpatialStructure-4/Figure2-ToivolaAreaBorders.JPG)
+![spatial4-borders](../SpatialStructure-4/Figure2-ToivolaAreaBorders.JPG "Caption")
 
-![](../SpatialStructure-4/Figure3-ToivolaAreaBorders2.JPG)
+![spatial4-borders2](../SpatialStructure-4/Figure3-ToivolaAreaBorders2.JPG "Caption")
 
 #### Project Breakdown
 
@@ -142,9 +142,9 @@ As such, the expected results are:
 1. Screen-shot of the spatial structure breakdown as represented in the native application,
 2. The resulting IFC file containing the spatial structure requested.
 
-For example, the application should be able to display something like what is shown in the picture below: 
+For example, the application should be able to display something as shown in Figure \ref{fig:spatial4-result}.
 
-![](../SpatialStructure-4/Figure4-result.png)
+![spatial4-result](../SpatialStructure-4/Figure4-result.png "Expected result in software.")
 
 ### Supporting files
 
