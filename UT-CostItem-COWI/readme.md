@@ -9,14 +9,23 @@
 
 This scenario builds upon following other scenarios:
 
-- *list other scenarios that should be supported before this one*
+- *SpatialStructure_3.ifc*
 
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
 
-- *list IFC concepts covered*
-- *list IFC entities specifically addressed*
+- *Classification Association*
+- *Project Declaration*
+- *Projecet Classification Information*
+
+- *IfcCostItem*
+- *IfcClassification*
+- *IfcClassificationReference*
+- *IfcElementQuantity*
+- *IfcQuantitityArea*
+- *IfcQuantitityVolume*
+- *IfcOwnerHistory*
 
 ### Supporting files
 
@@ -24,4 +33,5 @@ Following files correspond to this scenario:
 
 | Filename                          | Description                               |
 |-----------------------------------|-------------------------------------------|
-| *filename*                        | *short description*                       |
+| *IR_UT_COWI_Cost.ifc*             | *One cost itema for one slab.*            |
+| *COWI_CostItem.PNG*               | *Image of the structure.*                 |
