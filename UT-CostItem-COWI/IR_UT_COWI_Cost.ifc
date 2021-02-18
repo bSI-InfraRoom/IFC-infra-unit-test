@@ -33,7 +33,7 @@ DATA;
 #25= IFCCLASSIFICATION($,'201802','2018-06','Prosesskode','Standard specification of work for road projects used in Norway; issued in 2 handbooks, R761 (General specification 1) and R762 (General specification 2)','https://www.vegvesen.no/_attachment/2362831/binary/1269863?fast_title=H%C3%A5ndbok+R761+Prosesskode+1+Standard+beskrivelsestekster+for+vegkontrakter.pdf',('.'));
 #26= IFCCLASSIFICATIONREFERENCE($,'72.14','a',#25,$,$);
 
-#7= IFCRELDECLARES('2NTYCyomfC$uyNxNvK2zxD',$,$,$,#1,($,#28));
+#7= IFCRELDECLARES('2NTYCyomfC$uyNxNvK2zxD',$,$,$,#1,(#28));
 
 #8= IFCRELDECLARES('0NCqWXKw93yhRgjyblahbW',$,$,$,#1,(#29));
 
