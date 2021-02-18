@@ -2,7 +2,7 @@
 
 This UT implements IfcDistributionSystem for road drainage with a culvert and open side ditches.
 
-It is based on storyline `bSFi_IR_SLRD-DD` (https://app.box.com/s/x9q3q62tcc77hdqpdw0vjncj7bg3byay).
+It is based on storyline [bSFi-IR-SLRD-DD](https://app.box.com/s/x9q3q62tcc77hdqpdw0vjncj7bg3byay).
 
 ### Prerequisites
 
@@ -29,9 +29,9 @@ This scenario covers the following concepts and/or IFC entities:
     - `IfcRelConnectsPorts` 
 - physical elements 
     - `IfcDistributionChamberElement` with correct `PredefinedType`
-    - `IfcPipeSegment` with correct`PredefinedType`
+    - `IfcPipeSegment` with correct `PredefinedType`
 
-#### Situation
+### Situation
 
 The start situation is described in the UT SpatialStructure-4 output (SpatialStructure-4.ifc).
 In addition, DrainageSystem-2-2.xml provides top surface of road structures for reference.
@@ -41,17 +41,17 @@ corresponding ditch bottom breakline in the surface model, but the number of ben
 Connections, is reduced for practical reasons. Also, the Channel dimensions do not necessarily 
 match the slopes in the surface model.
 
-![](./DrainageSystem-2-3.JPG)
+![](../DrainageSystem-2/DrainageSystem-2-3.JPG)
 
 
 
-![](./DrainageSystem-2-4.JPG)
+![](../DrainageSystem-2/DrainageSystem-2-4.JPG)
 
 
 
-![](./DrainageSystem-2-5.JPG)
+![](../DrainageSystem-2/DrainageSystem-2-5.JPG)
 
-#### Expected Results
+### Expected Results
 
 Physical elements contained/referenced in the spatial structure set in UT SpatialStructure-4.
 Should be visualised correctly compared to the supporting screenshots.
@@ -63,7 +63,7 @@ Network topology using `IfcDistributionPort` and `IfcRelConnectsPorts`.
 Following files correspond to this scenario:
 
 | Filename                 | Description                                                  |
-| ------------------------ | ------------------------------------------------------------ |
+|:------------------------ | ------------------------------------------------------------ |
 | `DrainageSystem-2-1.xml` | Inframodel/LandXML: PipeNetwork with Structs and Pipes       |
 | `DrainageSystem-2-2.xml` | Inframodel/LandXML: Top surface of the road and slopes/ditches |
 | `DrainageSystem-2-3.jpg` | Inframodel/LandXML: Screenshot plan view                     |
