@@ -15,7 +15,7 @@ The figure shows:
 - long section view (0.2 exaggeration) of section through the two tins along the three-point string line "section 3" (cylan colour) 
 
 
-![earthworks12d0](../UT-Earthworks-12d-0/UT-Earthworks-12d-0.png) "Top and Bottom IfcSolidStratum for Earthworks Examples"
+![earthworks12d0](../UT-Earthworks-12d-0/UT-Earthworks-12d-0.png  "Top and Bottom IfcSolidStratum for Earthworks Examples") 
 
 
 ### Prerequisites
