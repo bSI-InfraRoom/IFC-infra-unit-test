@@ -10,11 +10,12 @@ ProjectSetup-1
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
-    - Element aggregation (IfcAlignment is included in IfcSite)
-    - IfcAlignment
-    - IfcAlignmentCurve
-    - IfcAlignmentHorizontal (IfcAlignmentHorizontalSegment of types LINE, CIRCULARARC and CLOTHOID)
-    - IfcAlignmentVertical (IfcAlignmentVerticalSegment of types CONSTANTGRADIENT and PARABOLICARC)
+
+- Element aggregation (IfcAlignment is included in IfcSite)
+- IfcAlignment
+- IfcAlignmentCurve
+- IfcAlignmentHorizontal (IfcAlignmentHorizontalSegment of types LINE, CIRCULARARC and CLOTHOID)
+- IfcAlignmentVertical (IfcAlignmentVerticalSegment of types CONSTANTGRADIENT and PARABOLICARC)
 
 ### Supporting files
 
