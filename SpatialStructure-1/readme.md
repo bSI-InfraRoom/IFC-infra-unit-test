@@ -5,11 +5,13 @@ The given scenario showcases options to combine `IfcFacility` and `IfcFacilityPa
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
+
 - `ProjectSetup`
 
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
+
 - Spatial decomposition using `IfcFacility` and `IfcFacilityPart` + corresponding SELECTS
 
 ### Supporting files
@@ -23,4 +25,5 @@ Following files correspond to this scenario:
 
 
 ## Sample code
+
 pushed to [GeometryGymIFCExamples](https://github.com/GeometryGym/GeometryGymIFCExamples) 
