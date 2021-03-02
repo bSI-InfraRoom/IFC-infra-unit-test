@@ -5,7 +5,7 @@ The given scenario showcases options to combine `IfcFacility` and `IfcFacilityPa
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
-- ProjectSetup_1
+- `ProjectSetup`
 
 ### Content
 
@@ -16,10 +16,10 @@ This scenario covers the following concepts and/or IFC entities:
 
 Following files correspond to this scenario:
 
-| Filename                          | Description                                      |
-|-----------------------------------|--------------------------------------------------|
-| UT_SpatialStructure_1.ifc         | The resulting/desired IFC model using IFC4X3_RC1 |
-| UT_SpatialStructure_1_1.png       | the intended structure in the FZK Viewer         |
+| Filename                          | Description                                        |
+|-----------------------------------|----------------------------------------------------|
+| `SpatialStructure1.ifc`           | The resulting/desired IFC model using `IFC4X3_RC1` |
+| `SpatialStructure1.png`           | the intended structure in the FZK Viewer           |
 
 
 ## Sample code
