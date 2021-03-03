@@ -1,22 +1,101 @@
 
 ### Intent
 
-*Include a short description of the unit test scenario(s).*
+This scenario establishes a spatial structure for a shipyard. The intention is to show and test how spatial structures can be used to organize a project. 
+The model utilizes new vertical and regional breakdown objects to organize the project and provide a skeleton for local placement.
 
-*Optional: if your data comes from a specific Storyline of the IFC Infrastructure Deployment Project, please include a link to the originating documentation here.*
+A version with geometric representation has also been added to mimic the master planning (PHXX) use case involving the initial layout of a complex which provides visualization and volumetric segregation of the model.
+
+It is based on the storyline [RHDHV_IR_SLPW-BA-DD](https://app.box.com/s/3mqdo34f2u1fu5scfcbqn7krmwct2sfd) which has exchanges for spatial and master planning of a shipyard. 
+
+The IFC file was generated using ABCT BIM Sandbox and GeomtryGym Library.
 
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
 
-- *list other scenarios that should be supported before this one*
+- ProjectSetup-1
 
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
 
-- *list IFC concepts covered*
-- *list IFC entities specifically addressed*
+- Spatial Structure
+	- `IfcSite`
+	- `IfcMarineFacility` with predefined types
+	- `IfcFacilityPart` with predefined and usage types
+- Representations
+	- `IfcProductDefinitionShape`
+	- `IfcShapeRepresentation`
+- Placement
+	- `IfcLocalPlacement`
+- Geometry
+	- `IfcExtrudedAreaSolid`
+	- `IfcBoundingBox`
+
+#### Project Breakdown
+Figure 1 shows the extent and plan layout of the masterplan.
+
+![Master Plan][figure 1]
+
+To represent the project breakdown for this unit test, we envision the following project structure.
+`IfcProject` contains an `IfcSite` (S.) with `Representation=IfcBoundingBox`, which in turn contains:
+
+- S.SY `IfcMarineFacility` (Shipyard)
+	- `Representation=IfcBoundingBox`
+	- `PredefinedType=IfcMarineFacilityTypeEnum.SHIPYARD`
+	- S.SY.W `IfcFacilityPart` (Shipyard Water Field)
+		- `Representation=IfcBoundingBox`
+        - `PredefinedType=IfcMarinePartTypeEnum.WATERFIELD`
+        - `UsageType=REGION`
+		- S.SY.W.1 `IfcMarineFacility` (Pier 1)
+			- `Representation=IfcBoundingBox`
+			- `PredefinedType=IfcMarineFacilityTypeEnum.JETTY`
+			- S.SY.W.1.b1 `IfcSpace` (Berth 1)
+				- `Representation=IfcExtrudedAreaSolid`
+				- `PredefinedType=IfcSpaceTypeEnum.BERTH`
+		- S.SY.W.2 `IfcMarineFacility` (Pier 2)
+			- `Representation=IfcBoundingBox`
+			- `PredefinedType=IfcMarineFacilityTypeEnum.JETTY`
+			- S.SY.W.2.b3 `IfcSpace` (Berth 3)
+				- `Representation=IfcExtrudedAreaSolid`
+				- `PredefinedType=IfcSpaceTypeEnum.BERTH`
+			- S.SY.W.2.b4 `IfcSpace` (Berth 4)
+				- `Representation=IfcExtrudedAreaSolid`
+				- `PredefinedType=IfcSpaceTypeEnum.BERTH`
+		- S.SY.W.3 `IfcMarineFacility` (Pier 3)
+			- `Representation=IfcBoundingBox`
+			- `PredefinedType=IfcMarineFacilityTypeEnum.JETTY`
+			- S.SY.W.3.b5 `IfcSpace` (Berth 5)
+				- `Representation=IfcExtrudedAreaSolid`
+				- `PredefinedType=IfcSpaceTypeEnum.BERTH`
+		- S.SY.W.4 `IfcMarineFacility` (Floating Drydock 1)
+			- `Representation=IfcBoundingBox`
+			- `PredefinedType=IfcMarineFacilityTypeEnum.FLOATINGDRYDOCK`
+		- S.SY.W.5 `IfcMarineFacility` (Floating Drydock 2)
+			- `Representation=IfcBoundingBox`
+			- `PredefinedType=IfcMarineFacilityTypeEnum.FLOATINGDRYDOCK`
+	- S.SY.L `IfcFacilityPart` (Shipyard Land Field)
+		- `Representation=IfcBoundingBox`
+        - `PredefinedType=IfcMarinePartTypeEnum.LANDFIELD`
+        - `UsageType=REGION`
+		- S.SY.L.1 `IfcMarineFacility` (Quay 1)
+			- `Representation=IfcBoundingBox`
+			- `PredefinedType=IfcMarineFacilityTypeEnum.QUAY`
+			- S.SY.L.1.b2 `IfcSpace` (Berth 2)
+				- `Representation=IfcExtrudedAreaSolid`
+				- `PredefinedType=IfcSpaceTypeEnum.BERTH`		
+		- S.SY.L.2 `IfcMarineFacility` (Quay 2)
+			- `Representation=IfcBoundingBox`
+			- `PredefinedType=IfcMarineFacilityTypeEnum.QUAY`
+			- S.SY.L.2.b6 `IfcSpace` (Berth 6)
+				- `Representation=IfcExtrudedAreaSolid`
+				- `PredefinedType=IfcSpaceTypeEnum.BERTH`
+
+
+The application should be able to display a project hierarchy as shown in Figure 2.
+
+![Project Tree][figure 2]
 
 ### Supporting files
 
@@ -24,4 +103,10 @@ Following files correspond to this scenario:
 
 | Filename                          | Description                               |
 |-----------------------------------|-------------------------------------------|
-| *filename*                        | *short description*                       |
+| `SpatialStructure-4-1.ifc` | IFC file with informational spatial structure of shipyard |
+| `SpatialStructure-4-2.ifc` | IFC file with informational spatial structure of shipyard |
+| `SpatialStructure-4-1.png` | Diagramatic overlay of master plan |
+| `SpatialStructure-4-2.png` | IFC Tree view produced in FZK Viewer |
+
+[figure 1]: ./SpatialStructure-4-1.png "Diagramatic overlay of master plan"
+[figure 2]: ./SpatialStructure-4-2.png "IFC Tree view produced in FZK Viewer"
