@@ -36,7 +36,7 @@ This scenario covers the following concepts and/or IFC entities:
 	- `IfcBoundingBox`
 
 #### Project Breakdown
-Figure 1 shows the extent and plan layout of the masterplan.
+Figure 1 shows the `SpatialStructure-5-2.ifc` with its additional geometric representation to help visualise the structure.
 
 ![Visual][figure 1]
 
@@ -60,7 +60,7 @@ To represent the project breakdown for this unit test, we envision the following
         	- `UsageType=VERTICAL`
 
 
-The application should be able to display a project hierarchy as shown in Figure 2.
+The application should be able to display a project hierarchy as shown in Figure 2 wh.
 
 ![Project Tree][figure 2]
 
@@ -73,9 +73,9 @@ Following files correspond to this scenario:
 | `SpatialStructure-5-1.ifc` | IFC file with informational spatial structure |
 | `SpatialStructure-5-2.ifc` | IFC file with additional geoemtric representations |
 | `SpatialStructure-5-1.png` | Visual of SpatialStructure-5-2.ifc |
-| `SpatialStructure-5-2.png` | IFC Tree view produced in FZK Viewer |
+| `SpatialStructure-5-2.png` | IFC Tree view produced in FZK Viewer from SpatialStructure-5-1.ifc|
 
-[Visual]: ./SpatialStructure-5-1.png "Diagramatic overlay of master plan"
-[Project Tree]: ./SpatialStructure-5-2.png "IFC Tree view produced in FZK Viewer"
+[Figure 1]: ./SpatialStructure-5-1.png "Diagramatic overlay of master plan"
+[Figure 2]: ./SpatialStructure-5-2.png "IFC Tree view produced in FZK Viewer"
 
 
