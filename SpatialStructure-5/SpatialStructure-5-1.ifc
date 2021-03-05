@@ -1,0 +1,55 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('ViewDefinition [Ifc4X3NotAssigned]'),'2;1');
+FILE_NAME(
+/* name */ 'SpatialStructure-5-1.ifc',
+/* time_stamp */ '2021-03-05T17:20:48',
+/* author */ ('Alex Bradley'),
+/* organization */ ('Unknown'),
+/* preprocessor_version */ 'GeometryGymIFC v0.1.6.0 by Geometry Gym Pty Ltd built 2020-12-16T05:57:54',
+/* originating_system */ 'ABCT.BimSandbox.Console v1.0.0.0',
+/* authorization */ 'None');
+
+FILE_SCHEMA (('IFC4X3_RC2'));
+ENDSEC;
+
+DATA;
+#1= IFCPERSON('alexb','Bradley','Alex',$,$,$,$,$);
+#2= IFCORGANIZATION($,'AB Consulting & Technologies Ltd',$,$,$);
+#3= IFCPERSONANDORGANIZATION(#1,#2,$);
+#4= IFCAPPLICATION(#2,'0.1.6.0','ABCT.BimSandbox.Console v1.0.0.0','ABCT.BimSandbox.Console v1.0.0.0');
+#5= IFCORGANIZATION($,'Geometry Gym Pty Ltd',$,$,$);
+#6= IFCOWNERHISTORY(#3,#4,$,.ADDED.,1614964848,$,$,1614964848);
+#7= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#8= IFCAXIS2PLACEMENT3D(#7,$,$);
+#9= IFCLOCALPLACEMENT($,#8);
+#10= IFCSITE('0EJkUBsgr5VuQtlx5XUz4S',#6,'test site',$,$,#9,$,$,$,$,$,$,$,$);
+#11= IFCPROJECT('1jX2IVmxv43gFEJzXEnnVO',#6,'test Project',$,$,$,$,$,#12);
+#12= IFCUNITASSIGNMENT((#13,#14,#15,#16,#17));
+#13= IFCSIUNIT(*,.LENGTHUNIT.,$,.METRE.);
+#14= IFCSIUNIT(*,.AREAUNIT.,$,.SQUARE_METRE.);
+#15= IFCSIUNIT(*,.VOLUMEUNIT.,$,.CUBIC_METRE.);
+#16= IFCSIUNIT(*,.PLANEANGLEUNIT.,$,.RADIAN.);
+#17= IFCSIUNIT(*,.TIMEUNIT.,$,.SECOND.);
+#18= IFCRELAGGREGATES('1xKgIKQO13kg$y4QhC$pUh',#6,$,$,#11,(#10));
+#19= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#20= IFCAXIS2PLACEMENT3D(#19,$,$);
+#21= IFCLOCALPLACEMENT(#9,#20);
+#22= IFCFACILITY('03Ds3TcWXDeP5qyWeyzVWd',#6,'Test Facility',$,$,#21,$,$,$);
+#23= IFCRELAGGREGATES('1OBmuXRCb2IuieqjaXsk2g',#6,$,$,#10,(#22));
+#24= IFCMARINEFACILITY('2Pm4wVIPL6nwFmzI33Tm$S',#6,'Quay',$,$,#9,$,$,$,.QUAY.);
+#25= IFCRELAGGREGATES('3sAf4zSUzEJgd8Da$lJbWD',#6,$,$,#22,(#24));
+#26= IFCCARTESIANPOINT((0.0,0.0,-5.0));
+#27= IFCAXIS2PLACEMENT3D(#26,$,$);
+#28= IFCLOCALPLACEMENT(#9,#27);
+#29= IFCFACILITYPART('0doivpGX1EP8YOrKr9AGub',#6,'Low Water Level',$,$,#28,$,$,$,IFCMARINEPARTTYPEENUM(.LOWWATERLINE.),.VERTICAL.);
+#30= IFCRELAGGREGATES('1ElirpJK178uisUu0cNtU5',#6,$,$,#24,(#29,#31,#35));
+#31= IFCFACILITYPART('2JufY0f_53efO9GRSJC7gC',#6,'Quay Cope Level',$,$,#9,$,$,$,IFCMARINEPARTTYPEENUM(.COPELEVEL.),.VERTICAL.);
+#32= IFCCARTESIANPOINT((15.0,90.0));
+#33= IFCAXIS2PLACEMENT3D(#32,$,$);
+#34= IFCLOCALPLACEMENT(#28,#33);
+#35= IFCSPACE('2fmzuliJ17pBOlSevCZNuJ',#6,'Berth',$,'BERTH',#34,$,$,$,.USERDEFINED.,$);
+ENDSEC;
+
+END-ISO-10303-21;
+
