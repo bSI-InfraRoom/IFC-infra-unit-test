@@ -36,6 +36,7 @@ This scenario covers the following concepts and/or IFC entities:
 	- `IfcBoundingBox`
 
 #### Project Breakdown
+
 Figure 1 shows the `SpatialStructure-5-2.ifc` with its additional geometric representation to help visualise the structure.
 
 ![Visual][figure 1]
