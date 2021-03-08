@@ -45,6 +45,7 @@ Supplimentary models for visual purposes cover the following concepts and/or IFC
 	- `IfcFacetedBRep`
 
 #### Project Breakdown
+
 Figure 1 shows the extent and plan layout of the masterplan.
 
 ![Master Plan][figure 1]
