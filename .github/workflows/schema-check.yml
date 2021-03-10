@@ -88,7 +88,7 @@ jobs:
       - name: Check IFC files
         run: |
           $data = '${{ needs.filter.outputs.allchangedfiles }}' | ConvertFrom-Json
-          $cmnd = "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe"
+          $cmnd = "${{ github.workspace }}\checker\ifcCheckingTool.exe"
           echo "::set-output name=haswrongifc::false"
           foreach( $i in $data ) {
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
