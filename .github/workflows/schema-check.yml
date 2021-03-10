@@ -58,7 +58,7 @@ jobs:
         shell: pwsh
     outputs:
       haslogs: ${{ steps.results.outputs.haslogs }}
-      haswrongifc: ${{ steps.results.outputs.haswrongifc }}
+      haswrongifc: ${{ steps.checker.outputs.haswrongifc }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -86,6 +86,7 @@ jobs:
           mkdir results
           Copy-Item "${{ github.workspace }}/checker/MVDChecker.xsl" -Destination "${{ github.workspace }}/results/MVDChecker.xsl"
       - name: Check IFC files
+        id: checker
         run: |
           $data = '${{ needs.filter.outputs.allchangedfiles }}' | ConvertFrom-Json
           $cmnd = "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe"
@@ -94,6 +95,11 @@ jobs:
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
             if( [IO.Path]::GetExtension($filename) -ne ".ifc" ) {continue}
             if( (Get-Content $("${{ github.workspace }}\$i") | ForEach-Object {$_ -match "IFC4X3_RC3"}) -notcontains $true ) {
+              if( (Get-Content $("${{ github.workspace }}\$i") | ForEach-Object {$_ -match "IFC4X3_RC2"}) -notcontains $true ) {
+                if( (Get-Content $("${{ github.workspace }}\$i") | ForEach-Object {$_ -match "IFC4X3_RC1"}) -notcontains $true ) {
+                  continue
+                }
+              }
               echo "::set-output name=haswrongifc::true"
               continue
             }
@@ -174,7 +180,7 @@ jobs:
         if: needs.check-ifc.outputs.haswrongifc == 'true'
         with:
           script: |
-            core.setFailed('There were IFC files included that are of IFC4X3_RC2 schema. Please review and update those.')
+            core.setFailed('There were IFC files included that are of IFC4X3_RC1 or IFC4X3_RC2 schema. Please review and update those.')
   check-md:
     runs-on: ubuntu-latest
     needs: filter
