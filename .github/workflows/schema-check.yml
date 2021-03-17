@@ -76,8 +76,7 @@ jobs:
           dir download/
       - name: Unzip the checker
         run: |
-          Rename-Item -Path "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}" -NewName "${{ steps.downloadfile.outputs.filename }}.zip"
-          Expand-Archive -LiteralPath "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}.zip" -DestinationPath "${{ github.workspace}}/checker"
+          Expand-Archive -LiteralPath "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}" -DestinationPath "${{ github.workspace}}/checker"
       - name: Logging checker directory
         run: |
           dir checker
