@@ -18,7 +18,7 @@ DATA;
 #3 = IFCDIRECTION((0., 1., 0.));
 #4 = IFCDIRECTION((0., 0., 1.));
 #5 = IFCCARTESIANPOINT((0., 0., 0.));
-#16 = IFCPROJECT('2DAvEupIz0HQr73cMaawtY', $, 'GeoRef_1', 'The bare minimum of an IFC file exchange with only georeferencing meta data.', $, $, $, (#28), #17);
+#16 = IFCPROJECT('2DAvEupIz0HQr73cMaawtY', $, 'GeoRef_1', 'The bare minimum of an IFC file exchange with simple georeferencing meta data.', $, $, $, (#28), #17);
 #17 = IFCUNITASSIGNMENT((#18, #19, #20, #24, #25, #26, #27));
 #18 = IFCSIUNIT(*, .LENGTHUNIT., $, .METRE.);
 #19 = IFCSIUNIT(*, .AREAUNIT., $, .SQUARE_METRE.);
