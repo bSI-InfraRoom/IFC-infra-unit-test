@@ -60,3 +60,5 @@ Following files correspond to this scenario:
 | `DrainageSystem-1-2.xml` | Inframodel/LandXML: Top surface of the road and slopes/ditches |
 | `DrainageSystem-1-3.jpg` | Inframodel/LandXML: Screenshot plan view                     |
 | `DrainageSystem-1-4.jpg` | Inframodel/LandXML: Screenshot 3d view                       |
+
+The xml files comply with the InfraModel 4 specification for LandXML 1.2. The specification is found here: https://buildingsmart.fi/infra/inframodel/

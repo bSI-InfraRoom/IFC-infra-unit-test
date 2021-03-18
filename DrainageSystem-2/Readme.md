@@ -69,3 +69,5 @@ Following files correspond to this scenario:
 | `DrainageSystem-2-3.jpg` | Inframodel/LandXML: Screenshot plan view                     |
 | `DrainageSystem-2-4.jpg` | Inframodel/LandXML: Screenshot cross section view            |
 | `DrainageSystem-2-5.jpg` | Inframodel/LandXML: Screenshot 3d view                       |
+
+The xml files comply with the InfraModel 4 specification for LandXML 1.2. The specification is found here: https://buildingsmart.fi/infra/inframodel/
