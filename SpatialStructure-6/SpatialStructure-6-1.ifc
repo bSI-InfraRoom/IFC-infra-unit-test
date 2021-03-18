@@ -2,11 +2,11 @@ ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('ViewDefinition [Ifc4X3NotAssigned]'),'2;1');
 FILE_NAME(
-/* name */ 'SpatialStructure-6-1.ifc',
-/* time_stamp */ '2021-03-09T14:13:38',
+/* name */ 'C:\\Users\\alexb\\Code Repos\\ABCT\\IFC-infra-unit-test\\SpatialStructure-6\\SpatialStructure-6-1.ifc',
+/* time_stamp */ '2021-03-18T18:31:35',
 /* author */ ('Alex Bradley'),
 /* organization */ ('Unknown'),
-/* preprocessor_version */ 'GeometryGymIFC v0.1.8.0 by Geometry Gym Pty Ltd built 2021-03-05T11:03:04',
+/* preprocessor_version */ 'GeometryGymIFC v0.1.9.0 by Geometry Gym Pty Ltd built 2021-03-12T11:39:12',
 /* originating_system */ 'ABCT.BimSandbox.Console v1.0.0.0',
 /* authorization */ 'None');
 
@@ -17,76 +17,76 @@ DATA;
 #1= IFCPERSON('alexb','Bradley','Alex',$,$,$,$,$);
 #2= IFCORGANIZATION($,'AB Consulting & Technologies Ltd',$,$,$);
 #3= IFCPERSONANDORGANIZATION(#1,#2,$);
-#4= IFCAPPLICATION(#2,'0.1.8.0','ABCT.BimSandbox.Console v1.0.0.0','ABCT.BimSandbox.Console v1.0.0.0');
+#4= IFCAPPLICATION(#2,'0.1.9.0','ABCT.BimSandbox.Console v1.0.0.0','ABCT.BimSandbox.Console v1.0.0.0');
 #5= IFCORGANIZATION($,'Geometry Gym Pty Ltd',$,$,$);
-#6= IFCOWNERHISTORY(#3,#4,$,.ADDED.,1615299218,$,$,1615299218);
+#6= IFCOWNERHISTORY(#3,#4,$,.ADDED.,1616092279,$,$,1616092279);
 #7= IFCCARTESIANPOINT((0.0,0.0,0.0));
 #8= IFCAXIS2PLACEMENT3D(#7,$,$);
 #9= IFCLOCALPLACEMENT($,#8);
-#10= IFCSITE('2YrfG9rwjEQgjuUfa2dmTw',#6,'test site',$,$,#9,$,$,$,$,$,$,$,$);
-#11= IFCPROJECT('1yGtpMzar1uhTZdymx2XG$',#6,'test Project',$,$,$,$,$,#12);
+#10= IFCSITE('3c2Ckl6EnAPwAZsp8mnepQ',#6,'test site',$,$,#9,$,$,$,$,$,$,$,$);
+#11= IFCPROJECT('355vLmiUz2NByzIQbSphBu',#6,'test Project',$,$,$,$,$,#12);
 #12= IFCUNITASSIGNMENT((#13,#14,#15,#16,#17));
 #13= IFCSIUNIT(*,.LENGTHUNIT.,$,.METRE.);
 #14= IFCSIUNIT(*,.AREAUNIT.,$,.SQUARE_METRE.);
 #15= IFCSIUNIT(*,.VOLUMEUNIT.,$,.CUBIC_METRE.);
 #16= IFCSIUNIT(*,.PLANEANGLEUNIT.,$,.RADIAN.);
 #17= IFCSIUNIT(*,.TIMEUNIT.,$,.SECOND.);
-#18= IFCRELAGGREGATES('2hrMIIco1Fye6ifc3sZh7D',#6,$,$,#11,(#10));
-#19= IFCMARINEFACILITY('1_s9qPq598NOZemVSvM5qJ',#6,'Test Shipyard',$,$,#9,$,$,$,.SHIPYARD.);
-#20= IFCRELAGGREGATES('1q72OzUmvBhuphLsfVqez_',#6,$,$,#10,(#19));
+#18= IFCRELAGGREGATES('2LW6ZUBHTDyxAPVxnDNAm7',#6,$,$,#11,(#10));
+#19= IFCMARINEFACILITY('2oNiFgsSP23BoEaZMvru0c',#6,'Test Shipyard',$,$,#9,$,$,$,.SHIPYARD.);
+#20= IFCRELAGGREGATES('27fSKgADPE1vKo8qYiPw3M',#6,$,$,#10,(#19));
 #21= IFCCARTESIANPOINT((0.0,0.0,0.0));
 #22= IFCAXIS2PLACEMENT3D(#21,$,$);
 #23= IFCLOCALPLACEMENT(#9,#22);
-#24= IFCFACILITYPART('37v1rEw2DBQfj6j1yn1qds',#6,'Water Field',$,$,#23,$,$,$,IFCMARINEPARTTYPEENUM(.WATERFIELD.),.REGION.);
-#25= IFCRELAGGREGATES('3rjt8N1KbAOAElSKlGFYUm',#6,$,$,#19,(#24,#29));
+#24= IFCFACILITYPART('01AHllu2b9w8Nkxg_c7yZI',#6,'Water Field',$,$,#23,$,$,$,IFCMARINEPARTTYPEENUM(.WATERFIELD.),.REGION.);
+#25= IFCRELAGGREGATES('1nARnoIv14hAzy7ZBzS0lf',#6,$,$,#19,(#24,#29));
 #26= IFCCARTESIANPOINT((0.0,0.0,0.0));
 #27= IFCAXIS2PLACEMENT3D(#26,$,$);
 #28= IFCLOCALPLACEMENT(#9,#27);
-#29= IFCFACILITYPART('0Xy$e10wb5o9hdIM8SFQKS',#6,'Land Field',$,$,#28,$,$,$,IFCMARINEPARTTYPEENUM(.LANDFIELD.),.REGION.);
+#29= IFCFACILITYPART('2SS23hKNnDyQ3U3qy0QgdA',#6,'Land Field',$,$,#28,$,$,$,IFCMARINEPARTTYPEENUM(.LANDFIELD.),.REGION.);
 #30= IFCCARTESIANPOINT((0.0,0.0,0.0));
 #31= IFCAXIS2PLACEMENT3D(#30,$,$);
 #32= IFCLOCALPLACEMENT(#23,#31);
-#33= IFCFACILITYPART('3BzGOVK9bBjR_FEzPcVO3v',#6,'Low Water Level',$,$,#32,$,$,$,IFCMARINEPARTTYPEENUM(.LOWWATERLINE.),.VERTICAL.);
-#34= IFCRELAGGREGATES('3ncCP74RLAUggRHrASRstN',#6,$,$,#24,(#33,#40,#41,#42,#43,#44));
-#35= IFCMARINEFACILITY('3w7uy$qpr8cxsoLEQbRz8n',#6,'Quay 1',$,$,#9,$,$,$,.QUAY.);
-#36= IFCRELAGGREGATES('0gHS22OMPBEflygFakzfJX',#6,$,$,#29,(#35,#37,#38,#39));
-#37= IFCMARINEFACILITY('1MiYPL6YzFEPF26dLnFigg',#6,'Quay 2',$,$,#9,$,$,$,.QUAY.);
-#38= IFCMARINEFACILITY('3WhDlPvyb2jhETjaGCvmM5',#6,'Dry Dock 1',$,$,#9,$,$,$,.DRYDOCK.);
-#39= IFCMARINEFACILITY('1gVdsJN2j5BeWubf77pVxP',#6,'Dry Dock 2',$,$,#9,$,$,$,.DRYDOCK.);
-#40= IFCMARINEFACILITY('3Qu9KBy3L24varXB8Jjy8w',#6,'Pier 1',$,$,#9,$,$,$,.JETTY.);
-#41= IFCMARINEFACILITY('2sd9BGiAbF1wQk$4jpuRS2',#6,'Pier 2',$,$,#9,$,$,$,.JETTY.);
-#42= IFCMARINEFACILITY('1acPexjRz1BxXYbWIM087Y',#6,'Pier 3',$,$,#9,$,$,$,.JETTY.);
-#43= IFCMARINEFACILITY('3ZuEx8UD1B4PppsrWlUt3x',#6,'Floating Dry Dock 1',$,$,#9,$,$,$,.FLOATINGDOCK.);
-#44= IFCMARINEFACILITY('3mLs1BfPj3RQuiN6yGRuBA',#6,'Floating Dry Dock 2',$,$,#9,$,$,$,.FLOATINGDOCK.);
+#33= IFCFACILITYPART('0rYk7FixfFsOqAfLklDZms',#6,'Low Water Level',$,$,#32,$,$,$,IFCMARINEPARTTYPEENUM(.LOWWATERLINE.),.VERTICAL.);
+#34= IFCRELAGGREGATES('1QnR5OQMnF8R897iJfF_Lx',#6,$,$,#24,(#33,#40,#41,#42,#43,#44));
+#35= IFCMARINEFACILITY('2VSSR_uS15Aexw8mtcJFHk',#6,'Quay 1',$,$,#9,$,$,$,.QUAY.);
+#36= IFCRELAGGREGATES('2G4G4J2uj74hQTi51dYciU',#6,$,$,#29,(#35,#37,#38,#39));
+#37= IFCMARINEFACILITY('39Jwu_hgTDgRwUcuA66xWe',#6,'Quay 2',$,$,#9,$,$,$,.QUAY.);
+#38= IFCMARINEFACILITY('1YvStOsQr9VRG$tU7yOsOh',#6,'Dry Dock 1',$,$,#9,$,$,$,.DRYDOCK.);
+#39= IFCMARINEFACILITY('1IlYBRx9T4lhaC7enMQG_r',#6,'Dry Dock 2',$,$,#9,$,$,$,.DRYDOCK.);
+#40= IFCMARINEFACILITY('2vzdbc8Dn9M9zo36J8K$UV',#6,'Pier 1',$,$,#9,$,$,$,.JETTY.);
+#41= IFCMARINEFACILITY('1myK50Avn7Uf3evADMEXv1',#6,'Pier 2',$,$,#9,$,$,$,.JETTY.);
+#42= IFCMARINEFACILITY('2HVV4bJV9ApOUpvpPbgz0D',#6,'Pier 3',$,$,#9,$,$,$,.JETTY.);
+#43= IFCMARINEFACILITY('1b8W7CVi59uBrKwQoVDJfK',#6,'Floating Dry Dock 1',$,$,#9,$,$,$,.FLOATINGDOCK.);
+#44= IFCMARINEFACILITY('3LCwuW3jHDSRVJxhpnTitf',#6,'Floating Dry Dock 2',$,$,#9,$,$,$,.FLOATINGDOCK.);
 #45= IFCCARTESIANPOINT((0.0,0.0,0.0));
 #46= IFCAXIS2PLACEMENT3D(#45,$,$);
 #47= IFCLOCALPLACEMENT(#9,#46);
-#48= IFCSPACE('1UOqBIOAj2pB1QmAonJ_7s',#6,'Berth 1',$,'BERTH',#47,$,$,$,.USERDEFINED.,$);
-#49= IFCRELAGGREGATES('1c9e7UwSj0LA4vFZMWm0jR',#6,$,$,#40,(#48));
+#48= IFCSPACE('39AR2dmbfFkQhadzoOz0Md',#6,'Berth 1',$,'BERTH',#47,$,$,$,.USERDEFINED.,$);
+#49= IFCRELAGGREGATES('3dTVhR8NTCbvoh$Ju8UIZO',#6,$,$,#40,(#48));
 #51= IFCCARTESIANPOINT((0.0,0.0,0.0));
 #52= IFCAXIS2PLACEMENT3D(#51,$,$);
 #53= IFCLOCALPLACEMENT(#9,#52);
-#54= IFCSPACE('0YrHDH9E14E9FLIwfv75fG',#6,'Berth 2',$,'BERTH',#53,$,$,$,.USERDEFINED.,$);
-#55= IFCRELAGGREGATES('1uOmNmIG5FR9NI6eg1JM7k',#6,$,$,#35,(#54));
+#54= IFCSPACE('0$jQLsKxTBHe$OLNIK$SNQ',#6,'Berth 2',$,'BERTH',#53,$,$,$,.USERDEFINED.,$);
+#55= IFCRELAGGREGATES('142CLDIlz9L9FqSLRCf$qo',#6,$,$,#35,(#54));
 #57= IFCCARTESIANPOINT((0.0,0.0,0.0));
 #58= IFCAXIS2PLACEMENT3D(#57,$,$);
 #59= IFCLOCALPLACEMENT(#9,#58);
-#60= IFCSPACE('3G4B1GVATFdROobFQwUUxU',#6,'Berth 3',$,'BERTH',#59,$,$,$,.USERDEFINED.,$);
-#61= IFCRELAGGREGATES('1ipo3TzsHB1Avum_EW59Ng',#6,$,$,#41,(#60,#66));
+#60= IFCSPACE('2ZusuKvR50sA8dLjJtZJB2',#6,'Berth 3',$,'BERTH',#59,$,$,$,.USERDEFINED.,$);
+#61= IFCRELAGGREGATES('2MIH0s1vj2jRNpfGvxXxGp',#6,$,$,#41,(#60,#66));
 #63= IFCCARTESIANPOINT((0.0,0.0,0.0));
 #64= IFCAXIS2PLACEMENT3D(#63,$,$);
 #65= IFCLOCALPLACEMENT(#9,#64);
-#66= IFCSPACE('3nmmgeVaXCv8mF5lK_WuuB',#6,'Berth 4',$,'BERTH',#65,$,$,$,.USERDEFINED.,$);
+#66= IFCSPACE('3znBHTyBz7fOGTYPENBXQR',#6,'Berth 4',$,'BERTH',#65,$,$,$,.USERDEFINED.,$);
 #68= IFCCARTESIANPOINT((0.0,0.0,0.0));
 #69= IFCAXIS2PLACEMENT3D(#68,$,$);
 #70= IFCLOCALPLACEMENT(#9,#69);
-#71= IFCSPACE('0p$8ci44v7MwIDAIByC4rY',#6,'Berth 5',$,'BERTH',#70,$,$,$,.USERDEFINED.,$);
-#72= IFCRELAGGREGATES('0uAI$PiLr09OUSl$XMLlAs',#6,$,$,#42,(#71));
+#71= IFCSPACE('1drCLnSDT7txpO0_YgGNmE',#6,'Berth 5',$,'BERTH',#70,$,$,$,.USERDEFINED.,$);
+#72= IFCRELAGGREGATES('36Pvue6_z1qwPTVJl3RaHF',#6,$,$,#42,(#71));
 #74= IFCCARTESIANPOINT((0.0,0.0,0.0));
 #75= IFCAXIS2PLACEMENT3D(#74,$,$);
 #76= IFCLOCALPLACEMENT(#9,#75);
-#77= IFCSPACE('22EAuaGUDEvfTVRgYGz35z',#6,'Berth 6',$,'BERTH',#76,$,$,$,.USERDEFINED.,$);
-#78= IFCRELAGGREGATES('2sgbN8ioL2_PqhZT32pxjM',#6,$,$,#37,(#77));
+#77= IFCSPACE('1mwoQ9Kcj9SuoY9Vw2g6yZ',#6,'Berth 6',$,'BERTH',#76,$,$,$,.USERDEFINED.,$);
+#78= IFCRELAGGREGATES('27tt2MfCf4O859yO1I4ckc',#6,$,$,#37,(#77));
 ENDSEC;
 
 END-ISO-10303-21;
