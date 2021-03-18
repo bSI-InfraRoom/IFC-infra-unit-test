@@ -2,7 +2,7 @@ ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('ViewDefinition [Ifc4X3NotAssigned]'),'2;1');
 FILE_NAME(
-/* name */ 'SpatialStructure_LC.ifc',
+/* name */ 'SpatialStructure-4.ifc',
 /* time_stamp */ '2021-03-18T10:56:35',
 /* author */ ('lars'),
 /* organization */ ('Unknown'),
