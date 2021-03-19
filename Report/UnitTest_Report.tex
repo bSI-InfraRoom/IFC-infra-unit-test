@@ -20,6 +20,22 @@
 \author{InfraRoom: IFC Infrastructure Extension Deployment project}
 \date{document automatically generated on: \today}
 
+\setkeys{Gin}{width=\linewidth}
+
+\usepackage{tabularx}
+
+\makeatletter
+\def\markdownLaTeXReadAlignments#1{%
+\advance\markdownLaTeXColumnCounter by 1\relax%
+\if#1d%
+\addto@hook\markdownLaTeXTableAlignment{p{0.5\textwidth}}%
+\else%
+\addto@hook\markdownLaTeXTableAlignment{#1}%
+\fi\ifnum\markdownLaTeXColumnCounter<\markdownLaTeXColumnTotal\relax\else\expandafter\@gobble%
+\fi\markdownLaTeXReadAlignments%
+}
+\makeatother
+
 \begin{document}
 
 \maketitle
@@ -31,7 +47,7 @@ This is a summary document of all approved unit tests during the IFC Infrastruct
 
 This document has been automatically produced from the \texttt{readme} files of individual unit tests.
 The originating documentation together with all mentioned files can be obtained
- from the project's official GitHub repository: \url{https://github.com/bSI-InfraRoom/IFC-infra-unit-test}.
+ from the project's official GitHub repository\footnote{\url{https://github.com/bSI-InfraRoom/IFC-infra-unit-test}}.
 
 \section{Schematics}
 \label{sec:schematics}
@@ -58,6 +74,7 @@ Each unit test has a link to the corresponding section of this document in the u
          fork sep = 6mm,    % distance from parent to branching point
                 }
     [Setup-1,name=boiler1,label=\labelcref{sec:project_setup_1}
+      [Setup-2,name=boiler2,label=\labelcref{sec:project_setup_2}],
       [TIN-1,name=tin1,label=\labelcref{sec:tin_1}
         [GeoRef-1,name=georef1,label=\labelcref{sec:georeferencing_1}] {
           \draw[-latex'] () to[out=north east,in=south east] (boiler1);
@@ -65,19 +82,75 @@ Each unit test has a link to the corresponding section of this document in the u
       ]
     ]  
   \end{forest}
+\clearpage
 
 
 \section{Project Setup 1}
 \label{sec:project_setup_1}
 \markdownInput{../ProjectSetup-1/readme.md}
+\clearpage
+
+\section{Project Setup 2}
+\label{sec:project_setup_2}
+%\markdownInput{../ProjectSetup-2/readme.md}
+\clearpage
+
 
 \section{TIN 1}
 \label{sec:tin_1}
 \markdownInput{../Tin-1/readme.md}
+\clearpage
 
 \section{Georeferencing 1}
 \label{sec:georeferencing_1}
 \markdownInput{../Georeferencing-1/readme.md}
+\clearpage
+
+
+
+\section{Spatial Structure 1}
+\label{sec:spatial_1}
+%\markdownInput{../SpatialStructure-1/readme.md}
+\clearpage
+
+\section{Spatial Structure 2}
+\label{sec:spatial_2}
+%\markdownInput{../SpatialStructure-2/readme.md}
+\clearpage
+
+\section{Spatial Structure 3}
+\label{sec:spatial_3}
+%\markdownInput{../SpatialStructure-3/readme.md}
+\clearpage
+
+\section{Spatial Structure 4}
+\label{sec:spatial_4}
+\markdownInput{../SpatialStructure-4/readme.md}
+\clearpage
+
+
+\section{Alignment 1}
+\label{sec:alignment_12d_1}
+\markdownInput{../Alignment-12d-1/readme.md}
+\clearpage
+
+\section{Alignment 2}
+\label{sec:alignment_12d_2}
+\markdownInput{../Alignment-12d-2/readme.md}
+\clearpage
+
+
+
+\section{Drainage System 1}
+\label{sec:drainage_1}
+\markdownInput{../DrainageSystem-1/readme.md}
+\clearpage
+
+\section{Drainage System 2}
+\label{sec:drainage_2}
+\markdownInput{../DrainageSystem-2/readme.md}
+\clearpage
+
 
 
 \end{document}
