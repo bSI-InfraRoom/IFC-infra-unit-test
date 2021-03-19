@@ -2,7 +2,7 @@
 
 This UT implements IfcDistributionSystem for road drainage with gullies/manholes and piped sewers.
 
-It is based on storyline `bSFi_IR_SLRD-DD` (https://app.box.com/s/x9q3q62tcc77hdqpdw0vjncj7bg3byay).
+It is based on storyline [bSFi-IR-SLRD-DD](https://app.box.com/s/x9q3q62tcc77hdqpdw0vjncj7bg3byay).
 
 ### Prerequisites
 
@@ -37,11 +37,11 @@ The start situation is described in the UT SpatialStructure-4 output (SpatialStr
 In addition, DrainageSystem-1-2.xml provides top surface of road structures for reference.
 The drainage system elements are given in DrainageSystem-1-1.xml.
 
-![](./DrainageSystem-1-3.JPG)
+![](../DrainageSystem-1/DrainageSystem-1-3.JPG)
 
 
 
-![](./DrainageSystem-1-4.JPG)
+![](../DrainageSystem-1/DrainageSystem-1-4.JPG)
 
 #### Expected Results
 
@@ -55,8 +55,10 @@ Network topology using `IfcDistributionPort` and `IfcRelConnectsPorts`.
 Following files correspond to this scenario:
 
 | Filename                 | Description                                                  |
-| ------------------------ | ------------------------------------------------------------ |
+|:------------------------ | ------------------------------------------------------------ |
 | `DrainageSystem-1-1.xml` | Inframodel/LandXML: PipeNetwork with Structs and Pipes       |
 | `DrainageSystem-1-2.xml` | Inframodel/LandXML: Top surface of the road and slopes/ditches |
 | `DrainageSystem-1-3.jpg` | Inframodel/LandXML: Screenshot plan view                     |
 | `DrainageSystem-1-4.jpg` | Inframodel/LandXML: Screenshot 3d view                       |
+
+The xml files comply with the InfraModel 4 specification for LandXML 1.2. The specification is found here: https://buildingsmart.fi/infra/inframodel/
