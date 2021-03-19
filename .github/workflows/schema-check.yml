@@ -188,7 +188,7 @@ jobs:
         if: needs.check-ifc.outputs.haslogs == 'false'
         with:
           script: |
-            core.info('There were no IFC files checked.')
+            core.warning('There were no IFC files checked. Was this expected?')
   check-md:
     runs-on: ubuntu-latest
     needs: filter
