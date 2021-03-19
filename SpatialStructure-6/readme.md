@@ -112,7 +112,7 @@ To represent the project breakdown for this unit test, we envision the following
 			- `PredefinedType=IfcMarineFacilityTypeEnum.DRYDOCK`
 
 
-The application should be able to display a project hierarchy as shown in Figure 2.
+The application should be able to display a project hierarchy as shown in Figure 3.
 
 ![Project Tree][figure 3]
 
