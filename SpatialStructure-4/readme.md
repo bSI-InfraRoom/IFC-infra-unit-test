@@ -148,7 +148,7 @@ For example, the application should be able to display something as shown in Fig
 
 The results when the IFC file is read into 12d Model is shown in the picture below: 
 
-![](./SpatialStructure-4-12d-1.png)
+![](../SpatialStructure-4/SpatialStructure-4-12d-1.png)
 
 ### Supporting files
 
