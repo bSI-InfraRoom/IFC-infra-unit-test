@@ -2,7 +2,7 @@ ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('ViewDefinition [Ifc4X3NotAssigned]'),'2;1');
 FILE_NAME(
-/* name */ 'UT_RSS_2_RD.ifc',
+/* name */ 'SpatialStructure_3.ifc',
 /* time_stamp */ '2020-11-24T08:45:25',
 /* author */ ('lars'),
 /* organization */ ('Unknown'),
@@ -10,7 +10,7 @@ FILE_NAME(
 /* originating_system */ 'UT_RSS_2 v1.0.0.0',
 /* authorization */ 'None');
 
-FILE_SCHEMA (('IFC4X3_RC2'));
+FILE_SCHEMA (('IFC4X3_RC3'));
 ENDSEC;
 
 DATA;
