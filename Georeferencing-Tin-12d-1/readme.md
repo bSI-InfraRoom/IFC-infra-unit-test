@@ -27,7 +27,7 @@ This scenario covers the following concepts and/or IFC entities:
 Following files correspond to this scenario:
 
 | Filename                     | Description                               |
-|------------------------------------|-------------------------------------------|
+|:-----------------------------------|-------------------------------------------|
 | `UT-Georeferencing-Tin-12d-1.ifc`       | the exported content as IFC document      |
 | `UT-Georeferencing-Tin-12d-1.png`       | screen shot from 12d Model                |
 

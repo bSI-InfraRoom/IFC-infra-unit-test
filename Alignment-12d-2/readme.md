@@ -36,7 +36,7 @@ This scenario covers the additional concepts and/or IFC entities:
 Following files correspond to this scenario:
 
 | Filename                           | Description                                                                                            |
-|------------------------------------|--------------------------------------------------------------------------------------------------------|
+|:-----------------------------------|--------------------------------------------------------------------------------------------------------|
 | `UT-Alignment-12d-2.ifc`           | the exported content as an IFC file                                                                    |
 | `UT-Alignment-12d-2.png`           | plan and long section view of the alignment, and the segment parameters (with Civil radius and percent Grade) |
 
