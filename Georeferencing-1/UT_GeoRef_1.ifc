@@ -41,7 +41,7 @@ DATA;
 
 /* ------- UT Tin_1 ---------------------------------------------------------------------------- */
 /* ------- IfcSite is the top most element in the spatial structure ---------------------------- */
-#32 = IFCSITE('27H$neCQf1NwtmczxBInPR', $, $, $, $, #33, #40, $, .ELEMENT., $, $, $, $, $);
+#32 = IFCSITE('27H$neCQf1NwtmczxBInPR', $, $, $, $, #33, $, $, .ELEMENT., $, $, $, $, $);
 /* ------- The IfcSite's placement is the top-most placement and uses the same ----------------- */
 /* ------- IfcAxis2Placement as IfcGeometricRepresentationContext does ------------------------- */
 #33 = IFCLOCALPLACEMENT($, #29);
