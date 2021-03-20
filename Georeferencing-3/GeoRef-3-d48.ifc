@@ -38,7 +38,7 @@ DATA;
 /* ------- coordinate reference system --------------------------------------------------------- */
 #30 = IFCPROJECTEDCRS('EPSG:3912', 'MGI 1901 / Slovene National Grid', 'EPSG:3906', $, 'Gauss-Kruger', '5', #18);
 /* ------- MapConversion provides information about the global-to-local transformation --------- */
-#31 = IFCMAPCONVERSION(#28, #30, 430500., 137100., 0., 1., 0., 1.);
+#31 = IFCMAPCONVERSION(#28, #30, 430500., 137100., 0., 1., 0., 1., 1., 1.);
 
 /* ------- UT SpatialStructure_1 --------------------------------------------------------------- */
 /* ------- IfcSite is the top most element in the spatial structure ---------------------------- */

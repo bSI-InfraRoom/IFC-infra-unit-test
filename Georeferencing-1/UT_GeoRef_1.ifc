@@ -7,7 +7,7 @@ ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION (('ViewDefinition [Ifc4X3NotAssigned]'), '2;1');
 FILE_NAME ('UT_GeoRef_1.ifc', '2020-07-27T12:00:00', ('Stefan Jaud'), ('bSI Infra Extension Deployment project'), 'manual text editing', 'SublimeText 3.0', 'GitHub pull request');
-FILE_SCHEMA (('IFC4X3_RC2'));
+FILE_SCHEMA (('IFC4X3_RC3'));
 ENDSEC;
 
 DATA;
@@ -37,7 +37,7 @@ DATA;
 /* ------- coordinate reference system --------------------------------------------------------- */
 #30 = IFCPROJECTEDCRS('EPSG:5834', 'DB_REF / 3-degree Gauss-Kruger zone 4 (E-N) + DHHN92 height', 'EPSG:5684', 'EPSG:5783', 'Gauss-Kruger', '4', #18);
 /* ------- MapConversion provides information about the global-to-local transformation --------- */
-#31 = IFCMAPCONVERSION(#28, #30, 4468005., 5334600., 515., 1., 0., 1.);
+#31 = IFCMAPCONVERSION(#28, #30, 4468005., 5334600., 515., 1., 0., 1., 1., 1.);
 
 /* ------- UT Tin_1 ---------------------------------------------------------------------------- */
 /* ------- IfcSite is the top most element in the spatial structure ---------------------------- */
