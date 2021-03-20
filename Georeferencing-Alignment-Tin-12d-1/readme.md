@@ -10,8 +10,8 @@ The data is read in from a TUM IFC 4x1 file with tins and alignments in a Trunca
 and the file has an IfcMapConversion to translate the data from Truncated Coordinates to Map Coordinates (Eastings and Northings).
 There was no 2D rotation or change of scale for X and Y in the IfcMapConversion.
 
-I don't know if the coordinates in the TUM file were truncated map coordinates or local engineerng coordinates.
-But being a real Civil project I suspect they are truncated map coordindates.
+I don't know if the coordinates in the TUM file were truncated map coordinates or local engineering coordinates.
+But being a real Civil project I suspect they are truncated map coordinates.
 
 The TUM IFC 4x1 data consists of two tins and 5 alignments:
 
