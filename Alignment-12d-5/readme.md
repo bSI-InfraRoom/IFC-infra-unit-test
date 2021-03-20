@@ -11,7 +11,7 @@ Civil Horizontal:
 - horizontal left clothoid transition of length 30 with IFC positive radius of curvature going from 150 to 0
 - horizontal straight of length 14.9
 - horizontal left arc of length 12.45 with IFC positive radius of curvature 40
-- horizontal straight of length 47.26,
+- horizontal straight of length 47.26
 - horizontal leading right clothoid transition of length 10 with IFC negative radius of curvature going from 0 to -75
 - horizontal right arc of length 26.798 with IFC negative radius of curvature -75
 - horizontal trailing right clothoid transition of length 30 with IFC negative radius of curvature going from -75 to 0
