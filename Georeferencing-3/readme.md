@@ -28,7 +28,7 @@ Following files correspond to this scenario:
 
 | Filename                          | Description                               |
 |:----------------------------------|-------------------------------------------|
-| `GeoRef-3-d48.ifc`                | the outline in D48/GK as IFC file         |
-| `GeoRef-3-d96.ifc`                | the outline in D96/TM as IFC file         |
+| `GeoRef-3-d48.ifc`                | the building's outline in D48/GK as IFC file         |
+| `GeoRef-3-d96.ifc`                | the building's outline in D96/TM as IFC file         |
 | `GeoRef-3-D48-OIP.png`            | screen shot of D48/GK file loaded in TUM Open Infra Platform |
 | `GeoRef-3-D96-OIP.png`            | screen shot of D96/TM file loaded in TUM Open Infra Platform |

@@ -7,8 +7,8 @@ ISO-10303-21;
 
 HEADER;
 FILE_DESCRIPTION (('ViewDefinition [Ifc4X3NotAssigned]'), '2;1');
-FILE_NAME ('UT_GeoRef_1.ifc', '2021-03-20T12:00:00', ('Stefan Jaud'), ('bSI Infra Extension Deployment project'), 'manual text editing', 'SublimeText 3.0', 'GitHub pull request');
-FILE_SCHEMA (('IFC4X3_RC1'));
+FILE_NAME ('GeoRef-3-d48.ifc', '2021-03-20T12:00:00', ('Stefan Jaud'), ('bSI Infra Extension Deployment project'), 'manual text editing', 'SublimeText 3.0', 'GitHub pull request');
+FILE_SCHEMA (('IFC4X3_RC3'));
 ENDSEC;
 
 DATA;
@@ -49,6 +49,7 @@ DATA;
 /* ------- Project/Spatial structure ----------------------------------------------------------- */
 #35 = IFCRELAGGREGATES('3Hu7f6BmT14B_XS9yS78Jr', $, $, $, #16, (#32));
 
+/* ------- UT Georef-3 ------------------------------------------------------------------------- */
 /* ------- Representation of the building's outline: ------------------------------------------- */
 /* ------- Polyline with six points ------------------------------------------------------------ */
 #40= IFCPRODUCTDEFINITIONSHAPE($,$,(#41));
@@ -61,7 +62,7 @@ DATA;
 #47 = IFCCARTESIANPOINT((77.37,66.98));
 #48 = IFCCARTESIANPOINT((78.67,58.98));
 
-/* ------ IfcSolidStratum represents the top most layer of terrain ----------------------------- */
+/* ------ IfcBuilding has a representation of its outline -------------------------------------- */
 #50 = IFCBUILDING('28H$neCQf1NwtmczxBInPR', $, $, $, $, #53, #40, $, $, $, $, $);
 /* ------ Spatial inclusion in the project ----------------------------------------------------- */
 #51 = IFCRELCONTAINEDINSPATIALSTRUCTURE('3Hu7f6BmT14B_XS9yS78Jq', $, $, $, (#50), #32);
