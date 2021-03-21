@@ -5,7 +5,7 @@ FILE_NAME ('Earthworks-12d-0.ifc', '2021-02-19T14:48:11', (' Gregory'), ('12d So
 FILE_SCHEMA (('IFC4X3_RC3'));
 ENDSEC;
 DATA;
-#1 = IFCPROJECT('1EDlYtb7PBXfbXwttKh5of', #2, 'UT-Earthworks-12d-0', 'Top and bottom tins', $, $, $, (#14), #9);
+#1 = IFCPROJECT('1EDlYtb7PBXfbXwttKh5of', #2, 'Earthworks-12d-0', 'Top and bottom tins', $, $, $, (#14), #9);
 #2 = IFCOWNERHISTORY(#3, #8, $, .NOCHANGE., $, $, $, 1613706491);
 #3 = IFCPERSONANDORGANIZATION(#4, #6, $);
 #4 = IFCPERSON($, 'Gregory', $, ('Lee'), $, $, (#5), $);
