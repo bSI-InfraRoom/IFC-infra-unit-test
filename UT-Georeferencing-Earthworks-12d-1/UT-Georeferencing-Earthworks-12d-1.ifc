@@ -31,7 +31,7 @@ DATA;
 #24 = IFCRELAGGREGATES('1P0t61MNT1v9X_9_0Y$vWg', #2, 'ProjectContainer', 'ProjectContainer for Sites', #1, (#23));
 #25 = IFCFACILITY('2sM4YzZBj5JPLknU_axJVz', #2, 'bulk earthworks', 'Description of bulk earthworks', $, #15, $, $, .ELEMENT.);
 #26 = IFCRELAGGREGATES('3qm2YPJ7H1efHlV2xJbhAO', #2, 'SiteContainer', 'SiteContainer For All Models', #23, (#25, #37676));
-#27 = IFCRELCONTAINEDINSPATIALSTRUCTURE('3TZJUHF3j1NgI_88dbCwCI', #2, 'FacilityContainer', 'FacilityContainer for Elements', (#28, #13444, #37311, #37511), #25);
+#27 = IFCRELCONTAINEDINSPATIALSTRUCTURE('3TZJUHF3j1NgI_88dbCwCI', #2, 'FacilityContainer', 'FacilityContainer for Elements', (#13444, #37311, #37511), #25);
 #28 = IFCEARTHWORKSCUT('1GAZBRWXf6wuwB1F1Gux26', #2, 'Cut', '12d Trimesh', 'Trimesh', #15, #29, $, .CUT.);
 #100028 = IFCRELVOIDSELEMENT('2R9LLU0BvCXuB2eOD9Yaa4', #2, 'Cut', $, #37678,#28);
 #29 = IFCPRODUCTDEFINITIONSHAPE($, $, (#30));
