@@ -2,7 +2,7 @@
 ### Intent
 
 This scenario has cut and fill elements for bulk earthworks.
-The data is in map coordinates MGA2020 and AHD.
+All data in the IFC file is in the map coordinates MGA2020 and using height datum AHD.
 
 ![GeorefEarth12d1](../UT-Georeferencing-Earthworks-12d-1/UT-Georeferencing-Earthworks-12d-1.png "Cut and Fill for Bulk Earthworks")
 
