@@ -36,11 +36,11 @@ The figure below illustrates the horizontal and vertical alignments.
 
 The horizontal elements are shown in the figure below.
 
-![](./Horizontal.png)
+![](../Alignment-INDOT/Horizontal.png)
 
 The vertical elements are shown in the figure below.
 
-![](./Vertical.png)
+![](../Alignment-INDOT/Vertical.png)
 
 ### Expected Results
 
@@ -54,7 +54,10 @@ As such, the expected results are:
 
 Following files correspond to this scenario:
 
-| Filename                               | Description                           |
-| -------------------------------------- | ------------------------------------- |
-| `PR_Twin_Branch_section_alignment.xml` | LandXML file with the alignment       |
-| `PR_Twin_Branch_section_alignment.ifc` | Sample IFC 4.3 file for the alignment |
+| Filename                               | Description                                                  |
+| -------------------------------------- | ------------------------------------------------------------ |
+| `PR_Twin_Branch_section_alignment.xml` | LandXML file with the alignment                              |
+| `PR_Twin_Branch_section_alignment.ifc` | Sample IFC 4.3 file for the alignment                        |
+| Horizontal.PNG                         | Listing of the horizontal alignment elements                 |
+| Vertical.png                           | Listing of the vertical alignment elements                   |
+| Illustration.PNG                       | Graphical illustration of the horizontal and vertical alignments |
