@@ -1,34 +1,28 @@
-# UT-IfcCourse
---- 
-
-### Scheme
-Ifc4X3_RC2
 
 ### Intent
 
-This scenario demonstrates the usage of IfcPavement in combination with IfcSectionedSurface
+IFC 4x3 RC3
+This scenario contains an alignment with
+pavement sweeping along alignment
+
+The alignment contains decomposition and geometry
+
 
 ### Prerequisites
 
-This scenario builds upon following other scenarios:
-- basic spatial structure containing an IfcProject and an IfcSite entity
+- ProjectSetup-1
 
 ### Content
 
-This scenario builds upon following scenarios:
-- project structure
-  - IfcProject
-  - IfcSite
+This scenario covers the additional concepts and/or IFC entities:
 
-- alignment
-  - IfcAlignment as IfcPolyline
-- pavement
-  - IfcPavement,IfcCourse,IfcSectionedSurface
-- core spatial structure
-  - IfcProject
-  - IfcSite
-
-
+- IFCALIGNMENT (1)
+- IFCALIGNMENTHORIZONTAL (1)
+- IFCALIGNMENTSEGMENT (2)
+- IFCALIGNMENTVERTICAL (1)
+- IFCCOURSE (1)
+- IFCPAVEMENT (1)
+- IFCSITE (1)
 
 ### Supporting files
 
@@ -38,7 +32,3 @@ Following files correspond to this scenario:
 |-------------------------------------------------------------|------------------------------------------|
 | UT-IfcPavement.ifc                                          | the exported content as IFC4X3 file      |
 | UT-IfcPavement.ppt                                          | Documentation as powerpoint file         |
-
-
-## Get an IFC viewer
- 
