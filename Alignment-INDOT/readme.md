@@ -32,7 +32,7 @@ This scenario covers the following concepts and/or IFC entities:
 
 The figure below illustrates the horizontal and vertical alignments.
 
-![](./Illustration.PNG)
+![](../Alignment-INDOT/Illustration.PNG)
 
 The horizontal elements are shown in the figure below.
 
