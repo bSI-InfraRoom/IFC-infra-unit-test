@@ -56,6 +56,5 @@ Following files correspond to this scenario:
 | `FT Plans 1of13 0500430 Typical Section.pdf`       | Pdf plan sheet showing typical section for Twin Branch Road  |
 | `FT Plans 4of13 0500430 for Contract Services.pdf` | Pdf plan sheets showing plan and profile view for Twin Branch Road |
 | `FT Xsect 2of2 0500430 for Contract Services.pdf`  | Pdf plan sheets showing cross sections for Twin Branch Road  |
-| `Horizontal.png`                                   | Horizontal alignment element listing  |
-| `Illustration.png`                                 | Illustration of the horizontal and vertical alignments  |
-| `Vertical.png`                                     | Vertical alignment element listing  |
+| `3D Model.JPG`                                     | Illustration of the resulting 3D model                       |
+| `TypicalSection.png`                               | Illustration of the cross profile used                       |
