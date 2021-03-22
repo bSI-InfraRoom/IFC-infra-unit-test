@@ -26,13 +26,13 @@ This scenario covers the following concepts and/or IFC entities:
 
 ### Situation
 
-The figure below illustrates the horizontal and vertical alignments.
-
-![](./Illustration.PNG)
-
 The typical section used for the unit test is shown in the figure below.
 
 ![](./typicalsection.png)
+
+An illustration of the 3D model result is shown in the figure below:
+
+![](../SectionedSurface-INDOT/3D Model.JPG)
 
 ### Expected Results
 
