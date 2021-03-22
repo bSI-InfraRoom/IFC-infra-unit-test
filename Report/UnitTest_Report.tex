@@ -58,28 +58,72 @@ Each unit test has a link to the corresponding section of this document in the u
 
 \tikzset{every label/.style={xshift=1ex, text width=10ex, align=left, 
                              inner sep=1pt, font=\footnotesize}}
+\tikzset{pr/.style={dashed}}
   \begin{forest}
     for tree={              % style of tree nodes
       font=\footnotesize,
       draw, semithick, rounded corners,
             align = center,
-        inner sep = 2mm,
+        inner sep = 3mm,
                             % style of tree (edges, distances, direction)
              edge = {draw, semithick, latex'-},
     parent anchor = east,
      child anchor = west,
-             grow = south,
+             grow = east,
     forked edge,            % for forked edge
-            l sep = 12mm,   % level distance
-         fork sep = 6mm,    % distance from parent to branching point
+            l sep = 9mm,   % level distance
+         fork sep = 4mm,    % distance from parent to branching point
                 }
     [Setup-1,name=boiler1,label=\labelcref{sec:project_setup_1}
+      [Spatial-1,name=spatial1,label=\labelcref{sec:spatial_1}
+        [Spatial-5,name=spatial5,label=\labelcref{sec:spatial_5}
+        ],
+        [Spatial-4,name=spatial4,label=\labelcref{sec:spatial_4}
+          [Drainage-1,name=drainage1,label=\labelcref{sec:drainage_1}
+          ],
+          [Drainage-2,name=drainage2,label=\labelcref{sec:drainage_2}
+          ]
+        ],
+        [Spatial-3,name=spatial3,label=\labelcref{sec:spatial_3}
+        ],
+        [Spatial-2,name=spatial2,label=\labelcref{sec:spatial_2}
+        ],
+      ],
       [Setup-2,name=boiler2,label=\labelcref{sec:project_setup_2}],
       [TIN-1,name=tin1,label=\labelcref{sec:tin_1}
-        [GeoRef-1,name=georef1,label=\labelcref{sec:georeferencing_1}] {
-          \draw[-latex'] () to[out=north east,in=south east] (boiler1);
-        }
-      ]
+        [GeoRef-1,name=georef1,label=\labelcref{sec:georeferencing_1}
+          [GeoRef-2,name=georef2,label=\labelcref{sec:georeferencing_2},pr
+          ],
+          [GeoRef-3,name=georef3,label=\labelcref{sec:georeferencing_3},pr
+          ]
+        ] %{
+          %\draw[-latex'] () to[out=south west,in=south] (boiler1);
+        %}
+        ,
+        [GeoRef-Tin-1,name=georeftin1,label=\labelcref{sec:georef_tin_1}
+          [GeoRef-Tin-2,name=georeftin2,label=\labelcref{sec:georef_tin_2}] 
+        ],
+      ],
+      [Alignment-1,name=align1,label=\labelcref{sec:align_1}
+        [Alignment-9,name=align9,label=\labelcref{sec:align_9},pr
+          [Alignment-10,name=align10,label=\labelcref{sec:align_10},pr
+          ]
+        ],
+        [Alignment-8,name=align8,label=\labelcref{sec:align_8},pr
+        ],
+        [Alignment-6,name=align6,label=\labelcref{sec:align_6},pr
+          [Alignment-7,name=align7,label=\labelcref{sec:align_7},pr
+          ]
+        ],
+        [Alignment-4,name=align4,label=\labelcref{sec:align_4},pr
+          [Alignment-5,name=align5,label=\labelcref{sec:align_5},pr
+          ],
+        ],
+        [Alignment-3,name=align3,label=\labelcref{sec:align_3},pr
+        ],
+        [Alignment-2,name=align2,label=\labelcref{sec:align_2}
+        ],
+      ],
     ]  
   \end{forest}
 \clearpage
