@@ -35,3 +35,7 @@ jobs:
         if: ${{ failure() }}
         run: |
           cat Report/UnitTest_Report.log
+      - name: Logging 2
+        if: ${{ failure() }}
+        run: |
+          cat Report/UnitTest_Report.markdown.err
