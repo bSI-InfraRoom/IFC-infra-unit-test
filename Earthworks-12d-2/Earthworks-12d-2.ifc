@@ -1,11 +1,11 @@
 ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION (('ViewDefinition[Ifc4x3NotAssigned]'), '2;1');
-FILE_NAME ('UT-Earthworks-12d-2.ifc', '2021-03-21T13:46:30', (' Gregory'), ('12d Solutions - Ranch'), 'IFC Engine rev 1257', '12d Model 15.0 Alpha 540 [DEVELOP] INT Build 20-03-2021', '');
+FILE_NAME ('Earthworks-12d-2.ifc', '2021-03-21T13:46:30', (' Gregory'), ('12d Solutions - Ranch'), 'IFC Engine rev 1257', '12d Model 15.0 Alpha 540 [DEVELOP] INT Build 20-03-2021', '');
 FILE_SCHEMA (('IFC4X3_RC3'));
 ENDSEC;
 DATA;
-#1 = IFCPROJECT('1EDlYtb7PBXfbXwttKh5of', #2, 'UT-Earthworks-12d-2', 'Simple cut trimesh', $, $, $, (#14), #9);
+#1 = IFCPROJECT('1EDlYtb7PBXfbXwttKh5of', #2, 'Earthworks-12d-2', 'Simple cut trimesh', $, $, $, (#14), #9);
 #2 = IFCOWNERHISTORY(#3, #8, $, .NOCHANGE., $, $, $, 1616294790);
 #3 = IFCPERSONANDORGANIZATION(#4, #6, $);
 #4 = IFCPERSON($, 'Gregory', $, ('Lee'), $, $, (#5), $);
