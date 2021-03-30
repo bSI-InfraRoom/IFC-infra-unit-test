@@ -69,7 +69,7 @@ jobs:
         id: downloadfile  # Remember to give an ID if you need the output
         name: Download the file
         with:
-          url: "https://www.iai.kit.edu/downloads/Informatik%20f%c3%bcr%20die%20Energiesystemanalyse/IfcCheckingTool_Lite_V2.2_Build-94.zip"
+          url: "https://www.iai.kit.edu/downloads/Informatik%20f%c3%bcr%20die%20Energiesystemanalyse/IfcCheckingTool_Lite_V2.2_Build-95_bs.zip"
           target: download
       - name: Logging location
         run: |
