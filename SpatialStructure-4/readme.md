@@ -146,6 +146,10 @@ For example, the application should be able to display something as shown in Fig
 
 ![spatial4-result](../SpatialStructure-4/Figure4-result.png "Expected result in software.")
 
+The results when the IFC file is read into 12d Model is shown in the picture below: 
+
+![](../SpatialStructure-4/SpatialStructure-4-12d-1.png)
+
 ### Supporting files
 
 Following files correspond to this scenario:
@@ -159,3 +163,4 @@ Following files correspond to this scenario:
 | `Figure4-result.png`              | picture showing possible result                              |
 | `ToivolaAreaBorders.dwg`          | dwg file as basis for figures 2 and 3                        |
 | `IFCTreeView.png`                 | picture showing file structure in IFCTreeView                |
+| `SpatialStructure-4-12d-1.png`    | picture showing spatial structure and geometry when read into 12d Model                |
