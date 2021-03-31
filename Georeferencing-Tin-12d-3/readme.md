@@ -8,7 +8,7 @@ There is one colour for all the triangles.
 The coordinates are in Easting, Northing and AHD (Australian Height Datum) for the map projection MGA2020 Zone 56.
 The Horizontal and Vertical datums and Map Projection are specified in `IfcProjectedCRS`.
 
-![georeftin12d3](../Georeferencing-Tin-12d-3/Georeferencing-Tin-12d-3.png  "Alignment where vertical does not match the horizontal") 
+![georeftin12d3](../Georeferencing-Tin-12d-3/Georeferencing-Tin-12d-3.png  "Tin with an Internal Hole") 
 
 The IFC file was written by 12d Model. 
 
