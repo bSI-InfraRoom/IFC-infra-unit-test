@@ -37,3 +37,4 @@ Following files correspond to this scenario:
 |:----------------------------------|-------------------------------------------|
 | `GeoRef-4.ifc`                    | the building's outline as IFC file        |
 | `GeoRef-4-OIP_wrong.png`          | screen shot of IFC file loaded in TUM Open Infra Platform - interpreted wrongly |
+| `GeoRef-4-OIP_separateModels.png` | screen shot of IFC file loaded in TUM Open Infra Platform - interpreted as two separate models |
