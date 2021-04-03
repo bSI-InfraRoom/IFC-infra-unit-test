@@ -76,7 +76,7 @@ DATA;
 #69 = IFCAXIS2PLACEMENT3D(#5, #4, #2);
 /* ------- ProjectedCRS provides information about the underlying geodetic --------------------- */
 /* ------- coordinate reference system --------------------------------------------------------- */
-#70 = IFCPROJECTEDCRS('EPSG:3912', 'Slovenia 1996 / Slovene National Grid', 'EPSG:4765', $, 'Gauss-Kruger', '5', #18);
+#70 = IFCPROJECTEDCRS('EPSG:3794', 'Slovenia 1996 / Slovene National Grid', 'EPSG:4765', $, 'Gauss-Kruger', '5', #18);
 /* ------- MapConversion provides information about the global-to-local transformation --------- */
 #71 = IFCMAPCONVERSION(#68, #70, 430200., 137600., 511.5, 1., 0., 1., 1., 1.);
 /* ------- Representation of the building's outline: ------------------------------------------- */

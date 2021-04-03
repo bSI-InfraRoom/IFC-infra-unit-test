@@ -36,7 +36,7 @@ DATA;
 /* ------- UT GeoRef_1 ------------------------------------------------------------------------- */
 /* ------- ProjectedCRS provides information about the underlying geodetic --------------------- */
 /* ------- coordinate reference system --------------------------------------------------------- */
-#30 = IFCPROJECTEDCRS('EPSG:3912', 'Slovenia 1996 / Slovene National Grid', 'EPSG:4765', $, 'Gauss-Kruger', '5', #18);
+#30 = IFCPROJECTEDCRS('EPSG:3794', 'Slovenia 1996 / Slovene National Grid', 'EPSG:4765', $, 'Gauss-Kruger', '5', #18);
 /* ------- MapConversion provides information about the global-to-local transformation --------- */
 #31 = IFCMAPCONVERSION(#28, #30, 430200., 137600., 0., 1., 0., 1., 1., 1.);
 
