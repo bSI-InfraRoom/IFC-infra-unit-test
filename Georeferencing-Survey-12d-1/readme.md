@@ -13,16 +13,18 @@ In this case, the survey string consists of just one point.
 To further identify special survey points, Surveyers uses a "Point id" for the partticular Survey Point.
 A Property Set attribute is recommended in the IFC Schema for this additional information.  
 
+It appears that Survey data is written out as IfcAnnotation.
+
 This IFC file has a survey consisting of:
 
 - a one point survey string with survey string name "SF LE" and the one point having Point Id "7A".
 
-The coordinates are in Easting, Northing and AHD for the map projection MGA2020 Zone 56.
+All the coordinates in the file are in Easting, Northing and AHD for the map projection MGA2020 Zone 56.
 The Horizontal and Vertical datums, and Map Projection, are specified in IfcProjectedCRS.
+IfcMapConversion is a "No Operation" as the data in the file is already in map coordinates and needs no further transformation. 
 
-![utsurvey12d1](../UT-Georeferencing-Survey-12d-1/UT-Georeferencing-Survey-12d-1.png  "Single Survey Point with Name "SF LE" and Point Id 7A") 
+![georefsurvey12d1](../Georeferencing-Survey-12d-1/Georeferencing-Survey-12d-1.png  "Single Survey Point with Name "SF LE" and Point Id "7A") 
 
-It appears that Survey data is written out as IfcAnnotation.
 The IFC file was written by 12d Model. 
 
 ### Prerequisites
@@ -46,8 +48,8 @@ This scenario covers the following new concepts and/or IFC entities:
 
 Following files correspond to this scenario:
 
-| Filename                              | Description                        |
-|---------------------------------------|------------------------------------|
-| `UT-Georeferencing-Survey-12d-1.ifc`  | the exported content as IFC document |
-| `UT-Georeferencing-Survey-12d-1.png`      | screen shot from 12d Model           |
+| Filename                          | Description                        |
+|-----------------------------------|------------------------------------|
+| `Georeferencing-Survey-12d-1.ifc`  | the exported content as IFC document |
+| `Georeferencing-Survey-12d-1.png`      | screen shot from 12d Model           |
 
