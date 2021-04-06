@@ -2,6 +2,7 @@
 ### Intent
 
 This scenario is a very simple alignment (horizontal + vertical).
+There is no representation of alingnment.
 
 ### Prerequisites
 
@@ -11,9 +12,9 @@ ProjectSetup-1
 
 This scenario covers the following concepts and/or IFC entities:
 
-- Element aggregation (IfcAlignment is included in IfcSite)
+- Element aggregation: IfcAlignment is included in IfcSite
+- Element nesting: IfcAlignmentHorizontalSegment are nested in IfcAlignmentHorizontal
 - IfcAlignment
-- IfcAlignmentCurve
 - IfcAlignmentHorizontal (IfcAlignmentHorizontalSegment of types LINE, CIRCULARARC and CLOTHOID)
 - IfcAlignmentVertical (IfcAlignmentVerticalSegment of types CONSTANTGRADIENT and PARABOLICARC)
 
