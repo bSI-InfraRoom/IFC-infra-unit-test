@@ -76,7 +76,7 @@ Following files correspond to this scenario:
 | `SpatialStructure-5-1.png` | Visual of SpatialStructure-5-2.ifc |
 | `SpatialStructure-5-2.png` | IFC Tree view produced in FZK Viewer from SpatialStructure-5-1.ifc|
 
-[Figure 1]: ./SpatialStructure-5-1.png "Diagramatic overlay of master plan"
-[Figure 2]: ./SpatialStructure-5-2.png "IFC Tree view produced in FZK Viewer"
+[Figure 1]: ../SpatialStructure-5/SpatialStructure-5-1.png "Diagramatic overlay of master plan"
+[Figure 2]: ../SpatialStructure-5/SpatialStructure-5-2.png "IFC Tree view produced in FZK Viewer"
 
 
