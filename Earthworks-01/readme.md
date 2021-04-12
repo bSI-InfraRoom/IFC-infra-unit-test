@@ -25,4 +25,4 @@ Following files correspond to this scenario:
 | -------------------- | ------------------------------------------------------------ |
 | `UT-Earthworks-01.ifc` | IFC file with content                                        |
 | `UT-Earthworks-01.png` | picture showing the TIN surface and embankment               |
-| `UT-Earthworks-01.dwg` | drawing file with BricsCAD TIN Surface and Grading representing embankment |
+| `UT-Earthworks-01.dwg` | drawing file with BricsCAD TIN Surface and watertight mesh representing embankment |
