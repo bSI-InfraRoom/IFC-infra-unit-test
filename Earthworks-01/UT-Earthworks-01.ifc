@@ -2,7 +2,7 @@ ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('ViewDefinition [Ifc4X3NotAssigned]'),'2;1');
 FILE_NAME('C:\\\\temp\\\\Earthworks01.ifc','2020-12-08T18:35:08',('Bricsys'),('Bricsys'),'BricsCAD BIM','BricsCAD BIM','BricsCAD BIM');
-FILE_SCHEMA(('IFC4X3_RC2'));
+FILE_SCHEMA(('IFC4X3_RC3'));
 ENDSEC;
 
 DATA;
