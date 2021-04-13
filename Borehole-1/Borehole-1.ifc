@@ -2,7 +2,7 @@ ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('ViewDefinition [Ifc4NotAssigned]'),'2;1');
 FILE_NAME(
-/* name */ 'F:\\My Work\\buildingSMART\\projects\\common schema\\deployment\\IFC-infra-unit-test\\UT-Borehole-1\\UT-TMR-Borehole.ifc',
+/* name */ 'F:\\My Work\\buildingSMART\\projects\\common schema\\deployment\\IFC-infra-unit-test\\Borehole-1\\Borehole.ifc',
 /* time_stamp */ '2021-02-24T22:19:05',
 /* author */ ('JonMirtschin'),
 /* organization */ ('Geometry Gym'),
