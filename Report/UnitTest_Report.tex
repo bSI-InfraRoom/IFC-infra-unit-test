@@ -52,12 +52,13 @@ The originating documentation together with all mentioned files can be obtained
 \subsection{Schematics}
 \label{sec:schematics}
 
-The following figure represents the dependencies between the individual unit tests.
+\Cref{sec:schematics} represents the dependencies between the individual unit tests.
 Unit tests are represented as boxes, while the arrows point from the dependant to the independent unit test.
 Each unit test has a link to the corresponding section of this document in the upper right corner.
 
 \tikzset{every label/.style={xshift=1ex, text width=10ex, align=left, 
                              inner sep=1pt, font=\footnotesize}}
+\tikzset{every node/.style={minimum width=6em}}
 \tikzset{pr/.style={dashed}}
 \begin{figure}
   \begin{forest}
@@ -65,7 +66,7 @@ Each unit test has a link to the corresponding section of this document in the u
       font=\footnotesize,
       draw, semithick, rounded corners,
             align = center,
-        inner sep = 3mm,
+        inner sep = 2mm,
                             % style of tree (edges, distances, direction)
              edge = {draw, semithick, latex'-},
     parent anchor = east,
@@ -77,6 +78,8 @@ Each unit test has a link to the corresponding section of this document in the u
                 }
     [Setup-1,name=boiler1,label=\labelcref{sec:project_setup_1}
       [Spatial-1,name=spatial1,label=\labelcref{sec:spatial_1}
+        [Spatial-6,name=spatial6,label=\labelcref{sec:spatial_6}
+        ]
         [Spatial-5,name=spatial5,label=\labelcref{sec:spatial_5}
         ],
         [Spatial-4,name=spatial4,label=\labelcref{sec:spatial_4}
@@ -86,26 +89,64 @@ Each unit test has a link to the corresponding section of this document in the u
           ]
         ],
         [Spatial-3,name=spatial3,label=\labelcref{sec:spatial_3}
+          [Other-1,name=other1,label=\labelcref{sec:other_1},pr
+          ],
         ],
         [Spatial-2,name=spatial2,label=\labelcref{sec:spatial_2}
         ],
       ],
       [Setup-2,name=boiler2,label=\labelcref{sec:project_setup_2}],
-      [TIN-1,name=tin1,label=\labelcref{sec:tin_1}
-        [GeoRef-1,name=georef1,label=\labelcref{sec:georeferencing_1}
-          [GeoRef-2,name=georef2,label=\labelcref{sec:georeferencing_2},pr
+      [GeoRef-1,name=georef1,label=\labelcref{sec:georeferencing_1}
+        [Survey-1,name=survey1,label=\labelcref{sec:survey_1},pr
+          [Survey-2,name=survey2,label=\labelcref{sec:survey_2},pr
           ],
-          [GeoRef-3,name=georef3,label=\labelcref{sec:georeferencing_3},pr          
-            [GeoRef-4,name=georef4,label=\labelcref{sec:georeferencing_4},pr
-            ]
-          ]
-        ] %{
-          %\draw[-latex'] () to[out=south west,in=south] (boiler1);
-        %}
-        ,
-        [GeoRef-Tin-1,name=georeftin1,label=\labelcref{sec:georef_tin_1}
-          [GeoRef-Tin-2,name=georeftin2,label=\labelcref{sec:georef_tin_2}] 
         ],
+        [GeoRef-3,name=georef3,label=\labelcref{sec:georeferencing_3},pr          
+          [GeoRef-4,name=georef4,label=\labelcref{sec:georeferencing_4},pr
+          ]
+        ],
+        [GeoRef-2,name=georef2,label=\labelcref{sec:georeferencing_2},pr
+        ],
+      ] {
+        \draw[-latex'] () to[out=north,in=south] (tin1);
+      },
+      [TIN-1,name=tin1,label=\labelcref{sec:tin_1}
+        [GeoRef-TIN-1,name=georeftin1,label=\labelcref{sec:georef_tin_1} 
+          [GeoRef-TIN-4,name=georeftin4,label=\labelcref{sec:georef_tin_4},pr
+          ],
+          [GeoRef-TIN-3,name=georeftin3,label=\labelcref{sec:georef_tin_3},pr
+          ],      
+          [GeoRef-TIN-2,name=georeftin2,label=\labelcref{sec:georef_tin_2}
+          ],
+          [Combi-2,name=combi2,label=\labelcref{sec:georef_earth_1}
+            [Combi-3,name=combi3,label=\labelcref{sec:georef_earth_2},pr
+            ]
+          ] {
+              \draw[-latex'] () to[out=north west,in=east] (earth1);
+            }
+        ] {
+            \draw[-latex'] () to[out=south west,in=north east] (georef1);
+          }
+      ],
+      [Road-2,name=road2,label=\labelcref{sec:road_2},pr
+      ],
+      [Road-1,name=road1,label=\labelcref{sec:road_1},pr
+      ],
+      [Bridge-1,name=bridge1,label=\labelcref{sec:bridge_1},pr
+      ],
+      [Earthworks-3,name=earth3,label=\labelcref{sec:earth_3},pr
+      ],
+      [Earthworks-0,name=earth0,label=\labelcref{sec:earth_0}
+        [Earthworks-2,name=earth2,label=\labelcref{sec:earth_2}
+        ],
+        [Earthworks-1,name=earth1,label=\labelcref{sec:earth_1}
+        ],
+      ],
+      [Alignment-13,name=align13,label=\labelcref{sec:align_13},pr
+        [Road-3,name=road3,label=\labelcref{sec:road_3},pr
+        ],
+      ],
+      [Alignment-12,name=align12,label=\labelcref{sec:align_12},pr
       ],
       [Alignment-1,name=align1,label=\labelcref{sec:align_1}
         [Alignment-9,name=align9,label=\labelcref{sec:align_9},pr
@@ -118,19 +159,20 @@ Each unit test has a link to the corresponding section of this document in the u
           [Alignment-7,name=align7,label=\labelcref{sec:align_7},pr
           ]
         ],
-        [Alignment-4,name=align4,label=\labelcref{sec:align_4},pr
-          [Alignment-5,name=align5,label=\labelcref{sec:align_5},pr
+        [Alignment-4,name=align4,label=\labelcref{sec:align_4}
+          [Alignment-5,name=align5,label=\labelcref{sec:align_5}
           ],
         ],
-        [Alignment-3,name=align3,label=\labelcref{sec:align_3},pr
-        ],
         [Alignment-2,name=align2,label=\labelcref{sec:align_2}
+          [Alignment-3,name=align3,label=\labelcref{sec:align_3}
+          ],
         ],
       ],
     ]  
   \end{forest}
   \caption{Schematic representation of unit tests and their dependencies.
            Dashed boxes mean that they are still under review.}
+  \label{fig:schematics}
 \end{figure}
 
 \subsection{How to read the document}
@@ -194,6 +236,16 @@ Under review.%\markdownInput{../Georeferencing-4/readme.md}
 \markdownInput{../Georeferencing-Tin-12d-2/Readme.md}
 \clearpage
 
+\subsection{Georeferencing and DTM 3}
+\label{sec:georef_tin_3}
+Under review.%\markdownInput{../Georeferencing-Tin-12d-3/Readme.md}
+\clearpage
+
+\subsection{Georeferencing and DTM 4}
+\label{sec:georef_tin_4}
+Under review.%\markdownInput{../Georeferencing-Tin-12d-4/Readme.md}
+\clearpage
+
 % -------------------------------------------------------------------------------
 \section{Alignment}
 
@@ -254,7 +306,12 @@ Under review.%\markdownInput{../Alignment-12d-11/readme.md}
 
 \subsection{Alignment 12}
 \label{sec:align_12}
-Under review.%\markdownInput{../Alignment-12d-12/readme.md}
+Under review.%\markdownInput{../Alignment-Aplitop-1/readme.md}
+\clearpage
+
+\subsection{Alignment 13}
+\label{sec:align_13}
+Under review.%\markdownInput{../UT-Alignment-3/readme.md}
 \clearpage
 
 % -------------------------------------------------------------------------------
@@ -291,21 +348,49 @@ Under review.%\markdownInput{../Alignment-12d-12/readme.md}
 \clearpage
 
 % -------------------------------------------------------------------------------
+\section{Geometry}
+
+\subsection{Road 1}
+\label{sec:road_1}
+Under review.%\markdownInput{../UT-IfcCourse/readme.md}
+\clearpage
+
+\subsection{Road 2}
+\label{sec:road_2}
+Under review.%\markdownInput{../UT-IfcPavement/readme.md}
+\clearpage
+
+\subsection{Road 3}
+\label{sec:road_3}
+Under review.%\markdownInput{../UT-Road-1/readme.md}
+\clearpage
+
+\subsection{Bridge 1}
+\label{sec:bridge_1}
+Under review.%\markdownInput{../SectionedSolidHorizotnal-1/readme.md}
+\clearpage
+
+% -------------------------------------------------------------------------------
 \section{Earthworks}
 
 \subsection{Earthworks 0}
-\label{sec:earthworks_0}
+\label{sec:earth_0}
 \markdownInput{../Earthworks-12d-0/Readme.md}
 \clearpage
 
 \subsection{Earthworks 1}
-\label{sec:earthworks_1}
+\label{sec:earth_1}
 \markdownInput{../Earthworks-12d-1/Readme.md}
 \clearpage
 
 \subsection{Earthworks 2}
-\label{sec:earthworks_2}
+\label{sec:earth_2}
 \markdownInput{../Earthworks-12d-2/Readme.md}
+\clearpage
+
+\subsection{Earthworks 3}
+\label{sec:earth_3}
+Under review.%\markdownInput{../UT-Earthworks-01/Readme.md}
 \clearpage
 
 % -------------------------------------------------------------------------------
@@ -315,6 +400,20 @@ Under review.%\markdownInput{../Alignment-12d-12/readme.md}
 \label{sec:borehole_1}
 \markdownInput{../Borehole-1/Readme.md}
 \clearpage
+
+% -------------------------------------------------------------------------------
+\section{Geodetic Survey}
+
+\subsection{Survey 1}
+\label{sec:survey_1}
+Under review.%\markdownInput{../Georeferencing-Survey-1/Readme.md}
+\clearpage
+
+\subsection{Survey 2}
+\label{sec:survey_2}
+Under review.%\markdownInput{../Georeferencing-Survey-2/Readme.md}
+\clearpage
+
 
 % -------------------------------------------------------------------------------
 \section{Drainage System}
@@ -329,7 +428,31 @@ Under review.%\markdownInput{../Alignment-12d-12/readme.md}
 \markdownInput{../DrainageSystem-2/Readme.md}
 \clearpage
 
+% -------------------------------------------------------------------------------
+\section{Combinations}
 
+\subsection{Combination 1: Georeferencing and Alignment and DTM}
+\label{sec:align_dtm_1}
+Under review.%\markdownInput{../Georeferencing-Alignment-Tin-12d-1/Readme.md}
+\clearpage
+
+\subsection{Combination 2: Georeferencing and Earthworks}
+\label{sec:georef_earth_1}
+\markdownInput{../Georeferencing-Earthworks-12d-1/Readme.md}
+\clearpage
+
+\subsection{Combination 3: Georeferencing and Earthworks 2}
+\label{sec:georef_earth_2}
+Under review.%\markdownInput{../Georeferencing-Earthworks-12d-2/Readme.md}
+\clearpage
+
+% -------------------------------------------------------------------------------
+\section{Other}
+
+\subsection{Other 1: Cost items}
+\label{sec:other_1}
+Under review.%\markdownInput{../UT-CostItem-COWI/Readme.md}
+\clearpage
 
 
 \end{document}
