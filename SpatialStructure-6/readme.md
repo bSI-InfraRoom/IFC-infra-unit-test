@@ -129,6 +129,6 @@ Following files correspond to this scenario:
 | `SpatialStructure-6-2.png` | master plan with geometry visualization |
 | `SpatialStructure-6-3.png` | IFC Tree view produced in FZK Viewer |
 
-[figure 1]: ./SpatialStructure-6-1.png "Diagramatic overlay of master plan"
-[figure 2]: ./SpatialStructure-6-2.png "master plan with geometry visualization"
-[figure 3]: ./SpatialStructure-6-3.png "IFC Tree view produced in FZK Viewer"
+[figure 1]: ../SpatialStructure-6/SpatialStructure-6-1.png "Diagramatic overlay of master plan"
+[figure 2]: ../SpatialStructure-6/SpatialStructure-6-2.png "master plan with geometry visualization"
+[figure 3]: ../SpatialStructure-6/SpatialStructure-6-3.png "IFC Tree view produced in FZK Viewer"
