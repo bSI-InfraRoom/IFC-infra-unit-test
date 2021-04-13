@@ -38,7 +38,6 @@ DATA;
 #31 = IFCINDEXEDCOLOURMAP(#30, $, #32, (1, 1, 1, 1));
 #32 = IFCCOLOURRGBLIST(((5.88235294117647E-1, 3.52941176470588E-1, 0.)));
 #33 = IFCFACILITY('0lav5jLhj5Rvzt54vjJqYg', #2, 'a cut', 'Description of a cut', $, #15, $, $, .ELEMENT.);
-#34 = IFCRELCONTAINEDINSPATIALSTRUCTURE('0nG772dx13U8MkfDgKjZCi', #2, 'FacilityContainer', 'FacilityContainer for Elements', (#35), #33);
 #35 = IFCEARTHWORKSCUT('0_ZK5$OYTBj8HihluGa0z7', #2, 'Fill 1', '12d Trimesh', 'Trimesh', #15, #36, $, .CUT.);
 #100035 = IFCRELVOIDSELEMENT('2R9LLU0BvCXuB2eOD9Yaa4', #2, 'Cut', $, #26,#35);
 #36 = IFCPRODUCTDEFINITIONSHAPE($, $, (#37));
