@@ -59,6 +59,7 @@ Each unit test has a link to the corresponding section of this document in the u
 \tikzset{every label/.style={xshift=1ex, text width=10ex, align=left, 
                              inner sep=1pt, font=\footnotesize}}
 \tikzset{pr/.style={dashed}}
+\begin{figure}
   \begin{forest}
     for tree={              % style of tree nodes
       font=\footnotesize,
@@ -126,7 +127,9 @@ Each unit test has a link to the corresponding section of this document in the u
       ],
     ]  
   \end{forest}
-\clearpage
+  \caption{Schematic representation of unit tests and their dependencies.
+           Dashed boxes mean that they are still under review.}
+\end{figure}
 
 \subsection{How to read the document}
 
