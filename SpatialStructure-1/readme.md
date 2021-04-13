@@ -12,7 +12,10 @@ This scenario builds upon following other scenarios:
 
 This scenario covers the following concepts and/or IFC entities:
 
-- Spatial decomposition using `IfcFacility` and `IfcFacilityPart` + corresponding SELECTS
+- Spatial decomposition using 
+    - `IfcFacility`
+    - `IfcFacilityPart` 
+    - corresponding `...SELECT`-s
 
 ### Supporting files
 
@@ -25,4 +28,4 @@ Following files correspond to this scenario:
 
 ### Sample code
 
-pushed to [GeometryGymIFCExamples](https://github.com/GeometryGym/GeometryGymIFCExamples) 
+Sample code has been pushed to [GeometryGymIFCExamples](https://github.com/GeometryGym/GeometryGymIFCExamples).
