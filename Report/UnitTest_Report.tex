@@ -77,6 +77,12 @@ Each unit test has a link to the corresponding section of this document in the u
          fork sep = 4mm,    % distance from parent to branching point
                 }
     [Setup-1,name=boiler1,label=\labelcref{sec:project_setup_1}
+      [Road-2,name=road2,label=\labelcref{sec:road_2},pr
+      ],
+      [Road-1,name=road1,label=\labelcref{sec:road_1},pr
+      ],
+      [Bridge-1,name=bridge1,label=\labelcref{sec:bridge_1},pr
+      ],
       [Spatial-1,name=spatial1,label=\labelcref{sec:spatial_1}
         [Spatial-6,name=spatial6,label=\labelcref{sec:spatial_6}
         ]
@@ -127,12 +133,6 @@ Each unit test has a link to the corresponding section of this document in the u
         ] {
             \draw[-latex'] () to[out=south west,in=north east] (georef1);
           }
-      ],
-      [Road-2,name=road2,label=\labelcref{sec:road_2},pr
-      ],
-      [Road-1,name=road1,label=\labelcref{sec:road_1},pr
-      ],
-      [Bridge-1,name=bridge1,label=\labelcref{sec:bridge_1},pr
       ],
       [Earthworks-3,name=earth3,label=\labelcref{sec:earth_3},pr
       ],
