@@ -36,9 +36,9 @@ Example: `GeoRef-1-2.png` is the 2nd figure of the 1st UT within the Georeferenc
 
 > FILE_DESCRIPTION (('ViewDefinition [Ifc4X3NotAssigned]'), '2;1');
 
-**NOTE:** The current (2021.01.13.) correct version of IFC4.3 file schema in the physical file is `IFC4x3_RC2`, i.e.
+**NOTE:** The current (2021.04.13.) correct version of IFC4.3 file schema in the physical file is `IFC4x3_RC3`, i.e.
 
-> FILE_SCHEMA(('IFC4X3_RC2'));
+> FILE_SCHEMA(('IFC4X3_RC3'));
 
 ## <a name="guidelines"></a> `readme` guidelines
 
