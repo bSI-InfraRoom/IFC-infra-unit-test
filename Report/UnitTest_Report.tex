@@ -73,26 +73,26 @@ Each unit test has a link to the corresponding section of this document in the u
      child anchor = west,
              grow = east,
     forked edge,            % for forked edge
-            l sep = 9mm,   % level distance
-         fork sep = 4mm,    % distance from parent to branching point
+            l sep = 6mm,   % level distance
+         fork sep = 3mm,    % distance from parent to branching point
                 }
     [Setup-1,name=boiler1,label=\labelcref{sec:project_setup_1}
       [Road-2,name=road2,label=\labelcref{sec:road_2},pr
       ],
       [Road-1,name=road1,label=\labelcref{sec:road_1},pr
       ],
-      [Bridge-1,name=bridge1,label=\labelcref{sec:bridge_1},pr
-      ],
       [Spatial-1,name=spatial1,label=\labelcref{sec:spatial_1}
+        [Spatial-7,name=spatial7,label=\labelcref{sec:spatial_7}
+        ],
         [Spatial-6,name=spatial6,label=\labelcref{sec:spatial_6}
         ]
         [Spatial-5,name=spatial5,label=\labelcref{sec:spatial_5}
         ],
         [Spatial-4,name=spatial4,label=\labelcref{sec:spatial_4}
+          [Drainage-2,name=drainage2,label=\labelcref{sec:drainage_2}
+          ],
           [Drainage-1,name=drainage1,label=\labelcref{sec:drainage_1}
           ],
-          [Drainage-2,name=drainage2,label=\labelcref{sec:drainage_2}
-          ]
         ],
         [Spatial-3,name=spatial3,label=\labelcref{sec:spatial_3}
           [Other-1,name=other1,label=\labelcref{sec:other_1},pr
@@ -101,7 +101,10 @@ Each unit test has a link to the corresponding section of this document in the u
         [Spatial-2,name=spatial2,label=\labelcref{sec:spatial_2}
         ],
       ],
-      [Setup-2,name=boiler2,label=\labelcref{sec:project_setup_2}],
+      [Bridge-1,name=bridge1,label=\labelcref{sec:bridge_1},pr
+      ],
+      [Setup-2,name=boiler2,label=\labelcref{sec:project_setup_2}
+      ],
       [GeoRef-1,name=georef1,label=\labelcref{sec:georeferencing_1}
         [Survey-1,name=survey1,label=\labelcref{sec:survey_1},pr
           [Survey-2,name=survey2,label=\labelcref{sec:survey_2},pr
@@ -140,6 +143,10 @@ Each unit test has a link to the corresponding section of this document in the u
         [Earthworks-2,name=earth2,label=\labelcref{sec:earth_2}
         ],
         [Earthworks-1,name=earth1,label=\labelcref{sec:earth_1}
+        ],
+      ],
+      [Alignment-14,name=align14,label=\labelcref{sec:align_14},pr
+        [Road-4,name=road4,label=\labelcref{sec:road_4},pr
         ],
       ],
       [Alignment-13,name=align13,label=\labelcref{sec:align_13},pr
@@ -314,6 +321,11 @@ Under review.%\markdownInput{../Alignment-Aplitop-1/readme.md}
 Under review.%\markdownInput{../UT-Alignment-3/readme.md}
 \clearpage
 
+\subsection{Alignment 14}
+\label{sec:align_14}
+Under review.%\markdownInput{../Alignment-INDOT/readme.md}
+\clearpage
+
 % -------------------------------------------------------------------------------
 \section{Spatial Structure}
 
@@ -347,6 +359,11 @@ Under review.%\markdownInput{../UT-Alignment-3/readme.md}
 \markdownInput{../SpatialStructure-6/readme.md}
 \clearpage
 
+\subsection{Spatial Structure 7}
+\label{sec:spatial_7}
+Under review.%\markdownInput{../CrossDisciplinary-1/README.md}
+\clearpage
+
 % -------------------------------------------------------------------------------
 \section{Geometry}
 
@@ -363,6 +380,11 @@ Under review.%\markdownInput{../UT-IfcPavement/readme.md}
 \subsection{Road 3}
 \label{sec:road_3}
 Under review.%\markdownInput{../UT-Road-1/readme.md}
+\clearpage
+
+\subsection{Road 4}
+\label{sec:road_4}
+Under review.%\markdownInput{../SectionedSurface-INDOT/readme.md}
 \clearpage
 
 \subsection{Bridge 1}
@@ -444,6 +466,11 @@ Under review.%\markdownInput{../Georeferencing-Alignment-Tin-12d-1/Readme.md}
 \subsection{Combination 3: Georeferencing and Earthworks 2}
 \label{sec:georef_earth_2}
 Under review.%\markdownInput{../Georeferencing-Earthworks-12d-2/Readme.md}
+\clearpage
+
+\subsection{Combination 4: Alignment and DTM}
+\label{sec:align_dtm_2}
+Under review.%\markdownInput{../Alignment-Tin-1/Readme.md}
 \clearpage
 
 % -------------------------------------------------------------------------------
