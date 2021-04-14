@@ -43,114 +43,478 @@
 \section{Summary}
 \label{sec:summary}
 
-This is a summary document of all approved unit tests during the IFC Infrastructure Extensions Deployment project.
+This is a summary document of all approved unit tests submitted during the IFC Infrastructure Extensions Deployment project.
 
 This document has been automatically produced from the \texttt{readme} files of individual unit tests.
 The originating documentation together with all mentioned files can be obtained
  from the project's official GitHub repository\footnote{\url{https://github.com/bSI-InfraRoom/IFC-infra-unit-test}}.
 
-\section{Schematics}
+\subsection{Schematics}
 \label{sec:schematics}
 
-The following figure represents the dependencies between the individual unit tests.
+\Cref{sec:schematics} represents the dependencies between the individual unit tests.
 Unit tests are represented as boxes, while the arrows point from the dependant to the independent unit test.
 Each unit test has a link to the corresponding section of this document in the upper right corner.
 
 \tikzset{every label/.style={xshift=1ex, text width=10ex, align=left, 
                              inner sep=1pt, font=\footnotesize}}
+\tikzset{every node/.style={minimum width=6em}}
+\tikzset{pr/.style={dashed}}
+\begin{figure}
   \begin{forest}
     for tree={              % style of tree nodes
       font=\footnotesize,
       draw, semithick, rounded corners,
             align = center,
-        inner sep = 2mm,
+        inner sep = 1mm,
                             % style of tree (edges, distances, direction)
              edge = {draw, semithick, latex'-},
     parent anchor = east,
      child anchor = west,
-             grow = south,
+             grow = east,
     forked edge,            % for forked edge
-            l sep = 12mm,   % level distance
-         fork sep = 6mm,    % distance from parent to branching point
+            l sep = 6mm,   % level distance
+         fork sep = 3mm,    % distance from parent to branching point
                 }
     [Setup-1,name=boiler1,label=\labelcref{sec:project_setup_1}
-      [Setup-2,name=boiler2,label=\labelcref{sec:project_setup_2}],
+      [Road-2,name=road2,label=\labelcref{sec:road_2},pr
+      ],
+      [Road-1,name=road1,label=\labelcref{sec:road_1},pr
+      ],
+      [Spatial-1,name=spatial1,label=\labelcref{sec:spatial_1}
+        [Spatial-7,name=spatial7,label=\labelcref{sec:spatial_7}
+        ],
+        [Spatial-6,name=spatial6,label=\labelcref{sec:spatial_6}
+        ]
+        [Spatial-5,name=spatial5,label=\labelcref{sec:spatial_5}
+        ],
+        [Spatial-4,name=spatial4,label=\labelcref{sec:spatial_4}
+          [Drainage-2,name=drainage2,label=\labelcref{sec:drainage_2}
+          ],
+          [Drainage-1,name=drainage1,label=\labelcref{sec:drainage_1}
+          ],
+        ],
+        [Spatial-3,name=spatial3,label=\labelcref{sec:spatial_3}
+          [Other-1,name=other1,label=\labelcref{sec:other_1},pr
+          ],
+        ],
+        [Spatial-2,name=spatial2,label=\labelcref{sec:spatial_2}
+        ],
+      ],
+      [Bridge-1,name=bridge1,label=\labelcref{sec:bridge_1},pr
+      ],
+      [Marine-1,name=marine1,label=\labelcref{sec:marine_1},pr
+      ],
+      [Marine-2,name=marine2,label=\labelcref{sec:marine_2},pr
+      ],
+      [Setup-2,name=boiler2,label=\labelcref{sec:project_setup_2}
+      ],
+      [GeoRef-1,name=georef1,label=\labelcref{sec:georeferencing_1}
+        [Survey-1,name=survey1,label=\labelcref{sec:survey_1},pr
+          [Survey-2,name=survey2,label=\labelcref{sec:survey_2},pr
+          ],
+        ],
+        [GeoRef-3,name=georef3,label=\labelcref{sec:georeferencing_3},pr          
+          [GeoRef-4,name=georef4,label=\labelcref{sec:georeferencing_4},pr
+          ]
+        ],
+        [GeoRef-2,name=georef2,label=\labelcref{sec:georeferencing_2},pr
+        ],
+      ] {
+        \draw[-latex'] () to[out=north,in=south] (tin1);
+      },
       [TIN-1,name=tin1,label=\labelcref{sec:tin_1}
-        [GeoRef-1,name=georef1,label=\labelcref{sec:georeferencing_1}] {
-          \draw[-latex'] () to[out=north east,in=south east] (boiler1);
-        }
-      ]
+        [GeoRef-TIN-1,name=georeftin1,label=\labelcref{sec:georef_tin_1} 
+          [GeoRef-TIN-4,name=georeftin4,label=\labelcref{sec:georef_tin_4},pr
+          ],
+          [GeoRef-TIN-3,name=georeftin3,label=\labelcref{sec:georef_tin_3},pr
+          ],      
+          [GeoRef-TIN-2,name=georeftin2,label=\labelcref{sec:georef_tin_2}
+          ],
+          [Combi-2,name=combi2,label=\labelcref{sec:georef_earth_1}
+            [Combi-3,name=combi3,label=\labelcref{sec:georef_earth_2},pr
+            ]
+          ] {
+              \draw[-latex'] () to[out=north west,in=east] (earth1);
+            }
+        ] {
+            \draw[-latex'] () to[out=south west,in=north east] (georef1);
+          }
+      ],
+      [Earthworks-3,name=earth3,label=\labelcref{sec:earth_3},pr
+      ],
+      [Earthworks-0,name=earth0,label=\labelcref{sec:earth_0}
+        [Earthworks-2,name=earth2,label=\labelcref{sec:earth_2}
+        ],
+        [Earthworks-1,name=earth1,label=\labelcref{sec:earth_1}
+        ],
+      ],
+      [Alignment-14,name=align14,label=\labelcref{sec:align_14},pr
+        [Road-4,name=road4,label=\labelcref{sec:road_4},pr
+        ],
+        [Road-5,name=road5,label=\labelcref{sec:road_5},pr
+        ],
+      ],
+      [Alignment-13,name=align13,label=\labelcref{sec:align_13},pr
+        [Road-3,name=road3,label=\labelcref{sec:road_3},pr
+        ],
+      ],
+      [Alignment-12,name=align12,label=\labelcref{sec:align_12},pr
+        [Alignment-15,name=align15,label=\labelcref{sec:align_15},pr
+        ],
+        [Alignment-16,name=align16,label=\labelcref{sec:align_16},pr
+        ],
+      ],
+      [Alignment-1,name=align1,label=\labelcref{sec:align_1}
+        [Alignment-9,name=align9,label=\labelcref{sec:align_9},pr
+          [Alignment-10,name=align10,label=\labelcref{sec:align_10},pr
+          ]
+        ],
+        [Alignment-8,name=align8,label=\labelcref{sec:align_8},pr
+        ],
+        [Alignment-6,name=align6,label=\labelcref{sec:align_6},pr
+          [Alignment-7,name=align7,label=\labelcref{sec:align_7},pr
+          ]
+        ],
+        [Alignment-4,name=align4,label=\labelcref{sec:align_4}
+          [Alignment-5,name=align5,label=\labelcref{sec:align_5}
+          ],
+        ],
+        [Alignment-2,name=align2,label=\labelcref{sec:align_2}
+          [Alignment-3,name=align3,label=\labelcref{sec:align_3}
+          ],
+        ],
+      ],
     ]  
   \end{forest}
+  \caption{Schematic representation of unit tests and their dependencies.
+           Dashed boxes mean that they are still under review.}
+  \label{fig:schematics}
+\end{figure}
+
+\subsection{How to read the document}
+
+Each unit test is within its own section.
+The included figures are \emph{floating} in this document, so they may appear at the top of the page,
+ even though they are mentioned later in the text.
+All figures are always flushed before the next section starts, so that there is no doubt.
+
+\tableofcontents
 \clearpage
 
+% -------------------------------------------------------------------------------
+\section{Project Setup}
 
-\section{Project Setup 1}
+\subsection{Project Setup 1}
 \label{sec:project_setup_1}
 \markdownInput{../ProjectSetup-1/readme.md}
 \clearpage
 
-\section{Project Setup 2}
+\subsection{Project Setup 2}
 \label{sec:project_setup_2}
-%\markdownInput{../ProjectSetup-2/readme.md}
+\markdownInput{../ProjectSetup-2/readme.md}
 \clearpage
 
+% -------------------------------------------------------------------------------
+\section{Georeferencing and Digital Terrain Models (DTMs)}
 
-\section{TIN 1}
+\subsection{TIN 1}
 \label{sec:tin_1}
 \markdownInput{../Tin-1/readme.md}
 \clearpage
 
-\section{Georeferencing 1}
+\subsection{Georeferencing 1}
 \label{sec:georeferencing_1}
 \markdownInput{../Georeferencing-1/readme.md}
 \clearpage
 
+\subsection{Georeferencing 2}
+\label{sec:georeferencing_2}
+Under review.%\markdownInput{../Georeferencing-2/readme.md}
+\clearpage
 
+\subsection{Georeferencing 3}
+\label{sec:georeferencing_3}
+Under review.%\markdownInput{../Georeferencing-3/readme.md}
+\clearpage
 
-\section{Spatial Structure 1}
+\subsection{Georeferencing 4}
+\label{sec:georeferencing_4}
+Under review.%\markdownInput{../Georeferencing-4/readme.md}
+\clearpage
+
+\subsection{Georeferencing and DTM 1}
+\label{sec:georef_tin_1}
+\markdownInput{../Georeferencing-Tin-12d-1/Readme.md}
+\clearpage
+
+\subsection{Georeferencing and DTM 2}
+\label{sec:georef_tin_2}
+\markdownInput{../Georeferencing-Tin-12d-2/Readme.md}
+\clearpage
+
+\subsection{Georeferencing and DTM 3}
+\label{sec:georef_tin_3}
+Under review.%\markdownInput{../Georeferencing-Tin-12d-3/Readme.md}
+\clearpage
+
+\subsection{Georeferencing and DTM 4}
+\label{sec:georef_tin_4}
+Under review.%\markdownInput{../Georeferencing-Tin-12d-4/Readme.md}
+\clearpage
+
+% -------------------------------------------------------------------------------
+\section{Alignment}
+
+\subsection{Alignment 1}
+\label{sec:align_1}
+\markdownInput{../Alignment-12d-1/readme.md}
+\clearpage
+
+\subsection{Alignment 2}
+\label{sec:align_2}
+\markdownInput{../Alignment-12d-2/readme.md}
+\clearpage
+
+\subsection{Alignment 3}
+\label{sec:align_3}
+\markdownInput{../Alignment-12d-3/readme.md}
+\clearpage
+
+\subsection{Alignment 4}
+\label{sec:align_4}
+\markdownInput{../Alignment-12d-4/readme.md}
+\clearpage
+
+\subsection{Alignment 5}
+\label{sec:align_5}
+\markdownInput{../Alignment-12d-5/readme.md}
+\clearpage
+
+\subsection{Alignment 6}
+\label{sec:align_6}
+Under review.%\markdownInput{../Alignment-12d-6/readme.md}
+\clearpage
+
+\subsection{Alignment 7}
+\label{sec:align_7}
+Under review.%\markdownInput{../Alignment-12d-7/readme.md}
+\clearpage
+
+\subsection{Alignment 8}
+\label{sec:align_8}
+Under review.%\markdownInput{../Alignment-12d-8/readme.md}
+\clearpage
+
+\subsection{Alignment 9}
+\label{sec:align_9}
+Under review.%\markdownInput{../Alignment-12d-9/readme.md}
+\clearpage
+
+\subsection{Alignment 10}
+\label{sec:align_10}
+Under review.%\markdownInput{../Alignment-12d-10/readme.md}
+\clearpage
+
+\subsection{Alignment 11}
+\label{sec:align_11}
+Under review.%\markdownInput{../Alignment-12d-11/readme.md}
+\clearpage
+
+\subsection{Alignment 12}
+\label{sec:align_12}
+Under review.%\markdownInput{../Alignment-Aplitop-1/readme.md}
+\clearpage
+
+\subsection{Alignment 13}
+\label{sec:align_13}
+Under review.%\markdownInput{../UT-Alignment-3/readme.md}
+\clearpage
+
+\subsection{Alignment 14}
+\label{sec:align_14}
+Under review.%\markdownInput{../Alignment-INDOT/readme.md}
+\clearpage
+
+\subsection{Alignment 15}
+\label{sec:align_15}
+Under review.%\markdownInput{../Alignment-Aplitop-2/readme.md}
+\clearpage
+
+\subsection{Alignment 16}
+\label{sec:align_16}
+Under review.%\markdownInput{../Alignment-Aplitop-3/readme.md}
+\clearpage
+
+% -------------------------------------------------------------------------------
+\section{Spatial Structure}
+
+\subsection{Spatial Structure 1}
 \label{sec:spatial_1}
-%\markdownInput{../SpatialStructure-1/readme.md}
+\markdownInput{../SpatialStructure-1/readme.md}
 \clearpage
 
-\section{Spatial Structure 2}
+\subsection{Spatial Structure 2}
 \label{sec:spatial_2}
-%\markdownInput{../SpatialStructure-2/readme.md}
+\markdownInput{../SpatialStructure-2/readme.md}
 \clearpage
 
-\section{Spatial Structure 3}
+\subsection{Spatial Structure 3}
 \label{sec:spatial_3}
-%\markdownInput{../SpatialStructure-3/readme.md}
+\markdownInput{../SpatialStructure-3/readme.md}
 \clearpage
 
-\section{Spatial Structure 4}
+\subsection{Spatial Structure 4}
 \label{sec:spatial_4}
 \markdownInput{../SpatialStructure-4/readme.md}
 \clearpage
 
-
-\section{Alignment 1}
-\label{sec:alignment_12d_1}
-\markdownInput{../Alignment-12d-1/readme.md}
+\subsection{Spatial Structure 5}
+\label{sec:spatial_5}
+\markdownInput{../SpatialStructure-5/readme.md}
 \clearpage
 
-\section{Alignment 2}
-\label{sec:alignment_12d_2}
-\markdownInput{../Alignment-12d-2/readme.md}
+\subsection{Spatial Structure 6}
+\label{sec:spatial_6}
+\markdownInput{../SpatialStructure-6/readme.md}
+\clearpage
+
+\subsection{Spatial Structure 7}
+\label{sec:spatial_7}
+Under review.%\markdownInput{../CrossDisciplinary-1/README.md}
+\clearpage
+
+% -------------------------------------------------------------------------------
+\section{Domain Specifics}
+
+\subsection{Road 1}
+\label{sec:road_1}
+Under review.%\markdownInput{../UT-IfcCourse/readme.md}
+\clearpage
+
+\subsection{Road 2}
+\label{sec:road_2}
+Under review.%\markdownInput{../UT-IfcPavement/readme.md}
+\clearpage
+
+\subsection{Road 3}
+\label{sec:road_3}
+Under review.%\markdownInput{../UT-Road-1/readme.md}
+\clearpage
+
+\subsection{Road 4}
+\label{sec:road_4}
+Under review.%\markdownInput{../SectionedSurface-INDOT/readme.md}
+\clearpage
+
+\subsection{Road 5}
+\label{sec:road_5}
+Under review.%\markdownInput{../RumbleStrip-INDOT/readme.md}
+\clearpage
+
+\subsection{Bridge 1}
+\label{sec:bridge_1}
+Under review.%\markdownInput{../SectionedSolidHorizontal-1/readme.md}
+\clearpage
+
+\subsection{Marine 1}
+\label{sec:marine_1}
+Under review.%\markdownInput{../MarineFurniture-1/readme.md}
+\clearpage
+
+\subsection{Marine 2}
+\label{sec:marine_2}
+Under review.%\markdownInput{../MarineFurniture-2/readme.md}
+\clearpage
+
+% -------------------------------------------------------------------------------
+\section{Earthworks}
+
+\subsection{Earthworks 0}
+\label{sec:earth_0}
+\markdownInput{../Earthworks-12d-0/Readme.md}
+\clearpage
+
+\subsection{Earthworks 1}
+\label{sec:earth_1}
+\markdownInput{../Earthworks-12d-1/Readme.md}
+\clearpage
+
+\subsection{Earthworks 2}
+\label{sec:earth_2}
+\markdownInput{../Earthworks-12d-2/Readme.md}
+\clearpage
+
+\subsection{Earthworks 3}
+\label{sec:earth_3}
+Under review.%\markdownInput{../UT-Earthworks-01/Readme.md}
+\clearpage
+
+% -------------------------------------------------------------------------------
+\section{Geotechnics}
+
+\subsection{Borehole 1}
+\label{sec:borehole_1}
+\markdownInput{../Borehole-1/Readme.md}
+\clearpage
+
+% -------------------------------------------------------------------------------
+\section{Geodetic Survey}
+
+\subsection{Survey 1}
+\label{sec:survey_1}
+Under review.%\markdownInput{../Georeferencing-Survey-1/Readme.md}
+\clearpage
+
+\subsection{Survey 2}
+\label{sec:survey_2}
+Under review.%\markdownInput{../Georeferencing-Survey-2/Readme.md}
 \clearpage
 
 
+% -------------------------------------------------------------------------------
+\section{Drainage System}
 
-\section{Drainage System 1}
+\subsection{Drainage System 1}
 \label{sec:drainage_1}
 \markdownInput{../DrainageSystem-1/Readme.md}
 \clearpage
 
-\section{Drainage System 2}
+\subsection{Drainage System 2}
 \label{sec:drainage_2}
 \markdownInput{../DrainageSystem-2/Readme.md}
 \clearpage
 
+% -------------------------------------------------------------------------------
+\section{Combinations}
+
+\subsection{Combination 1: Georeferencing and Alignment and DTM}
+\label{sec:align_dtm_1}
+Under review.%\markdownInput{../Georeferencing-Alignment-Tin-12d-1/Readme.md}
+\clearpage
+
+\subsection{Combination 2: Georeferencing and Earthworks}
+\label{sec:georef_earth_1}
+\markdownInput{../Georeferencing-Earthworks-12d-1/Readme.md}
+\clearpage
+
+\subsection{Combination 3: Georeferencing and Earthworks 2}
+\label{sec:georef_earth_2}
+Under review.%\markdownInput{../Georeferencing-Earthworks-12d-2/Readme.md}
+\clearpage
+
+\subsection{Combination 4: Alignment and DTM}
+\label{sec:align_dtm_2}
+Under review.%\markdownInput{../Alignment-Tin-1/Readme.md}
+\clearpage
+
+% -------------------------------------------------------------------------------
+\section{Other}
+
+\subsection{Other 1: Cost items}
+\label{sec:other_1}
+Under review.%\markdownInput{../UT-CostItem-COWI/Readme.md}
+\clearpage
 
 
 \end{document}

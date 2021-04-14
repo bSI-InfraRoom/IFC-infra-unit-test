@@ -52,7 +52,7 @@ Figure 1 shows the extent and plan layout of the masterplan.
 ![Master Plan with geometry][figure 2]
 
 To represent the project breakdown for this unit test, we envision the following project structure.
-`IfcProject` contains an `IfcSite` (S.) with `Representation=IfcBoundingBox`, which in turn contains:
+`IfcProject` contains an `IfcSite` (S.) with `Representation=IfcBoundingBox`, which contains:
 
 - S.SY `IfcMarineFacility` (Shipyard)
 	- `Representation=IfcBoundingBox`
@@ -61,55 +61,61 @@ To represent the project breakdown for this unit test, we envision the following
 		- `Representation=IfcBoundingBox`
         - `PredefinedType=IfcMarinePartTypeEnum.WATERFIELD`
         - `UsageType=REGION`
-		- S.SY.W.1 `IfcMarineFacility` (Pier 1)
-			- `Representation=IfcBoundingBox`
-			- `PredefinedType=IfcMarineFacilityTypeEnum.JETTY`
-			- S.SY.W.1.b1 `IfcSpace` (Berth 1)
-				- `Representation=IfcExtrudedAreaSolid`
-				- `PredefinedType=IfcSpaceTypeEnum.BERTH`
-		- S.SY.W.2 `IfcMarineFacility` (Pier 2)
-			- `Representation=IfcBoundingBox`
-			- `PredefinedType=IfcMarineFacilityTypeEnum.JETTY`
-			- S.SY.W.2.b3 `IfcSpace` (Berth 3)
-				- `Representation=IfcBoundingBox`
-				- `PredefinedType=IfcSpaceTypeEnum.BERTH`
-			- S.SY.W.2.b4 `IfcSpace` (Berth 4)
-				- `Representation=IfcBoundingBox`
-				- `PredefinedType=IfcSpaceTypeEnum.BERTH`
-		- S.SY.W.3 `IfcMarineFacility` (Pier 3)
-			- `Representation=IfcBoundingBox`
-			- `PredefinedType=IfcMarineFacilityTypeEnum.JETTY`
-			- S.SY.W.3.b5 `IfcSpace` (Berth 5)
-				- `Representation=IfcBoundingBox`
-				- `PredefinedType=IfcSpaceTypeEnum.BERTH`
-		- S.SY.W.4 `IfcMarineFacility` (Floating Drydock 1)
-			- `Representation=IfcBoundingBox`
-			- `PredefinedType=IfcMarineFacilityTypeEnum.FLOATINGDRYDOCK`
-		- S.SY.W.5 `IfcMarineFacility` (Floating Drydock 2)
-			- `Representation=IfcBoundingBox`
-			- `PredefinedType=IfcMarineFacilityTypeEnum.FLOATINGDRYDOCK`
 	- S.SY.L `IfcFacilityPart` (Shipyard Land Field)
 		- `Representation=IfcBoundingBox`
         - `PredefinedType=IfcMarinePartTypeEnum.LANDFIELD`
         - `UsageType=REGION`
-		- S.SY.L.1 `IfcMarineFacility` (Quay 1)
-			- `Representation=IfcBoundingBox`
-			- `PredefinedType=IfcMarineFacilityTypeEnum.QUAY`
-			- S.SY.L.1.b2 `IfcSpace` (Berth 2)
-				- `Representation=IfcBoundingBox`
-				- `PredefinedType=IfcSpaceTypeEnum.BERTH`
-		- S.SY.L.2 `IfcMarineFacility` (Dry Dock 1)
-			- `Representation=IfcBoundingBox`
-			- `PredefinedType=IfcMarineFacilityTypeEnum.DRYDOCK`		
-		- S.SY.L.3 `IfcMarineFacility` (Quay 2)
-			- `Representation=IfcBoundingBox`
-			- `PredefinedType=IfcMarineFacilityTypeEnum.QUAY`
-			- S.SY.L.3.b6 `IfcSpace` (Berth 6)
-				- `Representation=IfcBoundingBox`
-				- `PredefinedType=IfcSpaceTypeEnum.BERTH`
-		- S.SY.L.4 `IfcMarineFacility` (Dry Dock 1)
-			- `Representation=IfcBoundingBox`
-			- `PredefinedType=IfcMarineFacilityTypeEnum.DRYDOCK`
+
+The Shipyard Water Field (S.SY.W) in turn contains:
+
+- S.SY.W.1 `IfcMarineFacility` (Pier 1)
+	- `Representation=IfcBoundingBox`
+	- `PredefinedType=IfcMarineFacilityTypeEnum.JETTY`
+	- S.SY.W.1.b1 `IfcSpace` (Berth 1)
+		- `Representation=IfcExtrudedAreaSolid`
+		- `PredefinedType=IfcSpaceTypeEnum.BERTH`
+- S.SY.W.2 `IfcMarineFacility` (Pier 2)
+	- `Representation=IfcBoundingBox`
+	- `PredefinedType=IfcMarineFacilityTypeEnum.JETTY`
+	- S.SY.W.2.b3 `IfcSpace` (Berth 3)
+		- `Representation=IfcBoundingBox`
+		- `PredefinedType=IfcSpaceTypeEnum.BERTH`
+	- S.SY.W.2.b4 `IfcSpace` (Berth 4)
+		- `Representation=IfcBoundingBox`
+		- `PredefinedType=IfcSpaceTypeEnum.BERTH`
+- S.SY.W.3 `IfcMarineFacility` (Pier 3)
+	- `Representation=IfcBoundingBox`
+	- `PredefinedType=IfcMarineFacilityTypeEnum.JETTY`
+	- S.SY.W.3.b5 `IfcSpace` (Berth 5)
+		- `Representation=IfcBoundingBox`
+		- `PredefinedType=IfcSpaceTypeEnum.BERTH`
+- S.SY.W.4 `IfcMarineFacility` (Floating Drydock 1)
+	- `Representation=IfcBoundingBox`
+	- `PredefinedType=IfcMarineFacilityTypeEnum.FLOATINGDRYDOCK`
+- S.SY.W.5 `IfcMarineFacility` (Floating Drydock 2)
+	- `Representation=IfcBoundingBox`
+	- `PredefinedType=IfcMarineFacilityTypeEnum.FLOATINGDRYDOCK`
+
+The Shipyard Land Field (S.SY.L) in turn contains:
+
+- S.SY.L.1 `IfcMarineFacility` (Quay 1)
+	- `Representation=IfcBoundingBox`
+	- `PredefinedType=IfcMarineFacilityTypeEnum.QUAY`
+	- S.SY.L.1.b2 `IfcSpace` (Berth 2)
+		- `Representation=IfcBoundingBox`
+		- `PredefinedType=IfcSpaceTypeEnum.BERTH`
+- S.SY.L.2 `IfcMarineFacility` (Dry Dock 1)
+	- `Representation=IfcBoundingBox`
+	- `PredefinedType=IfcMarineFacilityTypeEnum.DRYDOCK`		
+- S.SY.L.3 `IfcMarineFacility` (Quay 2)
+	- `Representation=IfcBoundingBox`
+	- `PredefinedType=IfcMarineFacilityTypeEnum.QUAY`
+	- S.SY.L.3.b6 `IfcSpace` (Berth 6)
+		- `Representation=IfcBoundingBox`
+		- `PredefinedType=IfcSpaceTypeEnum.BERTH`
+- S.SY.L.4 `IfcMarineFacility` (Dry Dock 1)
+	- `Representation=IfcBoundingBox`
+	- `PredefinedType=IfcMarineFacilityTypeEnum.DRYDOCK`
 
 
 The application should be able to display a project hierarchy as shown in Figure 3.
