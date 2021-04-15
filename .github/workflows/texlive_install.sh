@@ -9,9 +9,9 @@
 # See if there is a cached version of TL available
 export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
 
-tlmgr uninstall --all --force
+#tlmgr uninstall --all --force
 
-if ! command -v texlua > /dev/null; then
+#if ! command -v texlua > /dev/null; then
   # Obtain TeX Live
   wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
   tar -xzf install-tl-unx.tar.gz
@@ -24,7 +24,7 @@ if ! command -v texlua > /dev/null; then
 
   cd ..
   rm install-tl-unx.tar.gz
-fi
+#fi
 
 # Update the TL install but add nothing new
 #tlmgr update --self --all --no-auto-install
