@@ -134,12 +134,8 @@ Each unit test has a link to the corresponding section of this document in the u
           [Combi-2,name=combi2,label=\labelcref{sec:georef_earth_1}
             [Combi-3,name=combi3,label=\labelcref{sec:georef_earth_2},pr
             ]
-          ] {
-              \draw[-latex'] () to[out=north west,in=east] (earth1);
-            }
-        ] {
-            \draw[-latex'] () to[out=south west,in=north east] (georef1);
-          }
+          ] { \draw[-latex'] () to[out=north west,in=east] (earth1); }
+        ] { \draw[-latex'] () to[out=south west,in=north east] (georef1); }
       ],
       [Earthworks-3,name=earth3,label=\labelcref{sec:earth_3},pr
       ],
