@@ -56,15 +56,15 @@ The originating documentation together with all mentioned files can be obtained
 Unit tests are represented as boxes, while the arrows point from the dependant to the independent unit test.
 Each unit test has a link to the corresponding section of this document in the upper right corner.
 
-\tikzset{every label/.style={xshift=1ex, text width=10ex, align=left, 
+\tikzset{every label/.style={xshift=3ex, text width=10ex, align=left, 
                              inner sep=1pt, font=\footnotesize}}
-\tikzset{every node/.style={minimum width=6em}}
 \tikzset{pr/.style={dashed}}
+\tikzset{star/.style={draw=none,anchor=north east,inner sep=2pt}}
 \begin{figure}
   \begin{forest}
     for tree={              % style of tree nodes
       font=\footnotesize,
-      draw, semithick, rounded corners,
+      draw, semithick, rounded corners,minimum width=7em,
             align = center,
         inner sep = 1mm,
                             % style of tree (edges, distances, direction)
