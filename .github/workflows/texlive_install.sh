@@ -6,7 +6,7 @@
 # A minimal current TL is installed adding only the packages that are
 # required
 
-tlmgr uninstall luatex
+#tlmgr uninstall luatex
 
 # See if there is a cached version of TL available
 export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
@@ -16,6 +16,8 @@ if ! command -v texlua > /dev/null; then
   tar -xzf install-tl-unx.tar.gz
   cd install-tl-20*
 
+  ls -la
+
   # Install a minimal system
   ./install-tl --profile=../.github/workflows/texlive.profile
 
@@ -24,7 +26,7 @@ if ! command -v texlua > /dev/null; then
 fi
 
 # Update the TL install but add nothing new
-tlmgr update --self --all --no-auto-install
+#tlmgr update --self --all --no-auto-install
 
 # Just including texlua so the cache check above works
 tlmgr install luatex
