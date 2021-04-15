@@ -85,18 +85,18 @@ Each unit test has a link to the corresponding section of this document in the u
         [Spatial-7,name=spatial7,label=\labelcref{sec:spatial_7}
         ],
         [Spatial-6,name=spatial6,label=\labelcref{sec:spatial_6}
-        ]
+        ] { \node[star] at (.north east) {*}; },
         [Spatial-5,name=spatial5,label=\labelcref{sec:spatial_5}
         ],
         [Spatial-4,name=spatial4,label=\labelcref{sec:spatial_4}
           [Drainage-2,name=drainage2,label=\labelcref{sec:drainage_2}
-          ],
+          ] { \node[star] at (.north east) {*}; },
           [Drainage-1,name=drainage1,label=\labelcref{sec:drainage_1}
-          ],
-        ],
+          ] { \node[star] at (.north east) {*}; },
+        ] { \node[star] at (.north east) {*}; },
         [Spatial-3,name=spatial3,label=\labelcref{sec:spatial_3}
           [Other-1,name=other1,label=\labelcref{sec:other_1},pr
-          ],
+          ] { \node[star] at (.north east) {*}; },
         ],
         [Spatial-2,name=spatial2,label=\labelcref{sec:spatial_2}
         ],
@@ -104,9 +104,9 @@ Each unit test has a link to the corresponding section of this document in the u
       [Bridge-1,name=bridge1,label=\labelcref{sec:bridge_1},pr
       ],
       [Marine-1,name=marine1,label=\labelcref{sec:marine_1},pr
-      ],
+      ] { \node[star] at (.north east) {*}; },
       [Marine-2,name=marine2,label=\labelcref{sec:marine_2},pr
-      ],
+      ] { \node[star] at (.north east) {*}; },
       [Setup-2,name=boiler2,label=\labelcref{sec:project_setup_2}
       ],
       [GeoRef-1,name=georef1,label=\labelcref{sec:georeferencing_1}
@@ -149,12 +149,14 @@ Each unit test has a link to the corresponding section of this document in the u
         [Earthworks-1,name=earth1,label=\labelcref{sec:earth_1}
         ],
       ],
+      [Geotechnics-1,name=geotech1,label=\labelcref{sec:borehole_1}
+      ] { \node[star] at (.north east) {*}; },
       [Alignment-14,name=align14,label=\labelcref{sec:align_14},pr
         [Road-4,name=road4,label=\labelcref{sec:road_4},pr
-        ],
+        ] { \node[star] at (.north east) {*}; },
         [Road-5,name=road5,label=\labelcref{sec:road_5},pr
-        ],
-      ],
+        ] { \node[star] at (.north east) {*}; },
+      ] { \node[star] at (.north east) {*}; },
       [Alignment-13,name=align13,label=\labelcref{sec:align_13},pr
         [Road-3,name=road3,label=\labelcref{sec:road_3},pr
         ],
