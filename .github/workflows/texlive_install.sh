@@ -9,7 +9,7 @@
 # See if there is a cached version of TL available
 export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
 
-tlmgr uninstall luatex
+tlmgr uninstall --all --force
 
 if ! command -v texlua > /dev/null; then
   # Obtain TeX Live
