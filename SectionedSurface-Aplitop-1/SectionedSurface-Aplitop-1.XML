@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<LandXML xmlns="http://www.landxml.org/schema/LandXML-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.landxml.org/schema/LandXML-1.0 http://www.landxml.org/schema/LandXML-1.0/LandXML-1.0.xsd" version="1.0" date="2021-04-06" time="11:09:06">
+	<Project name="Proyecto"/>
+	<Units>
+		<Metric areaUnit="squareMeter" linearUnit="meter" volumeUnit="cubicMeter" temperatureUnit="celsius" pressureUnit="mmHG" angularUnit="grads" directionUnit="grads"/>
+	</Units>
+	<Application name="MDT" version="8.5" manufacturer="Aplitop S.L" manufacturerURL="www.aplitop.com"/>
+	<Project name="Dibujo1"/>
+<Alignments>
+<Alignment name="demo2" staStart="0.000" length="110.818">
+	<CoordGeom>
+		<Line>
+			<Start>346.900000 293.600000</Start>
+			<End>305.818435 282.014833</End>
+		</Line>
+		<Curve rot="ccw">
+			<Start>305.818435 282.014833</Start>
+			<Center>281.390812 368.636374</Center>
+			<End>257.943491 281.744354</End>
+		</Curve>
+		<Line>
+			<Start>257.943491 281.744354</Start>
+			<End>238.948134 286.870143</End>
+		</Line>
+	</CoordGeom>
+<Profile>
+	<ProfSurf name="demo2">
+		<PntList2D>0.000 50.181 0.242 49.254 0.289 49.073 0.308 49.024 2.176 48.737 8.348 50.222 12.367 51.084 15.265 49.389 16.880 48.324 16.922 48.304
+ 17.139 48.266 24.286 47.804 30.903 47.667 38.457 47.532 46.450 47.195 47.983 47.155 50.679 47.027 63.040 46.536 64.301 46.488 80.524 46.051
+ 81.517 46.026 81.723 46.024 94.673 45.687 96.603 45.611 99.278 45.528 102.719 45.420 110.818 45.270</PntList2D>
+	</ProfSurf>
+	<ProfAlign name="demo2">
+		<PVI>0.000 50.043</PVI>
+		<ParaCurve length="45.142">63.969 45.922</ParaCurve>
+		<PVI>110.818 45.922</PVI>
+	</ProfAlign>
+</Profile>
+<CrossSects>
+	<CrossSect sta="0.000">
+		<CrossSectSurf name="demo2 (Seccion Subrasante)">
+			<PntList2D> -2.736 49.836 -2.500 49.993 0.000 50.043 2.500 49.993 3.000 49.743 4.482 50.730</PntList2D>
+			<Feature code="RR VertexName">119,30,0,30,98,139</Feature>
+		</CrossSectSurf>
+	</CrossSect>
+	<CrossSect sta="20.000">
+		<CrossSectSurf name="demo2 (Seccion Subrasante)">
+			<PntList2D> -3.778 47.852 -2.500 48.704 0.000 48.754 2.500 48.704 2.864 48.462</PntList2D>
+			<Feature code="RR VertexName">119,30,0,30,119</Feature>
+		</CrossSectSurf>
+	</CrossSect>
+	<CrossSect sta="40.000">
+		<CrossSectSurf name="demo2 (Seccion Subrasante)">
+			<PntList2D> -3.398 47.431 -3.000 47.166 -2.500 47.416 0.000 47.466 2.500 47.416 2.524 47.400</PntList2D>
+			<Feature code="RR VertexName">139,98,30,0,30,119</Feature>
+		</CrossSectSurf>
+	</CrossSect>
+	<CrossSect sta="60.000">
+		<CrossSectSurf name="demo2 (Seccion Subrasante)">
+			<PntList2D> -3.934 46.747 -3.000 46.125 -2.500 46.375 0.000 46.425 2.500 46.375 3.000 46.125 3.788 46.650</PntList2D>
+			<Feature code="RR VertexName">139,98,30,0,30,98,139</Feature>
+		</CrossSectSurf>
+	</CrossSect>
+	<CrossSect sta="80.000">
+		<CrossSectSurf name="demo2 (Seccion Subrasante)">
+			<PntList2D> -3.706 46.123 -3.000 45.653 -2.500 45.903 0.000 45.953 2.500 45.903 3.000 45.653 3.586 46.043</PntList2D>
+			<Feature code="RR VertexName">139,98,30,0,30,98,139</Feature>
+		</CrossSectSurf>
+	</CrossSect>
+	<CrossSect sta="100.000">
+		<CrossSectSurf name="demo2 (Seccion Subrasante)">
+			<PntList2D> -2.998 45.590 -2.500 45.922 0.000 45.922 2.500 45.922 3.194 45.459</PntList2D>
+			<Feature code="RR VertexName">119,30,0,30,119</Feature>
+		</CrossSectSurf>
+	</CrossSect>
+	<CrossSect sta="110.818">
+		<CrossSectSurf name="demo2 (Seccion Subrasante)">
+			<PntList2D> -2.958 45.616 -2.500 45.922 0.000 45.922 2.500 45.922 3.487 45.264</PntList2D>
+			<Feature code="RR VertexName">119,30,0,30,119</Feature>
+		</CrossSectSurf>
+	</CrossSect>
+</CrossSects>
+</Alignment>
+</Alignments>
+</LandXML>
