@@ -2,8 +2,8 @@
 ### Intent
 
 The scenario is of typical alignments from a real project for a grade separated highway.
-The alignment RS1A has a 2D length of 33,876.059 Km and a non-zero start chainage of 111,146.9996. 
-The alignment RS2A has a 2D length of 33,869.361 Km and a non-zero start chainage of -53. 
+The alignment RS1A has a 2D length of 33,876.059 Km and a positive start chainage of 111,146.9996. 
+The alignment RS2A has a 2D length of 33,869.361 Km and a NEGATIVE start chainage of -53. 
 
 - the alignment RS1A includes:
      horizontal alignment: straights, IFC clothoids and arcs
@@ -27,7 +27,10 @@ This scenario builds upon the scenarios:
  
 ### Content
 
-This example demonstrates typical alignments for a grade separated road project.
+This example is of typical alignments for a grade separated road project.
+It is the first Unit Test with an alignment with a negative start chainage.
+
+ `IfcAlignmentHorizontal` with `IfcAlignmentHorizontal.StartDistAlong=-53`
 
 ### Supporting files
 
