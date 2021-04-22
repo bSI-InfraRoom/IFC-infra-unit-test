@@ -44,7 +44,7 @@ In Figure-2, the changes of superelevations and widths along the alignments are 
 - The main alignment (M14334) contained at IfcSite level
 - The alignment for the side road (Y3/Road2) contained at IfcRoad level
 - The necessary facility parts subdivided further laterally into CARRIAGEWAY, SOFTSHOULDER (left and right), ROADSIDEPART (Sideslope left and right) and ROADSIDEPART (back slope left and right)
-  - These are used to contain the IfcAnnotation/SUPERELEVATION and IfcAnnotationWidth objects with the specified values as properties
+    - These are used to contain the IfcAnnotation/SUPERELEVATION and IfcAnnotationWidth objects with the specified values as properties
 - Linear placements along the alignments for the longitudinal facility parts and the IfcAnnotation objects
 
 ### Supporting files
