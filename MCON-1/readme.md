@@ -1,8 +1,6 @@
 ### Intent
 
-This UT implements IfcDistributionSystem for road drainage with a culvert and open side ditches.
-
-It is based on storyline [TC127-IR-SLRH-C-MCON](https://app.box.com/folder/122373399568?s=fr6k8xqud6uug6ep0s158uxtb70doxcd). Particularly the exchange scenarios 1 (alignment) and 4 (Requirements of final product). Regarding exchange scenario 4, this unit test particularly tests the use of IfcAnnotation/SUPERELEVATIONEVENT and IfcAnnotation/WIDTHEVENT together with a lateral breakdown of the facility parts from [SpatialStructure-4](https://github.com/bSI-InfraRoom/IFC-infra-unit-test/tree/main/SpatialStructure-4) and linear placement of the objects along the alignments.
+This UT implements IfcAnnotation/SUPERELEVATION and IfcAnnotation/WIDTH to test requirements based on storyline [TC127-IR-SLRH-C-MCON](https://app.box.com/folder/122373399568?s=fr6k8xqud6uug6ep0s158uxtb70doxcd). Particularly the exchange scenarios 1 (alignment) and 4 (Requirements of final product). Regarding exchange scenario 4, this unit test particularly tests the use of IfcAnnotation/SUPERELEVATIONEVENT and IfcAnnotation/WIDTHEVENT together with a lateral breakdown of the facility parts from [SpatialStructure-4](https://github.com/bSI-InfraRoom/IFC-infra-unit-test/tree/main/SpatialStructure-4) and linear placement of the objects along the alignments.
 
 ### Prerequisites
 
