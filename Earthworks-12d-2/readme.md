@@ -29,5 +29,5 @@ Following files correspond to this scenario:
 |--------------------------|------------------------------------------|
 | `Earthworks-12d-2.ifc`    | the exported content as IFC document     |
 | `Earthworks-12d-2.png`    | screen shot from 12d Model               |
-| `Earthworks-12d-2.png-OIP`| screen shot from TUM OpenInfraPlatform   |
+| `OIP` directory | screen shots from TUM OpenInfraPlatform   |
 
