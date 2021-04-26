@@ -25,7 +25,7 @@ This IFC file has a survey consisting of:
 
 - one survey string with name "RD ET"
 - Property Set "SW" with properties STRMATERIAL, STRSHAPE and STRDIAMETER
-- Property Set "Vertex" containing Property sets "SW" and "PT_ID" 
+- Property Set "Vertex" containing Property sets "SW" and "PT ID" 
 - Property Set "Segment" containing Property sets "SW" 
 
 The coordinates are in Easting, Northing and AHD for the map projection MGA2020 Zone 56.
