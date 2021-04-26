@@ -7,9 +7,11 @@ NR==FNR && /^[ \t]*ENTITY / {
     gsub(/[ \t]+/, "", fullline)
     match(fullline, /^\#[0-9]+=/)
     withoutstart = substr(fullline, RLENGTH+1)
-    match(withoutstart, /^[A-Z0-9]+/)
-    entity = substr(withoutstart, 1, RLENGTH)
-    entities[entity]++
+    while ( match(withoutstart, /IFC[A-Z0-9]+/) != 0 ) {
+        entity = substr(withoutstart, RSTART, RLENGTH)
+        withoutstart = substr(withoutstart, RLENGTH+1)
+        entities[entity]++    
+    }
     next
 }
 END {
