@@ -1,5 +1,7 @@
 NR==FNR && /^[ \t]*ENTITY / {
-    entities[$2]=0
+    match($2, /^[A-Za-z]+/)
+    entity = substr($2, RSTART, RLENGTH)
+    entities[entity]=0
     next
 }
 /^[ \t]*\#[0-9]+[ \t]*=[ \t]*/ {
@@ -10,7 +12,12 @@ NR==FNR && /^[ \t]*ENTITY / {
     while ( match(withoutstart, /IFC[A-Z0-9]+/) != 0 ) {
         entity = substr(withoutstart, RSTART, RLENGTH)
         withoutstart = substr(withoutstart, RLENGTH+1)
-        entities[entity]++    
+        for( el in entities ) {
+            if( tolower(el) == tolower(entity) ) {
+                entities[el]++
+                break
+            }
+        }  
     }
     next
 }
