@@ -22,7 +22,9 @@
 
 \setkeys{Gin}{width=\linewidth}
 
+\usepackage{ltablex}
 \usepackage{tabularx}
+\usepackage{booktabs}
 
 \makeatletter
 \def\markdownLaTeXReadAlignments#1{%
@@ -48,6 +50,31 @@ This is a summary document of all approved unit tests submitted during the IFC I
 This document has been automatically produced from the \texttt{readme} files of individual unit tests.
 The originating documentation together with all mentioned files can be obtained
  from the project's official GitHub repository\footnote{\url{https://github.com/bSI-InfraRoom/IFC-infra-unit-test}}.
+
+\subsection{Coverage}
+\label{sec:coverage}
+
+\Cref{tab:coverage} lists all IFC entities occurring in all listed unit tests.
+The number next to each entity shows how many times this entity occurs.
+
+\begin{tabularx}{\textwidth}{rX}
+  \caption{The covered entities of all unit test files combined.}\label{tab:coverage} \\
+  \toprule
+    Occurance & Entity \\
+  \midrule
+  \endfirsthead
+  \caption[]{\emph{(cont.)} The covered entities of all unit test files combined.} \\
+  \toprule
+    Occurance & Entity \\
+  \midrule
+  \endhead
+  \bottomrule
+  \multicolumn{2}{r}{\footnotesize(... to be continued)}
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  \input{../Report/coverageTable.tex}
+\end{tabularx}
 
 \subsection{Schematics}
 \label{sec:schematics}
