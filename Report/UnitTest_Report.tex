@@ -41,6 +41,7 @@
 \begin{document}
 
 \maketitle
+\addtocontents{toc}{~\hfill\textbf{Page}\par}
 
 \section{Summary}
 \label{sec:summary}
@@ -69,7 +70,7 @@ The number next to each entity shows how many times this entity occurs.
   \midrule
   \endhead
   \bottomrule
-  \multicolumn{2}{r}{\footnotesize(... to be continued)}
+  \multicolumn{2}{r}{\footnotesize(continued)}
   \endfoot
   \bottomrule
   \endlastfoot
@@ -79,7 +80,7 @@ The number next to each entity shows how many times this entity occurs.
 \subsection{Schematics}
 \label{sec:schematics}
 
-\Cref{sec:schematics} represents the dependencies between the individual unit tests.
+\Cref{fig:schematics} represents the dependencies between the individual unit tests.
 Unit tests are represented as boxes, while the arrows point from the dependant to the independent unit test.
 Each unit test has a link to the corresponding section of this document in the upper right corner.
 
@@ -224,6 +225,8 @@ The included figures are \emph{floating} in this document, so they may appear at
  even though they are mentioned later in the text.
 All figures are always flushed before the next section starts, so that there is no doubt.
 
+\subsection{Overview over the Content}
+\renewcommand\contentsname{}
 \tableofcontents
 \clearpage
 
