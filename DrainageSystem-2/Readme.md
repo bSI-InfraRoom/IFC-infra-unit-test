@@ -63,11 +63,12 @@ Network topology using `IfcDistributionPort` and `IfcRelConnectsPorts`.
 Following files correspond to this scenario:
 
 | Filename                 | Description                                                  |
-|:------------------------ | ------------------------------------------------------------ |
+| :----------------------- | ------------------------------------------------------------ |
 | `DrainageSystem-2-1.xml` | Inframodel/LandXML: PipeNetwork with Structs and Pipes       |
 | `DrainageSystem-2-2.xml` | Inframodel/LandXML: Top surface of the road and slopes/ditches |
 | `DrainageSystem-2-3.jpg` | Inframodel/LandXML: Screenshot plan view                     |
 | `DrainageSystem-2-4.jpg` | Inframodel/LandXML: Screenshot cross section view            |
 | `DrainageSystem-2-5.jpg` | Inframodel/LandXML: Screenshot 3d view                       |
+| `DrainageSystem-2.ifc`   | IFC-file create by Aplitop using a polyline representation.  |
 
 The xml files comply with the InfraModel 4 specification for LandXML 1.2. The specification is found here: https://buildingsmart.fi/infra/inframodel/
