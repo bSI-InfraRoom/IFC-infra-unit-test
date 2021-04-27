@@ -4,6 +4,12 @@ NR==FNR && /^[ \t]*ENTITY / {
     entities[entity]=0
     next
 }
+NR==FNR && /^[ \t]*TYPE / {
+    match($2, /^[A-Za-z]+/)
+    type = substr($2, RSTART, RLENGTH)
+    entities[type]=0
+    next
+}
 /^[ \t]*\#[0-9]+[ \t]*=[ \t]*/ {
     fullline = $0
     gsub(/[ \t]+/, "", fullline)
