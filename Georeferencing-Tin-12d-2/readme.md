@@ -1,9 +1,9 @@
 
 ### Intent
 
-This scenario has a TIN with coordinates for `IfcTriangulatedIrregularNetwork` in map metres
- but using a local origin of (256400.0, 7011600.0, 0.0) to truncate the coordinates.
-IfcMapConversion is used to translate data to the correct (Easting, Northing, Height) for the map projection.
+This scenario has a TIN with coordinates for `IfcTriangulatedIrregularNetwork` in map metres but using a local origin of (256400.0, 7011600.0, 0.0) to truncate the coordinates.
+IfcMapConversion is used to translate the tin to the correct (Easting, Northing, Height) for the map projection.
+
 The data is already in map metres so Scale, ScaleY and ScaleZ are 1.
 The Horizontal and Vertical datums are specified in `IfcProjectedCRS`.
 
