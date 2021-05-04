@@ -2,7 +2,7 @@
 ### Intent
 
 This scenario has a tin with one internal hole.
-The tin is in map coodinates (and map metres).
+The tin is in map coodinates and map metres.
 There is one colour for all the triangles. 
 
 The coordinates are in Easting, Northing and AHD (Australian Height Datum) for the map projection MGA2020 Zone 56.
