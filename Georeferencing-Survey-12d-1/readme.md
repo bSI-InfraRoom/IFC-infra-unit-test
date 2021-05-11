@@ -23,7 +23,7 @@ All the coordinates in the file are in Easting, Northing and AHD for the map pro
 The Horizontal and Vertical datums, and Map Projection, are specified in IfcProjectedCRS.
 IfcMapConversion is a "No Operation" as the data in the file is already in map coordinates and needs no further transformation. 
 
-![georefsurvey12d1](../Georeferencing-Survey-12d-1/Georeferencing-Survey-12d-1.png  "Single Survey Point with Name "SF LE" and Point Id "7A") 
+![georefsurvey12d1](../Georeferencing-Survey-12d-1/Georeferencing-Survey-12d-1.png  "Single Survey Point with Name *SF LE* and Point Id *7A*") 
 
 The IFC file was written by 12d Model. 
 
@@ -39,7 +39,7 @@ This scenario builds upon following other scenarios:
 This scenario covers the following new concepts and/or IFC entities:
 
 -  `IfcAnnotation` with `IfcAnnotation.Name` as the Survey string name
--  `IfcAnnotation` with `IfcAnnotation.PredefinedType=USERDEFINED` and `IfcAnnotation.ObjectType=SurveyPoint`
+-  `IfcAnnotation` with `PredefinedType=USERDEFINED` and `ObjectType=SurveyPoint`
 -  `IfcPropertySet`
 -  `IfcPropertySingleValue`
 -  `IfcRelDefinesByPropeties`

@@ -6,7 +6,7 @@ The model utilizes new vertical and regional breakdown objects to organize the p
 
 A version with geometric representation has also been added to mimic the master planning (PHXX) use case involving the initial layout of a complex which provides visualization and volumetric segregation of the model. In Addition to this a third version with generic built element placeholders provides a simple visualisation of an arbituary facility
 
-It is based on the storyline [RHDHV_IR_SLPW-BA-DD](https://app.box.com/s/3mqdo34f2u1fu5scfcbqn7krmwct2sfd) which has exchanges for spatial and master planning of a shipyard. 
+It is based on the storyline [RHDHV-IR-SLPW-BA-DD](https://app.box.com/s/3mqdo34f2u1fu5scfcbqn7krmwct2sfd) which has exchanges for spatial and master planning of a shipyard. 
 
 The IFC file was generated using ABCT BIM Sandbox and GeomtryGym Library.
 

@@ -1,9 +1,8 @@
 
 ### Intent
 
-This scenario has a simple TIN with some holes/voids. 
+This scenario has a simple Triangulated Irregular Network (TIN) with some holes/voids. 
 
-![tin11](../Tin-1/Tin-1-1.png  "Simple TIN")
 
 The IFC file was created by 12d Model. 
 
@@ -37,9 +36,12 @@ This scenario covers the following concepts and/or IFC entities:
 
 Following files correspond to this scenario:
 
-| Filename                     | Description                               |
+| Filename                     | Description                                |
 |:------------------------------|-------------------------------------------|
 | `Tin-1.ifc`                   | the exported content as IFC document      |
 | `Tin-1-1.png`                 | screen shot from 12d Model                |
-| `Tin-1-2.png`                 | screen shot from OpenInfraPlatform        |
+| `Tin-1-2.png`                 | screen shot from TUM OpenInfraPlatform  |
 
+![tin11](../Tin-1/Tin-1-1.png  "Simple TIN in 12d Model.")
+
+![tin12](../Tin-1/Tin-1-2.png  "The same model in TUM Open Infra Platform.")
