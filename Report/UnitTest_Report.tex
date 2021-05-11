@@ -94,7 +94,7 @@ Each unit test has a link to the corresponding section of this document in the u
       font=\footnotesize,
       draw, semithick, rounded corners,minimum width=7em,
             align = center,
-        inner sep = 1mm,
+        inner sep = 1pt,
                             % style of tree (edges, distances, direction)
              edge = {draw, semithick, latex'-},
     parent anchor = east,
@@ -105,13 +105,17 @@ Each unit test has a link to the corresponding section of this document in the u
          fork sep = 3mm,    % distance from parent to branching point
                 }
     [Setup-1,name=boiler1,label=\labelcref{sec:project_setup_1}
+      [Road-6,name=road6,label=\labelcref{sec:road_6},pr
+      ],
       [Road-2,name=road2,label=\labelcref{sec:road_2},pr
       ],
       [Road-1,name=road1,label=\labelcref{sec:road_1},pr
       ],
       [Spatial-1,name=spatial1,label=\labelcref{sec:spatial_1}
-        [Spatial-7,name=spatial7,label=\labelcref{sec:spatial_7}
+        [Spatial-8,name=spatial8,label=\labelcref{sec:spatial_8},pr
         ],
+        [Spatial-7,name=spatial7,label=\labelcref{sec:spatial_7},pr
+        ] { \node[star] at (.north east) {*}; },
         [Spatial-6,name=spatial6,label=\labelcref{sec:spatial_6}
         ] { \node[star] at (.north east) {*}; },
         [Spatial-5,name=spatial5,label=\labelcref{sec:spatial_5}
@@ -140,6 +144,8 @@ Each unit test has a link to the corresponding section of this document in the u
       [GeoRef-1,name=georef1,label=\labelcref{sec:georeferencing_1}
         [Survey-1,name=survey1,label=\labelcref{sec:survey_1},pr
           [Survey-2,name=survey2,label=\labelcref{sec:survey_2},pr
+            [Survey-3,name=survey3,label=\labelcref{sec:survey_3},pr
+            ],
           ],
         ],
         [GeoRef-3,name=georef3,label=\labelcref{sec:georeferencing_3},pr          
@@ -174,7 +180,11 @@ Each unit test has a link to the corresponding section of this document in the u
         ],
       ],
       [Geotechnics-1,name=geotech1,label=\labelcref{sec:borehole_1}
-      ] { \node[star] at (.north east) {*}; },
+      ] { \node[star] at (.north east) {*}; },      
+      [Alignment-17,name=align17,label=\labelcref{sec:align_17},pr  
+        [Alignment-18,name=align18,label=\labelcref{sec:align_18},pr
+        ],
+      ],   
       [Alignment-14,name=align14,label=\labelcref{sec:align_14},pr
         [Road-4,name=road4,label=\labelcref{sec:road_4},pr
         ] { \node[star] at (.north east) {*}; },
@@ -214,7 +224,8 @@ Each unit test has a link to the corresponding section of this document in the u
     ]  
   \end{forest}
   \caption{Schematic representation of unit tests and their dependencies.
-           Dashed boxes mean that they are still under review.}
+           Dashed boxes mean that they are still under review.
+           A star in the upper right corner means that the unit test has been derived from a storyline.}
   \label{fig:schematics}
 \end{figure}
 
@@ -256,17 +267,12 @@ All figures are always flushed before the next section starts, so that there is 
 \markdownInput{../Georeferencing-1/readme.md}
 \clearpage
 
-\subsection{Georeferencing 2}
-\label{sec:georeferencing_2}
-Under review.%\markdownInput{../Georeferencing-2/readme.md}
-\clearpage
-
-\subsection{Georeferencing 3}
+\subsection{Georeferencing 2} % PR#85
 \label{sec:georeferencing_3}
 Under review.%\markdownInput{../Georeferencing-3/readme.md}
 \clearpage
 
-\subsection{Georeferencing 4}
+\subsection{Georeferencing 3} % PR#85
 \label{sec:georeferencing_4}
 Under review.%\markdownInput{../Georeferencing-4/readme.md}
 \clearpage
@@ -281,12 +287,12 @@ Under review.%\markdownInput{../Georeferencing-4/readme.md}
 \markdownInput{../Georeferencing-Tin-12d-2/readme.md}
 \clearpage
 
-\subsection{Georeferencing and DTM 3}
+\subsection{Georeferencing and DTM 3} % PR#20
 \label{sec:georef_tin_3}
 Under review.%\markdownInput{../Georeferencing-Tin-12d-3/Readme.md}
 \clearpage
 
-\subsection{Georeferencing and DTM 4}
+\subsection{Georeferencing and DTM 4} % PR#21
 \label{sec:georef_tin_4}
 Under review.%\markdownInput{../Georeferencing-Tin-12d-4/Readme.md}
 \clearpage
@@ -319,59 +325,69 @@ Under review.%\markdownInput{../Georeferencing-Tin-12d-4/Readme.md}
 \markdownInput{../Alignment-12d-5/readme.md}
 \clearpage
 
-\subsection{Alignment 6}
+\subsection{Alignment 6} % PR#25
 \label{sec:align_6}
 Under review.%\markdownInput{../Alignment-12d-6/readme.md}
 \clearpage
 
-\subsection{Alignment 7}
+\subsection{Alignment 7} % PR#26
 \label{sec:align_7}
 Under review.%\markdownInput{../Alignment-12d-7/readme.md}
 \clearpage
 
-\subsection{Alignment 8}
+\subsection{Alignment 8} % PR#29
 \label{sec:align_8}
 Under review.%\markdownInput{../Alignment-12d-8/readme.md}
 \clearpage
 
-\subsection{Alignment 9}
+\subsection{Alignment 9} % PR#31
 \label{sec:align_9}
 Under review.%\markdownInput{../Alignment-12d-9/readme.md}
 \clearpage
 
-\subsection{Alignment 10}
+\subsection{Alignment 10} % PR#38
 \label{sec:align_10}
 Under review.%\markdownInput{../Alignment-12d-10/readme.md}
 \clearpage
 
-\subsection{Alignment 11}
+\subsection{Alignment 11} % PR#42
 \label{sec:align_11}
 Under review.%\markdownInput{../Alignment-12d-11/readme.md}
 \clearpage
 
-\subsection{Alignment 12}
+\subsection{Alignment 12} % PR#96
 \label{sec:align_12}
 Under review.%\markdownInput{../Alignment-Aplitop-1/readme.md}
 \clearpage
 
-\subsection{Alignment 13}
+\subsection{Alignment 13} % PR#39
 \label{sec:align_13}
 Under review.%\markdownInput{../UT-Alignment-3/readme.md}
 \clearpage
 
-\subsection{Alignment 14}
+\subsection{Alignment 14} % PR#71 *
 \label{sec:align_14}
 Under review.%\markdownInput{../Alignment-INDOT/readme.md}
 \clearpage
 
-\subsection{Alignment 15}
+\subsection{Alignment 15} % PR#96
 \label{sec:align_15}
 Under review.%\markdownInput{../Alignment-Aplitop-2/readme.md}
 \clearpage
 
-\subsection{Alignment 16}
+\subsection{Alignment 16} % PR#96
 \label{sec:align_16}
 Under review.%\markdownInput{../Alignment-Aplitop-3/readme.md}
+\clearpage
+
+\subsection{Alignment 17} % PR#103
+\label{sec:align_17}
+Under review.%\markdownInput{../Georeferencing-Alignment-12d-1/readme.md}
+\clearpage
+
+\subsection{Alignment 18} % PR#107
+\label{sec:align_18}
+Under review.%\markdownInput{../Georeferencing-Alignment-12d-2/readme.md}
 \clearpage
 
 % -------------------------------------------------------------------------------
@@ -407,50 +423,60 @@ Under review.%\markdownInput{../Alignment-Aplitop-3/readme.md}
 \markdownInput{../SpatialStructure-6/readme.md}
 \clearpage
 
-\subsection{Spatial Structure 7}
+\subsection{Spatial Structure 7} % PR#116 *
 \label{sec:spatial_7}
+Under review.%\markdownInput{../SpatialStructure-7/README.md}
+\clearpage
+
+\subsection{Spatial Structure 8} % PR#65
+\label{sec:spatial_8}
 Under review.%\markdownInput{../CrossDisciplinary-1/README.md}
 \clearpage
 
 % -------------------------------------------------------------------------------
 \section{Domain Specifics}
 
-\subsection{Road 1}
+\subsection{Road 1}  % PR#52
 \label{sec:road_1}
 Under review.%\markdownInput{../UT-IfcCourse/readme.md}
 \clearpage
 
-\subsection{Road 2}
+\subsection{Road 2} % PR#52
 \label{sec:road_2}
 Under review.%\markdownInput{../UT-IfcPavement/readme.md}
 \clearpage
 
-\subsection{Road 3}
+\subsection{Road 3} % PR#40
 \label{sec:road_3}
 Under review.%\markdownInput{../UT-Road-1/readme.md}
 \clearpage
 
-\subsection{Road 4}
+\subsection{Road 4} % PR#71 *
 \label{sec:road_4}
 Under review.%\markdownInput{../SectionedSurface-INDOT/readme.md}
 \clearpage
 
-\subsection{Road 5}
+\subsection{Road 5} % PR#88 *
 \label{sec:road_5}
 Under review.%\markdownInput{../RumbleStrip-INDOT/readme.md}
 \clearpage
 
-\subsection{Bridge 1}
+\subsection{Road 6} % PR#106 *
+\label{sec:road_6}
+Under review.%\markdownInput{../SectionedSurface-Aplitop-1/readme.md}
+\clearpage
+
+\subsection{Bridge 1} % PR#51
 \label{sec:bridge_1}
 Under review.%\markdownInput{../SectionedSolidHorizontal-1/readme.md}
 \clearpage
 
-\subsection{Marine 1}
+\subsection{Marine 1} % PR#94
 \label{sec:marine_1}
 Under review.%\markdownInput{../MarineFurniture-1/readme.md}
 \clearpage
 
-\subsection{Marine 2}
+\subsection{Marine 2} % PR#97
 \label{sec:marine_2}
 Under review.%\markdownInput{../MarineFurniture-2/readme.md}
 \clearpage
@@ -491,12 +517,17 @@ Under review.%\markdownInput{../UT-Earthworks-01/readme.md}
 
 \subsection{Survey 1}
 \label{sec:survey_1}
-Under review.%\markdownInput{../Georeferencing-Survey-1/readme.md}
+\markdownInput{../Georeferencing-Survey-12d-1/readme.md}
 \clearpage
 
-\subsection{Survey 2}
+\subsection{Survey 2} % PR#56
 \label{sec:survey_2}
-Under review.%\markdownInput{../Georeferencing-Survey-2/readme.md}
+Under review.%\markdownInput{../Georeferencing-Survey-12d-2/readme.md}
+\clearpage
+
+\subsection{Survey 3} % PR#112
+\label{sec:survey_3}
+Under review.%\markdownInput{../Georeferencing-Survey-12d-3/readme.md}
 \clearpage
 
 
@@ -516,7 +547,7 @@ Under review.%\markdownInput{../Georeferencing-Survey-2/readme.md}
 % -------------------------------------------------------------------------------
 \section{Combinations}
 
-\subsection{Combination 1: Georeferencing and Alignment and DTM}
+\subsection{Combination 1: Georeferencing and Alignment and DTM} % PR#43
 \label{sec:align_dtm_1}
 Under review.%\markdownInput{../Georeferencing-Alignment-Tin-12d-1/readme.md}
 \clearpage
@@ -526,7 +557,7 @@ Under review.%\markdownInput{../Georeferencing-Alignment-Tin-12d-1/readme.md}
 \markdownInput{../Georeferencing-Earthworks-12d-1/readme.md}
 \clearpage
 
-\subsection{Combination 3: Georeferencing and Earthworks 2}
+\subsection{Combination 3: Georeferencing and Earthworks 2} % PR#50
 \label{sec:georef_earth_2}
 Under review.%\markdownInput{../Georeferencing-Earthworks-12d-2/readme.md}
 \clearpage
@@ -539,7 +570,7 @@ Under review.%\markdownInput{../Alignment-Tin-1/readme.md}
 % -------------------------------------------------------------------------------
 \section{Other}
 
-\subsection{Other 1: Cost items}
+\subsection{Other 1: Cost items} % PR#53 *
 \label{sec:other_1}
 Under review.%\markdownInput{../UT-CostItem-COWI/readme.md}
 \clearpage
