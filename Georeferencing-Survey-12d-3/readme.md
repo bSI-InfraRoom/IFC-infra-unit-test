@@ -48,8 +48,8 @@ This scenario builds upon following other scenarios:
 This scenario covers the following new concepts and/or IFC entities:
 
 -  `IfcComplexProperty`
--  `IfcPropertySetSingleValue` with `IfcPropertySetSingleValue.Nominalvalue` IFCLABEL
--  `IfcPropertySetSingleValue` with `IfcPropertySetSingleValue.Nominalvalue` IFCREAL
+-  `IfcPropertySingleValue` with `IfcPropertySingleValue.Nominalvalue` IFCLABEL
+-  `IfcPropertySingleValue` with `IfcPropertySingleValue.Nominalvalue` IFCREAL
 
 
 ### Supporting files
