@@ -18,7 +18,7 @@ The entities are connected via a separate IfcRelNests entity for segments and ve
 
 This encoding is to allow the process to be reversed when read into another software package. 
 
-So this scenario covers one simple survey string with property sets for the entire string, property sets for vertex properties and property sets for segment properties
+So this scenario covers one simple survey string with property sets for the entire string, property sets for vertex properties and property sets for segment properties.
 
 This IFC file has a survey consisting of:
 
