@@ -2,7 +2,7 @@ ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('ViewDefinition [Ifc4NotAssigned]'),'2;1');
 FILE_NAME(
-/* name */ 'F:\\My Work\\buildingSMART\\projects\\common schema\\deployment\\finland\\UT_DrainageSystem_1_1.ifc',
+/* name */ 'DrainageSystem-1-1.ifc',
 /* time_stamp */ '2021-02-10T15:15:20',
 /* author */ ('JonMirtschin'),
 /* organization */ ('Geometry Gym Pty Ltd'),
@@ -10,7 +10,7 @@ FILE_NAME(
 /* originating_system */ 'ggRhinoIFC - Rhino6 Plug-in by Geometry Gym Pty Ltd',
 /* authorization */ 'None');
 
-FILE_SCHEMA (('IFC4X3_RC2'));
+FILE_SCHEMA (('IFC4X3_RC3'));
 ENDSEC;
 
 DATA;
