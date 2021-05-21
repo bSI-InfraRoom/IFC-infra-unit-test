@@ -55,10 +55,11 @@ Network topology using `IfcDistributionPort` and `IfcRelConnectsPorts`.
 Following files correspond to this scenario:
 
 | Filename                 | Description                                                  |
-|:------------------------ | ------------------------------------------------------------ |
+| :----------------------- | ------------------------------------------------------------ |
 | `DrainageSystem-1-1.xml` | Inframodel/LandXML: PipeNetwork with Structs and Pipes       |
 | `DrainageSystem-1-2.xml` | Inframodel/LandXML: Top surface of the road and slopes/ditches |
 | `DrainageSystem-1-3.jpg` | Inframodel/LandXML: Screenshot plan view                     |
 | `DrainageSystem-1-4.jpg` | Inframodel/LandXML: Screenshot 3d view                       |
+| DrainageSystem-1-1.ifc   | IFC file implementing the drainage system according to the above content description<br />except that the IfcRoad was not decomposed into IfcFacilityPart.<br />The physical objects have both an Axis and a Body representation. |
 
 The xml files comply with the InfraModel 4 specification for LandXML 1.2. The specification is found here: https://buildingsmart.fi/infra/inframodel/
