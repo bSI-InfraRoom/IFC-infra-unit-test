@@ -61,6 +61,7 @@ Following files correspond to this scenario:
 | `DrainageSystem-1-3.jpg` | Inframodel/LandXML: Screenshot plan view                     |
 | `DrainageSystem-1-4.jpg` | Inframodel/LandXML: Screenshot 3d view                       |
 | DrainageSystem-1-1.ifc   | IFC file implementing the drainage system according to the above content description except that the `IfcRoad` was not decomposed into `IfcFacilityPart`. The physical objects have both an `Axis` and a `Body` representation. |
+| DrainageSystem-1-2 | Same structure as DrainageSystem-1-1.ifc, but with classification (Inframodel) and Psets added to fulfill storyline requirements. |
 
 The xml files comply with the InfraModel 4 specification for LandXML 1.2. The specification is found here: https://buildingsmart.fi/infra/inframodel/
 
