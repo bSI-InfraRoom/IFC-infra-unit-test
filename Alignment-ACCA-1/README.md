@@ -27,3 +27,4 @@ Following files correspond to this scenario:
 | Filename                          | Description                                 |
 |-----------------------------------|---------------------------------------------|
 | Alignment-ACCA-1.ifc              | contains the sematic and geometric definition of an horizontal alignment with a straight line, transition curve and circular curve |
+| Alignment-ACCA-1.png              | screenshot of the IFC model |
