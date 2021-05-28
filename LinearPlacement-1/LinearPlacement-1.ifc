@@ -1,7 +1,7 @@
 ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION (('ViewDefinition [Ifc4X3NotAssigned]'), '2;1');
-FILE_NAME ('LinearPlacement-1.ifc', '2021-05-28T14:33:52', (), (), 'ACCA_IFC.dll Version 500', $, $);
+FILE_NAME ('LinearPlacement-1.ifc', '2021-05-28T14:44:12', (), (), 'ACCA_IFC.dll Version 500', $, $);
 FILE_SCHEMA (('IFC4X3_RC3'));
 ENDSEC;
 DATA;
@@ -57,7 +57,7 @@ DATA;
 #50 = IFCDIRECTION((0., 0., 1.));
 #51 = IFCDIRECTION((1., 0., 0.));
 #52 = IFCAXIS2PLACEMENT3D(#15, #50, #51);
-#53 = IFCALIGNMENTHORIZONTAL('0fuEcOMrnBJurPPsX_KRB$', #1, $, $, $, $, $);
+#53 = IFCALIGNMENTHORIZONTAL('0fuEcOMrnBJurPPsX_KRB$', #1, $, $, $, $, $, $);
 #54 = IFCALIGNMENTSEGMENT('0QV2RurPX3kRAvakfRH__P', #1, $, $, $, $, $, #55);
 #55 = IFCALIGNMENTHORIZONTALSEGMENT($, $, #56, 0., 0., 0., 400., $, .LINE.);
 #56 = IFCCARTESIANPOINT((0., 0.));
