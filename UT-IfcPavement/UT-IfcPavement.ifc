@@ -41,7 +41,7 @@ DATA;
 #34 = IFCGRADIENTCURVE((#53), .T., #35, $);
 #35 = IFCCOMPOSITECURVE((#42), .T.);
 #36 = IFCRELNESTS('1af$LUK$GHbKKM1zNtUZqQ', $, $, $, #31, (#37));
-#37 = IFCALIGNMENTHORIZONTAL('1CWUt5qdsfiqEymDp4bSdP', $, $, $, $, $, $);
+#37 = IFCALIGNMENTHORIZONTAL('1CWUt5qdsfiqEymDp4bSdP', $, $, $, $, $, $,0.);
 #38 = IFCRELNESTS('0NgfjQSOFFWaDUdMfIyrOD', $, $, $, #37, (#39));
 #39 = IFCALIGNMENTSEGMENT('1xgBaHmyZ1i4KsmlMg$6cq', $, $, $, $, $, $, #40);
 #40 = IFCALIGNMENTHORIZONTALSEGMENT($, $, #41, 7.85398163397897E-1, 0., 0., 14.1421356, $, .LINE.);
