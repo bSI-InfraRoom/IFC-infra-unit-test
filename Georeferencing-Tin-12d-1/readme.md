@@ -1,12 +1,14 @@
 
 ### Intent
 
-IFC 4x3 RC2
 This scenario has a tin (only 1.5K triangles) with just one colour for all the triangles. 
-The coordinates are in Easting, Northing and AHD for the map projection MGA2020 Zone 56.
+The coordinates are in Easting, Northing and AHD for the map projection MGA2020 Zone 56, and heights in AHD.
 The Horizontal and Vertical datums are specified in `IfcProjectedCRS`.
+`IfcMapConversion` leaves the coordinates as they are and all Scales are 1. 
 
-The IFC file was written by 12d Model. 
+![georeferencingtin12d1](../Georeferencing-Tin-12d-1/Georeferencing-Tin-12d-1.png  "tin in Map Coordinates  MGA2020 Zone 56 Vertical AHD") 
+
+The IFC file was genereated by 12d Model. 
 
 ### Prerequisites
 
@@ -28,6 +30,6 @@ Following files correspond to this scenario:
 
 | Filename                     | Description                               |
 |:-----------------------------------|-------------------------------------------|
-| `UT-Georeferencing-Tin-12d-1.ifc`       | the exported content as IFC document      |
-| `UT-Georeferencing-Tin-12d-1.png`       | screen shot from 12d Model                |
+| `Georeferencing-Tin-12d-1.ifc`       | the exported content as IFC document      |
+| `Georeferencing-Tin-12d-1.png`       | screen shot from 12d Model                |
 
