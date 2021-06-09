@@ -27,11 +27,11 @@ This scenario covers the following concepts and/or IFC entities:
 
 ### Situation
 
-Figure \cref{spatial4-situation} shows the extent of the `IfcSite` and its georeferenced location.
+Figure \ref{fig:spatial4-situation} shows the extent of the `IfcSite` and its georeferenced location.
 
 ![spatial4-situation](../SpatialStructure-4/Figure1-Situation.PNG "Caption")
 
-Figures \cref{spatial4-borders,spatial4-borders2} show the spatial breakdown of the project into `IfcFacility` (blue) and `IfcFacilityPart` (turquoise).
+Figures \ref{fig:spatial4-borders,fig:spatial4-borders2} show the spatial breakdown of the project into `IfcFacility` (blue) and `IfcFacilityPart` (turquoise).
 
 ![spatial4-borders](../SpatialStructure-4/Figure2-ToivolaAreaBorders.JPG "Caption")
 
