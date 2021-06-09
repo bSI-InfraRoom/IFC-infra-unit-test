@@ -2,7 +2,7 @@
 
 This UT establishes a an IfcPavement with IfcCourse objects that has associated IfcSurfaceFeature/RUMBLESTRIP.
 
-It is based on the storylines [INDOT IR_SLRH-C](https://app.box.com/file/731742565663?s=x8prri9nbc1n0x2bjaezeqxvkr9o03sw) storyline
+It is based on the storylines [INDOT IR-SLRH-C](https://app.box.com/file/731742565663?s=x8prri9nbc1n0x2bjaezeqxvkr9o03sw) storyline
 
 ### Prerequisites
 
@@ -30,7 +30,7 @@ There is an IFC4 file containing the pavement elements.
 
 There is also an IFC4 file containing the rumble strips.
 
-![](../RumbleStrip-INDOT/SurfaceFeatures.JPG)
+![SurfaceFeatures](../RumbleStrip-INDOT/SurfaceFeatures.JPG)
 
 ### Expected Results
 

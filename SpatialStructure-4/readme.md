@@ -142,9 +142,9 @@ As such, the expected results are:
 1. Screen-shot of the spatial structure breakdown as represented in the native application,
 2. The resulting IFC file containing the spatial structure requested.
 
-For example, the application should be able to display something as shown in Figure \ref{fig:spatial4-result}.
+For example, the application should be able to display something as shown in Figure \cref{fig:spatial4-result}.
 
-![spatial4-result](../SpatialStructure-4/Figure4-result.png "Expected result in software.")
+![fig:spatial4-result](../SpatialStructure-4/Figure4-result.png "Expected result in software.")
 
 The results when the IFC file is read into 12d Model is shown in the picture below: 
 

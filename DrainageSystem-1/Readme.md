@@ -37,11 +37,11 @@ The start situation is described in the UT SpatialStructure-4 output (SpatialStr
 In addition, DrainageSystem-1-2.xml provides top surface of road structures for reference.
 The drainage system elements are given in DrainageSystem-1-1.xml.
 
-![](../DrainageSystem-1/DrainageSystem-1-3.JPG)
+![drainage-1-3](../DrainageSystem-1/DrainageSystem-1-3.JPG)
 
 
 
-![](../DrainageSystem-1/DrainageSystem-1-4.JPG)
+![drainage-1-4](../DrainageSystem-1/DrainageSystem-1-4.JPG)
 
 #### Expected Results
 
