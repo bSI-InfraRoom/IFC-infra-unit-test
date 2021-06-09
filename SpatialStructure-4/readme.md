@@ -27,11 +27,11 @@ This scenario covers the following concepts and/or IFC entities:
 
 ### Situation
 
-Figure \ref{fig:spatial4-situation} shows the extent of the `IfcSite` and its georeferenced location.
+Figure \cref{spatial4-situation} shows the extent of the `IfcSite` and its georeferenced location.
 
 ![spatial4-situation](../SpatialStructure-4/Figure1-Situation.PNG "Caption")
 
-Figures \ref{fig:spatial4-borders,fig:spatial4-borders2} show the spatial breakdown of the project into `IfcFacility` (blue) and `IfcFacilityPart` (turquoise).
+Figures \cref{spatial4-borders,spatial4-borders2} show the spatial breakdown of the project into `IfcFacility` (blue) and `IfcFacilityPart` (turquoise).
 
 ![spatial4-borders](../SpatialStructure-4/Figure2-ToivolaAreaBorders.JPG "Caption")
 
@@ -142,9 +142,9 @@ As such, the expected results are:
 1. Screen-shot of the spatial structure breakdown as represented in the native application,
 2. The resulting IFC file containing the spatial structure requested.
 
-For example, the application should be able to display something as shown in Figure \ref{fig:spatial4-result}.
+For example, the application should be able to display something as shown in Figure \cref{fig:spatial4-result}.
 
-![spatial4-result](../SpatialStructure-4/Figure4-result.png "Expected result in software.")
+![fig:spatial4-result](../SpatialStructure-4/Figure4-result.png "Expected result in software.")
 
 The results when the IFC file is read into 12d Model is shown in the picture below: 
 

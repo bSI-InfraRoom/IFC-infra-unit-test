@@ -41,15 +41,15 @@ corresponding ditch bottom breakline in the surface model, but the number of ben
 Connections, is reduced for practical reasons. Also, the Channel dimensions do not necessarily 
 match the slopes in the surface model.
 
-![](../DrainageSystem-2/DrainageSystem-2-3.JPG)
+![drainage-2-3](../DrainageSystem-2/DrainageSystem-2-3.JPG)
 
 
 
-![](../DrainageSystem-2/DrainageSystem-2-4.JPG)
+![drainage-2-4](../DrainageSystem-2/DrainageSystem-2-4.JPG)
 
 
 
-![](../DrainageSystem-2/DrainageSystem-2-5.JPG)
+![drainage-2-5](../DrainageSystem-2/DrainageSystem-2-5.JPG)
 
 ### Expected Results
 
