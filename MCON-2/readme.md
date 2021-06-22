@@ -24,9 +24,9 @@ This scenario covers the following concepts and/or IFC entities:
     - `IfcLinearPlacement`
     - `IfcAnnotation` with correct `PredefinedType` and Psets
     - `IfcPavement`
-      - `Pset_PavementCommon`
+        - `Pset_PavementCommon`
     - `IfcCourse`
-      - `Pset_CourseCommon`
+        - `Pset_CourseCommon`
 
 ### Situation
 
