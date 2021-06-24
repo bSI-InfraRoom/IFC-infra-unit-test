@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LandXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.landxml.org/schema/LandXML-1.2 http://www.landxml.org/schema/landxml-1.2/LandXML-1.2.xsd" version="1.2" date="2021-02-24" time="14:07:01" xmlns="http://www.landxml.org/schema/LandXML-1.2">
+	<Units>
+		<Imperial areaUnit="squareFoot" linearUnit="USSurveyFoot" volumeUnit="cubicYard" temperatureUnit="fahrenheit" pressureUnit="inHG" />
+	</Units>
+	<Application name="OpenRoads Designer" version="10.09.00.91" manufacturer="Bentley Systems, Inc." manufacturerURL="http://www.bentley.com" />
+	<CgPoints />
+	<Alignments>
+		<Alignment name="PR_Twin_Branch_section" length="2796.6790253265699" state="proposed" staStart="2103.7205600000002">
+			<CoordGeom name="PR_Twin_Branch_section" state="proposed">
+				<Line length="741.37139133935671">
+					<Start>627930.52398891689 1320681.4885891825 0</Start>
+					<End>628515.24226994836 1321137.2693168621 0</End>
+					<Feature>
+						<Property label="style" value="Alignment\P_ALG_Horizontal" />
+					</Feature>
+				</Line>
+				<Curve crvType="arc" rot="ccw" radius="2600" length="1705.3152959346885" chord="1674.9120152077185">
+					<Start>628515.24226994917 1321137.2693168628 0</Start>
+					<Center>630113.67175591353 1319086.6539998422 0</Center>
+					<End>630097.50708320097 1321686.6037500021 0</End>
+					<Feature>
+						<Property label="style" value="Alignment\P_ALG_Horizontal" />
+					</Feature>
+				</Curve>
+				<Line length="349.99233805252447">
+					<Start>630097.50708320097 1321686.6037500014 0</Start>
+					<End>630447.49265700008 1321688.7797160002 0</End>
+					<Feature>
+						<Property label="style" value="Alignment\P_ALG_Horizontal" />
+					</Feature>
+				</Line>
+			</CoordGeom>
+			<Profile>
+				<ProfAlign name="PR_Twin_Branch_section">
+					<PVI>2103.7224673486326 796.56280347515894</PVI>
+					<ParaCurve length="346.27753265136721">2276.8612336743163 797.16981264013839</ParaCurve>
+					<ParaCurve length="499.99999999999983">3150.0000000000005 783.52400000000023</ParaCurve>
+					<ParaCurve length="399.99999999999864">3990.0000000000009 808.32700000000057</ParaCurve>
+					<ParaCurve length="15.000000000000211">4932.5000000000018 714.47918750000042</ParaCurve>
+					<PVI>4940.0000000000018 713.75733171875027</PVI>
+					<Feature>
+						<Property label="style" value="Alignment\P_ALG_Horizontal" />
+					</Feature>
+				</ProfAlign>
+			</Profile>
+		</Alignment>
+	</Alignments>
+</LandXML>
