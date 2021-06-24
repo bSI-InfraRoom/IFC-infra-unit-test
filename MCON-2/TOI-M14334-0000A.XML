@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandXML xmlns="http://www.inframodel.fi/inframodel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.inframodel.fi/inframodel https://buildingsmart.fi/infra/schema/4.0.3/inframodel.xsd" language="Finnish" date="2020-03-05+03:00" time="14:19:37+03:00" version="1.2" readOnly="false">
+  <Project name="Toivolan_tasoristeyssuunnitelma" desc="Toivolan_tasoristeyssuunnitelma" state="proposed">
+    <Feature code="IM_codings" source="inframodel">
+      <Property label="infraCoding" value="InfraBIM"/>
+      <Property label="proprietaryInfraCoding" value="Novapoint - FINLAND STANDARD"/>
+      <Property label="surfaceCoding" value="TIELAITOS"/>
+      <Property label="terrainCoding" value="TIELAITOS"/>
+    </Feature>
+  </Project>
+  <Application name="Novapoint" manufacturer="Trimble Solutions Sandvika AS" manufacturerURL="http://www.novapoint.com" version="Novapoint 21.05.FP4d (21.0.26612.6200)" timeStamp="2019-11-18T10:39:14">
+    <Author createdBy="M. Storhammar" createdByEmail="maiju.storhammar@sweco.fi" company="Sweco" companyURL="www.sweco.fi"/>
+  </Application>
+  <FeatureDictionary name="inframodel" version="4.0.3">
+    <DocFileRef name="Finnish inframodel application documentation for LandXML 1.2" location="https://buildingsmart.fi/infra/inframodel/"/>
+  </FeatureDictionary>
+  <Units>
+    <Metric angularUnit="decimal degrees" areaUnit="squareMeter" diameterUnit="meter" directionUnit="decimal degrees" elevationUnit="meter" heightUnit="meter" linearUnit="meter" pressureUnit="mmHG" temperatureUnit="celsius" velocityUnit="kilometersPerHour" volumeUnit="cubicMeter" widthUnit="meter"/>
+  </Units>
+  <CoordinateSystem rotationAngle="0.000000" epsgCode="3878" horizontalDatum="EPSG:3878" verticalDatum="EPSG:3900"/>
+  <Alignments name="Geometriat">
+    <Alignment name="Sammalniementie_u" state="proposed" staStart="0.000000" length="616.442493">
+      <CoordGeom>
+        <Line dir="89.901186" staStart="0.000000" length="229.405681">
+          <Start>6876935.549267 24525276.867419 0.000000</Start>
+          <End>6876935.944905 24525506.272759 0.000000</End>
+        </Line>
+        <Curve delta="8.122567" radius="110.000000" rot="cw" chord="15.581153" dirStart="89.901186" dirEnd="98.023753" staStart="229.405681" length="15.594208">
+          <Start>6876935.944905 24525506.272759</Start>
+          <End>6876934.868200 24525521.816666</End>
+          <Center>6876825.945068 24525506.462467</Center>
+        </Curve>
+        <Line dir="98.023753" staStart="244.999890" length="91.725737">
+          <Start>6876934.868200 24525521.816666 0.000000</Start>
+          <End>6876922.064789 24525612.644434 0.000000</End>
+        </Line>
+        <Curve delta="62.923694" radius="110.000000" rot="cw" chord="114.824750" dirStart="98.023753" dirEnd="160.947447" staStart="336.725626" length="120.804820">
+          <Start>6876922.064789 24525612.644434</Start>
+          <End>6876849.049537 24525701.264387</End>
+          <Center>6876813.141658 24525597.290235</Center>
+        </Curve>
+        <Line dir="160.947447" staStart="457.530446" length="25.538554">
+          <Start>6876849.049537 24525701.264387 0.000000</Start>
+          <End>6876824.909996 24525709.601071 0.000000</End>
+        </Line>
+        <Curve delta="-25.852708" radius="110.000000" rot="ccw" chord="49.213658" dirStart="160.947447" dirEnd="135.094739" staStart="483.069001" length="49.633636">
+          <Start>6876824.909996 24525709.601071</Start>
+          <End>6876783.164849 24525735.664970</End>
+          <Center>6876860.817875 24525813.575223</Center>
+        </Curve>
+        <Line dir="135.094739" staStart="532.702636" length="83.739856">
+          <Start>6876783.164849 24525735.664970 0.000000</Start>
+          <End>6876723.854000 24525794.780000 0.000000</End>
+        </Line>
+      </CoordGeom>
+      <Profile name="Sammalniementie_u" staStart="0.000000">
+        <ProfAlign name="Sammalniementie_u">
+          <PVI>135.557000 125.687614</PVI>
+          <CircCurve length="18.119178" radius="1300.000000">155.453895 126.367318</CircCurve>
+          <CircCurve length="39.035673" radius="1300.000000">224.860128 127.770226</CircCurve>
+          <PVI>294.554565 127.086000</PVI>
+          <PVI>306.077551 127.086000</PVI>
+          <CircCurve length="15.275471" radius="5000.000000">506.227944 126.379507</CircCurve>
+          <CircCurve length="10.410425" radius="1300.000000">597.429913 125.778943</CircCurve>
+          <PVI>616.442493 125.806000</PVI>
+        </ProfAlign>
+      </Profile>
+    </Alignment>
+  </Alignments>
+</LandXML>

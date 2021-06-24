@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandXML xmlns="http://www.inframodel.fi/inframodel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.inframodel.fi/inframodel https://buildingsmart.fi/infra/schema/4.0.3/inframodel.xsd" language="Finnish" date="2020-03-06+03:00" time="12:09:14+03:00" version="1.2" readOnly="false">
+  <Project name="Toivolan_tasoristeyssuunnitelma" desc="Toivolan_tasoristeyssuunnitelma" state="proposed">
+    <Feature code="IM_codings" source="inframodel">
+      <Property label="infraCoding" value="InfraBIM"/>
+      <Property label="proprietaryInfraCoding" value="Novapoint - FINLAND STANDARD"/>
+      <Property label="surfaceCoding" value="TIELAITOS"/>
+      <Property label="terrainCoding" value="TIELAITOS"/>
+    </Feature>
+  </Project>
+  <Application name="Novapoint" manufacturer="Trimble Solutions Sandvika AS" manufacturerURL="http://www.novapoint.com" version="Novapoint 21.05.FP4d (21.0.26612.6200)" timeStamp="2019-11-18T10:39:14">
+    <Author createdBy="M.Storhammar" createdByEmail="maiju.storhammar@sweco.fi" company="Sweco Oy" companyURL="www.sweco.fi"/>
+  </Application>
+  <FeatureDictionary name="inframodel" version="4.0.3">
+    <DocFileRef name="Finnish inframodel application documentation for LandXML 1.2" location="https://buildingsmart.fi/infra/inframodel/"/>
+  </FeatureDictionary>
+  <Units>
+    <Metric angularUnit="decimal degrees" areaUnit="squareMeter" diameterUnit="meter" directionUnit="decimal degrees" elevationUnit="meter" heightUnit="meter" linearUnit="meter" pressureUnit="mmHG" temperatureUnit="celsius" velocityUnit="kilometersPerHour" volumeUnit="cubicMeter" widthUnit="meter"/>
+  </Units>
+  <CoordinateSystem rotationAngle="0.000000" epsgCode="3878" horizontalDatum="EPSG:3878" verticalDatum="EPSG:3900"/>
+  <Alignments name="Geometriat">
+    <Alignment name="Tie2 oikea" state="proposed" staStart="0.000000" length="37.043112">
+      <CoordGeom>
+        <Line dir="205.225997" staStart="0.000000" length="37.043112">
+          <Start>6876912.954533 24525646.631749 0.000000</Start>
+          <End>6876879.444083 24525630.844353 0.000000</End>
+        </Line>
+      </CoordGeom>
+      <Profile name="Tie2 oikea" staStart="0.000000">
+        <ProfAlign name="Tie2 oikea">
+          <PVI>-1.544812 126.944412</PVI>
+          <CircCurve length="9.901082" radius="400.000000">26.759653 126.063716</CircCurve>
+          <PVI>35.958170 126.005283</PVI>
+        </ProfAlign>
+      </Profile>
+    </Alignment>
+  </Alignments>
+</LandXML>
