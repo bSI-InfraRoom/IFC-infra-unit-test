@@ -42,3 +42,5 @@ DATA;
 #35 = IFCRELAGGREGATES('1$R2J$E6r598daBHeZ7A5a', #1, 'Project Container', 'Project to Spatial Element', #7, (#21));
 #36 = IFCRELINTERFERESELEMENTS('1KGxl_MJzCugAzAbkkkI95', #1, $, $, #26, #33, $, 'PassesOver', .U.);
 #37 = IFCRELINTERFERESELEMENTS('258z1l3OLB2AfN2jNMLr8D', #1, $, $, #33, #30, $, 'PassesUnder', .U.);
+ENDSEC;
+END-ISO-10303-21;

@@ -1,7 +1,7 @@
 ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION (('ViewDefinition [Ifc4X3NotAssigned]'), '2;1');
-FILE_NAME ('UT-CrossDisciplinary-1.ifc', '2021-05-26T11:45:42', (), (), 'ACCA_IFC.dll Version 500', 'ACCA IfcInfraGenerator', $);
+FILE_NAME ('CrossDisciplinary-1.ifc', '2021-06-29T16:20:35', (), (), 'ACCA_IFC.dll Version 500', 'ACCA IfcInfraGenerator', $);
 FILE_SCHEMA (('IFC4X3_RC3'));
 ENDSEC;
 DATA;
@@ -40,8 +40,7 @@ DATA;
 #33 = IFCBRIDGE('0lkLAjfTH4VvYnWYwPXxp7', #1, 'a bridge', $, $, $, $, $, .ELEMENT., .NOTDEFINED.);
 #34 = IFCRELAGGREGATES('2ocfYp2vT1kfdwG_pOCGW8', #1, 'Site Container', 'Site to Facilities', #21, (#26, #30, #33));
 #35 = IFCRELAGGREGATES('1$R2J$E6r598daBHeZ7A5a', #1, 'Project Container', 'Project to Spatial Element', #7, (#21));
-#36 = IFCRELINTERFERESELEMENTS('1KGxl_MJzCugAzAbkkkI95', #1, $, $, #33, #26, $, 'PassesOver', .U.);
+#36 = IFCRELINTERFERESELEMENTS('1KGxl_MJzCugAzAbkkkI95', #1, $, $, #26, #33, $, 'PassesOver', .U.);
 #37 = IFCRELINTERFERESELEMENTS('258z1l3OLB2AfN2jNMLr8D', #1, $, $, #33, #30, $, 'PassesUnder', .U.);
-#38 = IFCRELINTERFERESELEMENTS('0SvjQsc2TCzuPvCU3Or7Wi', #1, $, $, #31, #28, $, 'Crosses', .U.);
 ENDSEC;
 END-ISO-10303-21;
