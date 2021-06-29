@@ -26,3 +26,4 @@ Following files correspond to this scenario:
 | Filename                          | Description                               |
 |-----------------------------------|-------------------------------------------|
 | UT-CrossDisciplinary-1.ifc        | IFC model with Bridge, Road and Railway facilities. |
+| UT-CrossDisciplinary-1.png        | Screenshot of UT-CrossDisciplinary.ifc. |
