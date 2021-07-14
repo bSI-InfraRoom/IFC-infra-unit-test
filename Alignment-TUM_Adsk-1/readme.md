@@ -20,7 +20,7 @@ Following files correspond to this scenario:
 
 | Filename                       | Description                                                                       |
 |--------------------------------|-----------------------------------------------------------------------------------|
-| `TUM-Adsk_alignment_01.ifc`    | the content as an IFC file                                                        |
+| `TUMAdsk-alignment-01.ifc`     | the content as an IFC file                                                        |
 
 
 
