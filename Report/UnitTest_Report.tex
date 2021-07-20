@@ -66,17 +66,29 @@
 \section{Summary}
 \label{sec:summary}
 
-This is a summary document of all approved unit tests submitted during the IFC Infrastructure Extensions Deployment project.
+This is a summary document of all unit tests submitted during the IFC Infrastructure Extensions Deployment project until \DTMdisplaydate{2021}{7}{16}{}.
 
-This document has been automatically produced from the \texttt{readme} files of individual unit tests.
+This Section is structured as follows:
+\begin{compactitem}
+  \item guidance on how to read the document in \cref{sec:how_to},
+  \item a list of all unit tests, their status of approval, and source of data in \cref{sec:status},
+  \item an overview of the covered entities by all approved unit tests in \cref{sec:coverage},
+  \item an overview over the dependencies between individual unit tests in \cref{sec:schematics}, and
+  \item a table of content in \cref{sec:content}.
+\end{compactitem}
+\Cref{sec:project_setup,sec:alignment,sec:geotechnics,sec:domain_specifics,sec:earthworks,sec:geodetic_survey,sec:combinations,sec:georeferencing_and_dtms,sec:drainage_system,sec:other,sec:spatial_structure} are automatically generated from the \texttt{readme} files of individual unit tests.
+The grouping of individual unit tests under these sections 
+
 The originating documentation together with all mentioned files can be obtained
  from the project's official GitHub repository\footnote{\url{https://github.com/bSI-InfraRoom/IFC-infra-unit-test}}.
 
 \subsection{Coverage}
 \label{sec:coverage}
 
-\Cref{tab:coverage} lists all IFC entities occurring in all listed unit tests.
-The number next to each entity shows how many times this entity occurs.
+\Cref{tab:coverage} lists all IFC entities occurring in all accepted and approved unit tests.
+The number next to each entity shows how many times this entity occurs\footnotemark{}.
+
+\footnotetext{The content has been joined in Appendix C of the deliverable with the covered entities by the IFC Rail Phase 2 project but is also included here for completeness.}
 
 \begin{tabularx}{\textwidth}{rX}
   \caption{The covered entities of all unit test files combined.}\label{tab:coverage} \\
@@ -271,12 +283,14 @@ The included figures are \emph{floating} in this document, so they may appear at
 All figures are always flushed before the next section starts, so that there is no doubt.
 
 \subsection{Overview over the Content}
+\label{sec:content}
 \renewcommand\contentsname{}
 \tableofcontents
 \clearpage
 
 % -------------------------------------------------------------------------------
 \section{Project Setup}
+\label{sec:project_setup}
 
 \subsection{Project Setup 1}
 \label{sec:project_setup_1}
@@ -290,6 +304,7 @@ All figures are always flushed before the next section starts, so that there is 
 
 % -------------------------------------------------------------------------------
 \section{Georeferencing and Digital Terrain Models (DTMs)}
+\label{sec:georeferencing_and_dtms}
 
 \subsection{TIN 1}
 \label{sec:tin_1}
@@ -333,6 +348,7 @@ Under review.%\markdownInput{../Georeferencing-4/readme.md}
 
 % -------------------------------------------------------------------------------
 \section{Alignment}
+\label{sec:alignment}
 
 \subsection{Alignment 1}
 \label{sec:align_1}
@@ -436,6 +452,7 @@ Under review.%\markdownInput{../Georeferencing-Alignment-12d-2/readme.md}
 
 % -------------------------------------------------------------------------------
 \section{Spatial Structure}
+\label{sec:spatial_structure}
 
 \subsection{Spatial Structure 1}
 \label{sec:spatial_1}
@@ -479,6 +496,7 @@ Under review.%\markdownInput{../CrossDisciplinary-1/README.md}
 
 % -------------------------------------------------------------------------------
 \section{Domain Specifics}
+\label{sec:domain_specifics}
 
 \subsection{Road 1}  % PR#52
 \label{sec:road_1}
@@ -527,6 +545,7 @@ Under review.%\markdownInput{../MarineFurniture-1/readme.md}
 
 % -------------------------------------------------------------------------------
 \section{Earthworks}
+\label{sec:earthworks}
 
 \subsection{Earthworks 0}
 \label{sec:earth_0}
@@ -555,6 +574,7 @@ Under review.%\markdownInput{../UT-Earthworks-01/readme.md}
 
 % -------------------------------------------------------------------------------
 \section{Geotechnics}
+\label{sec:geotechnics}
 
 \subsection{Borehole 1}
 \label{sec:borehole_1}
@@ -563,6 +583,7 @@ Under review.%\markdownInput{../UT-Earthworks-01/readme.md}
 
 % -------------------------------------------------------------------------------
 \section{Geodetic Survey}
+\label{sec:geodetic_survey}
 
 \subsection{Survey 1}
 \label{sec:survey_1}
@@ -587,6 +608,7 @@ Under review.%\markdownInput{../Georeferencing-Survey-12d-3/readme.md}
 
 % -------------------------------------------------------------------------------
 \section{Drainage System}
+\label{sec:drainage_system}
 
 \subsection{Drainage System 1}
 \label{sec:drainage_1}
@@ -600,6 +622,7 @@ Under review.%\markdownInput{../Georeferencing-Survey-12d-3/readme.md}
 
 % -------------------------------------------------------------------------------
 \section{Combinations}
+\label{sec:combinations}
 
 \subsection{Combination 1: Georeferencing and Alignment and DTM} % PR#43
 \label{sec:align_dtm_1}
@@ -623,6 +646,7 @@ Under review.%\markdownInput{../Alignment-Tin-1/readme.md}
 
 % -------------------------------------------------------------------------------
 \section{Other}
+\label{sec:other}
 
 \subsection{Other 1: Cost items} % PR#53 *
 \label{sec:other_1}
