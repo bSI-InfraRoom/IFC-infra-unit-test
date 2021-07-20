@@ -14,7 +14,18 @@
 \usepackage[footnotes,definitionLists,smartEllipses,hybrid,pipeTables=true,shiftHeadings=1,tableCaptions=true]{markdown}
 \usepackage[edges]{forest}
 
+\usepackage{booktabs}
 \usepackage{cleveref}
+
+\usepackage{paralist}
+
+\usepackage{pifont}
+\newcommand{\jaja}{\ding{51}}
+\newcommand{\nope}{\ding{55}}
+
+\usepackage{tabularx}
+\renewcommand\tabularxcolumn[1]{m{#1}}% for vertical centering text in X column
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
 
 \title{Appendix B: IFC Files and Descriptions (DEPL Part)}
 \author{Files submitted to IFC Infrastructure Extension Deployment project}
