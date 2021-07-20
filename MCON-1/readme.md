@@ -1,6 +1,6 @@
 ### Intent
 
-This UT implements IfcAnnotation/SUPERELEVATION and IfcAnnotation/WIDTH to test requirements based on storyline [TC127-IR-SLRH-C-MCON](https://app.box.com/folder/122373399568?s=fr6k8xqud6uug6ep0s158uxtb70doxcd). Particularly the exchange scenarios 1 (alignment) and 4 (Requirements of final product). Regarding exchange scenario 4, this unit test particularly tests the use of IfcAnnotation/SUPERELEVATIONEVENT and IfcAnnotation/WIDTHEVENT together with a lateral breakdown of the facility parts from [SpatialStructure-4](https://github.com/bSI-InfraRoom/IFC-infra-unit-test/tree/main/SpatialStructure-4) and linear placement of the objects along the alignments.
+This UT implements `IfcAnnotation/SUPERELEVATION` and `IfcAnnotation/WIDTH` to test requirements based on storyline [TC127-IR-SLRH-C-MCON](https://app.box.com/folder/122373399568?s=fr6k8xqud6uug6ep0s158uxtb70doxcd). Particularly the exchange scenarios 1 (alignment) and 4 (Requirements of final product). Regarding exchange scenario 4, this unit test particularly tests the use of `IfcAnnotation/SUPERELEVATIONEVENT` and `IfcAnnotation/WIDTHEVENT` together with a lateral breakdown of the facility parts from [SpatialStructure-4](https://github.com/bSI-InfraRoom/IFC-infra-unit-test/tree/main/SpatialStructure-4) and linear placement of the objects along the alignments.
 
 ### Prerequisites
 
@@ -15,7 +15,7 @@ This scenario covers the following concepts and/or IFC entities:
 - spatial structure and containment
     - `IfcSite`
     - `IfcRoad`
-    - `IfcFacilityPart` with correct `PredefinedType` (UsageType both LONGITUDINAL and LATERAL)
+    - `IfcFacilityPart` with correct `PredefinedType` (UsageType both `LONGITUDINAL` and `LATERAL`)
     - `IfcRelContainedInSpatialStructure`
 - physical elements 
     - `IfcAlignment`
@@ -28,15 +28,13 @@ The start situation is described in the UT SpatialStructure-4 output (SpatialStr
 
 The area of concern is especially the part where the main road (M14334 - starting from the railway level crossing) intersects with the smaller road Y3 (Road2 in the spatial structure).
 
-Typical ross-section definitions are given in Figure-1
+Typical cross-section definitions are given in \ref{Figure-1}
 
-![Figure-1](..\MCON-1\M14334-Cross-section.png)
+![Figure-1](../MCON-1/M14334-Cross-section.png "Cross section definitions")
 
-Figure-1 : Cross-section definitions
+In \ref{Figure-2}, the changes of superelevations and widths along the alignments are shown.
 
-In Figure-2, the changes of superelevations and widths along the alignments are shown.
-
-![Figure-2](..\MCON-1\Superelevations-Widths.png)
+![Figure-2](../MCON-1/Superelevations-Widths.png)
 
 ### Expected Results
 

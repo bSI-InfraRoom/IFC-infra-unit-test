@@ -31,7 +31,7 @@ Figure \ref{fig:spatial4-situation} shows the extent of the `IfcSite` and its ge
 
 ![spatial4-situation](../SpatialStructure-4/Figure1-Situation.PNG "Caption")
 
-Figures \ref{fig:spatial4-borders,fig:spatial4-borders2} show the spatial breakdown of the project into `IfcFacility` (blue) and `IfcFacilityPart` (turquoise).
+Figures \ref{fig:spatial4-borders} and \ref{fig:spatial4-borders2} show the spatial breakdown of the project into `IfcFacility` (blue) and `IfcFacilityPart` (turquoise).
 
 ![spatial4-borders](../SpatialStructure-4/Figure2-ToivolaAreaBorders.JPG "Caption")
 

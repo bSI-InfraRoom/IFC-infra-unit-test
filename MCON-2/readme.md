@@ -34,19 +34,17 @@ The start situation is described in the UT SpatialStructure-4 output (SpatialStr
 
 The area of concern is especially the part where the main road (M14334 - starting from the railway level crossing) intersects with the smaller road Y3 (Road2 in the spatial structure).
 
-Typical ross-section definitions are given in Figure-1
+Typical cross-section definitions are given in \ref{Figure-3}
 
-![Figure-1](..\MCON-2\M14334-Cross-section.png)
+![Figure-3](../MCON-2/M14334-Cross-section.png "Cross-section definitions")
 
-Figure-1 : Cross-section definitions
+In \ref{Figure-4}, the changes of superelevations and widths along the alignments are shown.
 
-In Figure-2, the changes of superelevations and widths along the alignments are shown.
+![Figure-4](../MCON-2/Superelevations-Widths.png)
 
-![Figure-2](..\MCON-2\Superelevations-Widths.png)
+In \ref{Figure-5}, the definitions of the superstructures are marked within red boxes.
 
-In Figure-3, the definitions of the superstructures are marked within red boxes.
-
-![Figure-2](..\MCON-2\Pavement-composition.png)
+![Figure-5](../MCON-2/Pavement-composition.png)
 
 ### Expected Results
 
