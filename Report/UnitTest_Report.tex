@@ -103,7 +103,7 @@ All figures are always flushed before the next section starts, so that there is 
   \item column \emph{Unit test} provides the name of the unit test,
   \item column \emph{Export} names the producing software vendor (or the project team itself if it was produced by us),
   \item column \emph{Ck.} shows, if the unit test file has been checked (\jaja) by the project team or not (\nope),
-  \item column \emph{Import} names another software solution that successfully imported the data (can be empty if it has not happened yet), and
+  \item column \emph{Import} names another software solution that successfully imported the data (- if it has not happened yet), or provides a link to the opened pull request inviting a review, and
   \item column \emph{SL} denotes unit tests stemming from a storyline (\jaja) or not (\nope).
 \end{compactitem}
 
@@ -127,7 +127,7 @@ All figures are always flushed before the next section starts, so that there is 
   % content
     \labelcref{sec:project_setup_1} & Setup 1 & project team & \jaja  & TUM OIP & \nope \\
     \labelcref{sec:project_setup_2} & Setup 2 & project team & \jaja  & TUM OIP & \nope \\[0.5em]
-    
+
     \labelcref{sec:tin_1} & DTM 1 & 12d Solutions & \jaja  & TUM OIP & \nope \\
     \labelcref{sec:georeferencing_1} & Georef. 1 & project team & \jaja  & TUM OIP & \nope \\
     \labelcref{sec:georeferencing_3} & Georef. 2 & project team & \jaja  & TUM OIP & \nope \\
@@ -136,7 +136,7 @@ All figures are always flushed before the next section starts, so that there is 
     \labelcref{sec:georef_tin_2} & Georef.+DTM 2 & 12d Solutions & \jaja  & TUM OIP & \nope \\
     \labelcref{sec:georef_tin_3} & Georef.+DTM 3 & 12d Solutions & \jaja  & TUM OIP & \nope \\
     \labelcref{sec:georef_tin_4} & Georef.+DTM 4 & 12d Solutions & \jaja  & TUM OIP & \nope \\[0.5em]
-    
+
     \labelcref{sec:align_1} & Alignment 1 & 12d Solutions & \jaja  & Geometry Gym & \nope \\
     \labelcref{sec:align_2} & Alignment 2 & 12d Solutions & \jaja  & Geometry Gym & \nope \\
     \labelcref{sec:align_3} & Alignment 3 & 12d Solutions & \jaja  & Geometry Gym & \nope \\
@@ -158,12 +158,12 @@ All figures are always flushed before the next section starts, so that there is 
     \labelcref{sec:align_19} & Alignment 19 & ACCA & \jaja  & Geometry Gym  & \nope \\
     \labelcref{sec:align_20} & Alignment 20 & ACCA & \jaja  & Geometry Gym  & \nope \\
     \labelcref{sec:align_21} & Alignment 21 & TUM \& AutoDesk & \nope  & \pr{143}  & \nope \\[0.5em]
-    
+
     \labelcref{sec:linear_1} & Linear Pos. 1 & ACCA & \jaja  & -  & \nope \\
     \labelcref{sec:linear_2} & Linear Pos. 2 & ACCA & \jaja  & -  & \nope \\
     \labelcref{sec:linear_3} & Linear Pos. 3 & ACCA & \jaja  & -  & \nope \\
     \labelcref{sec:linear_4} & Linear Pos. 4 & ACCA & \jaja  & -  & \nope \\[0.5em]
-    
+
     \labelcref{sec:spatial_1} & Spatial str. 1 & project team & \jaja  & FZK Viewer & \nope \\
     \labelcref{sec:spatial_2} & Spatial str. 2 & project team & \jaja  & FZK Viewer & \jaja \\
     \labelcref{sec:spatial_3} & Spatial str. 3 & project team & \jaja  & IFCTreeView & \jaja \\
@@ -172,7 +172,7 @@ All figures are always flushed before the next section starts, so that there is 
     \labelcref{sec:spatial_6} & Spatial str. 6 & project team & \jaja  & FZK Viewer & \jaja \\
     \labelcref{sec:spatial_7} & Spatial str. 7 & project team & \jaja  & \pr{116} & \jaja \\
     \labelcref{sec:spatial_8} & Spatial str. 8 & TUM & \jaja  & \pr{65} & \nope \\[0.5em]
-    
+
     \labelcref{sec:swept_1} & Swept Geom. 1 & project team & \jaja  & \pr{40} & \nope \\
     \labelcref{sec:swept_2} & Swept Geom. 2 & project team & \jaja  & - & \jaja \\
     \labelcref{sec:swept_3} & Swept Geom. 3 & Aplitop & \jaja  & \pr{106} & \nope \\
@@ -186,7 +186,7 @@ All figures are always flushed before the next section starts, so that there is 
     \labelcref{sec:swept_11} & Swept Geom. 11 & ACCA & \nope  & \pr{136} & \nope \\
     \labelcref{sec:swept_12} & Swept Geom. 12 & ACCA & \nope  & \pr{139} & \nope \\
     \labelcref{sec:swept_13} & Swept Geom. 13 & ACCA & \nope  & \pr{140} & \nope \\[0.5em]
-    
+
     \labelcref{sec:road_1} & Road 1 & AKG Software & \jaja  & \pr{52} & \nope \\
     \labelcref{sec:road_2} & Road 2 & AKG Software & \jaja  & \pr{52} & \nope \\
     \labelcref{sec:road_3} & Road 3 & project team & \jaja  & - & \jaja \\
@@ -194,27 +194,27 @@ All figures are always flushed before the next section starts, so that there is 
     \labelcref{sec:road_5} & Road 5 & project team & \jaja  & - & \jaja \\
     \labelcref{sec:marine_1} & Marine 1 & project team & \nope  & \pr{94} & \jaja \\
     \labelcref{sec:marine_2} & Marine 2 & project team & \jaja  & - & \jaja \\[0.5em]
-    
+
     \labelcref{sec:earth_0} & Earthworks 0 & 12d Solutions & \jaja  & TUM OIP & \nope \\
     \labelcref{sec:earth_1} & Earthworks 1 & 12d Solutions & \jaja  & TUM OIP & \nope \\
     \labelcref{sec:earth_2} & Earthworks 2 & 12d Solutions & \jaja  & TUM OIP & \nope \\
     \labelcref{sec:earth_3} & Earthworks 3 & BricSys & \jaja  & 12d Solutions & \nope \\
     \labelcref{sec:borehole_1} & Geotechnics 1 & Geometry Gym & \jaja  & - & \jaja \\
     \labelcref{sec:geological_1} & Geology 1 & Geometry Gym & \nope  & - & \jaja \\[0.5em]
-    
+
     \labelcref{sec:survey_1} & Geod. survey 1 & 12d Solutions & \jaja  & TUM OIP & \nope \\
     \labelcref{sec:survey_2} & Geod. survey 2 & 12d Solutions & \jaja  & \pr{56} & \nope \\
     \labelcref{sec:survey_3} & Geod. survey 3 & 12d Solutions & \jaja  & \pr{112} & \nope \\
     \labelcref{sec:survey_4} & Geod. survey 4 & 12d Solutions & \jaja  & RDF Viewer & \nope \\[0.5em]
-    
+
     \labelcref{sec:drainage_1} & Drainage 1 & project team & \jaja  & - & \jaja \\
     \labelcref{sec:drainage_2} & Drainage 2 & project team & \jaja  & - & \jaja \\[0.5em]
-    
+
     \labelcref{sec:align_dtm_1} & Combination 1 & 12d Solutions & \nope  & - & \nope \\
     \labelcref{sec:align_dtm_2} & Combination 2 & Card-1 & \nope  & - & \nope \\
     \labelcref{sec:georef_earth_1} & Combination 3 & 12d Solutions & \jaja  & - & \nope \\
     \labelcref{sec:georef_earth_2} & Combination 4 & 12d Solutions & \nope  & - & \nope \\[0.5em]
-    
+
     \labelcref{sec:other_1} & Cost items 1 & project team & \nope  & \pr{53} & \jaja \\
     \labelcref{sec:other_2} & Properties 2 & ACCA & \nope  & \pr{120} & \nope \\
     \labelcref{sec:other_3} & Properties 3 & ACCA & \nope  & \pr{121} & \nope \\
@@ -266,7 +266,7 @@ Each unit test has a link to the corresponding section of this document in the u
 \begin{figure}
   \begin{forest}
     for tree={              % style of tree nodes
-      font=\footnotesize,
+      font=\scriptsize,
       draw, semithick, rounded corners,minimum width=7em,
             align = center,
         inner sep = 1pt,
