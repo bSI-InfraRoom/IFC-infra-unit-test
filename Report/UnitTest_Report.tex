@@ -248,6 +248,12 @@ The number next to each entity shows how many times this entity occurs\footnotem
   \input{../Report/coverageTable.tex}
 \end{tabularx}
 
+\subsection{Overview over the Content}
+\label{sec:content}
+\renewcommand\contentsname{}
+\tableofcontents
+\clearpage
+
 \subsection{Schematics}
 \label{sec:schematics}
 
@@ -256,7 +262,7 @@ Unit tests are represented as boxes, while the arrows point from the dependant t
 Each unit test has a link to the corresponding section of this document in the upper right corner.
 
 \tikzset{every label/.style={xshift=3ex, text width=10ex, align=left, 
-                             inner sep=1pt, font=\footnotesize}}
+                             inner sep=1pt, font=\scriptsize}}
 \tikzset{pr/.style={dashed}}
 \tikzset{star/.style={draw=none,anchor=north east,inner sep=2pt}}
 \begin{figure}
@@ -417,12 +423,6 @@ Each unit test has a link to the corresponding section of this document in the u
            A star in the upper right corner means that the unit test has been derived from a storyline.}
   \label{fig:schematics}
 \end{figure}
-
-\subsection{Overview over the Content}
-\label{sec:content}
-\renewcommand\contentsname{}
-\tableofcontents
-\clearpage
 
 % -------------------------------------------------------------------------------
 \section{Project Setup}
