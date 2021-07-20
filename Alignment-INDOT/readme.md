@@ -2,7 +2,7 @@
 
 This UT establishes a road alignment for the other INDOT unit tests
 
-It is based on the storylines [INDOT IR_SLRH-C](https://app.box.com/file/731742565663?s=x8prri9nbc1n0x2bjaezeqxvkr9o03sw) storyline
+It is based on the storylines [INDOT IR-SLRH-C](https://app.box.com/file/731742565663?s=x8prri9nbc1n0x2bjaezeqxvkr9o03sw) storyline
 
 ### Prerequisites
 

@@ -32,5 +32,5 @@ Following files correspond to this scenario:
 
 | Filename                          | Description                                 |
 |-----------------------------------|---------------------------------------------|
-| LinearPlacement-2.ifc              | contains the linear placement of objects along an alignment with lateral and vertical offset|
-| LinearPlacement-2.ifc              | screenshot of the IFC model |
+| `LinearPlacement-2.ifc`              | contains the linear placement of objects along an alignment with lateral and vertical offset|
+| `LinearPlacement-2.png`              | screenshot of the IFC model |

@@ -33,5 +33,5 @@ Following files correspond to this scenario:
 
 | Filename                          | Description                                 |
 |-----------------------------------|---------------------------------------------|
-| LinearPlacement-4.ifc              | contains the linear placement of assemblies (of assembly) along an alignment with lateral and vertical offsets|
-| LinearPlacement-4.png              | screenshot of the IFC model |
+| `LinearPlacement-4.ifc`              | contains the linear placement of assemblies (of assembly) along an alignment with lateral and vertical offsets|
+| `LinearPlacement-4.png`              | screenshot of the IFC model |

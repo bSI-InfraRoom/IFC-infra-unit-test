@@ -32,5 +32,5 @@ Following files correspond to this scenario:
 
 | Filename                          | Description                                 |
 |-----------------------------------|---------------------------------------------|
-| LinearPlacement-3.ifc              | contains the linear placement of assemblies (of assembly) along an alignment|
-| LinearPlacement-3.ifc              | screenshot of the IFC model |
+| `LinearPlacement-3.ifc`              | contains the linear placement of assemblies (of assembly) along an alignment|
+| `LinearPlacement-3.png`              | screenshot of the IFC model |

@@ -2,7 +2,7 @@
 
 This UT establishes a an IfcPavement with an IfcCourse represented by an IfcSectionedSurface.
 
-It is based on the storylines [INDOT IR_SLRH-C](https://app.box.com/file/731742565663?s=x8prri9nbc1n0x2bjaezeqxvkr9o03sw) storyline
+It is based on the storylines [INDOT IR-SLRH-C](https://app.box.com/file/731742565663?s=x8prri9nbc1n0x2bjaezeqxvkr9o03sw) storyline
 
 ### Prerequisites
 
@@ -28,7 +28,7 @@ This scenario covers the following concepts and/or IFC entities:
 
 The typical section used for the unit test is shown in the figure below.
 
-![](./typicalsection.png)
+![](../SectionedSurface-INDOT/typicalsection.png)
 
 An illustration of the 3D model result is shown in the figure below:
 
