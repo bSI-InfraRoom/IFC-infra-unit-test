@@ -32,7 +32,7 @@ The typical section used for the unit test is shown in the figure below.
 
 An illustration of the 3D model result is shown in the figure below:
 
-![](../SectionedSurface-INDOT/3D Model.JPG)
+![sectionedSurfaceINDOT3D](../SectionedSurface-INDOT/3D-Model.JPG)
 
 ### Expected Results
 
