@@ -99,10 +99,12 @@ All figures are always flushed before the next section starts, so that there is 
 
 \Cref{tab:unit_tests} lists all unit tests and presents their status:
 \begin{compactitem}
-  \item the authoring software of the unit test (Export),
-  \item if it was checked by the technical team of the project (Ck.),
-  \item if it was successfully imported into another software solution (Import), and
-  \item if the unit tests stems from a storyline (SL).
+  \item column \emph{Section} provides a link to the corresponding section in the report,
+  \item column \emph{Unit test} provides the name of the unit test,
+  \item column \emph{Export} names the producing software vendor (or the project team itself if it was produced by us),
+  \item column \emph{Ck.} shows, if the unit test file has been checked (\tikz{\jaja}) by the project team or not (\tikz{\nope}),
+  \item column \emph{Import} names another software solution that successfully imported the data (can be empty if it has not happened yet), and
+  \item column \emph{SL} denotes unit tests stemming from a storyline (\tikz{\jaja}).
 \end{compactitem}
 
 \begin{tabularx}{\textwidth}{rYlclc}
