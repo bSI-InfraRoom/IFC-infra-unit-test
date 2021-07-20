@@ -1,11 +1,11 @@
 NR==FNR && /^[ \t]*ENTITY / {
-    match($2, /^[A-Za-z]+/)
+    match($2, /^[A-Za-z0-9]+/)
     entity = substr($2, RSTART, RLENGTH)
     entities[entity]=0
     next
 }
 NR==FNR && /^[ \t]*TYPE / {
-    match($2, /^[A-Za-z]+/)
+    match($2, /^[A-Za-z0-9]+/)
     type = substr($2, RSTART, RLENGTH)
     entities[type]=0
     next
