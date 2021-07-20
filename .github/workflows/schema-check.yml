@@ -96,10 +96,12 @@ jobs:
             if( $removed -contains $i ) {continue}
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
             if( [IO.Path]::GetExtension($filename) -ne ".ifc" ) {continue}
-            if( (Get-Content $("${{ github.workspace }}\$i") | ForEach-Object {$_ -match "IFC4X3_RC3"}) -notcontains $true ) {
-              if( (Get-Content $("${{ github.workspace }}\$i") | ForEach-Object {$_ -match "IFC4X3_RC2"}) -notcontains $true ) {
-                if( (Get-Content $("${{ github.workspace }}\$i") | ForEach-Object {$_ -match "IFC4X3_RC1"}) -notcontains $true ) {
-                  continue
+            if( (Get-Content $("${{ github.workspace }}\$i") | ForEach-Object {$_ -match "IFC4X3_RC4"}) -notcontains $true ) {
+              if( (Get-Content $("${{ github.workspace }}\$i") | ForEach-Object {$_ -match "IFC4X3_RC3"}) -notcontains $true ) {
+                if( (Get-Content $("${{ github.workspace }}\$i") | ForEach-Object {$_ -match "IFC4X3_RC2"}) -notcontains $true ) {
+                  if( (Get-Content $("${{ github.workspace }}\$i") | ForEach-Object {$_ -match "IFC4X3_RC1"}) -notcontains $true ) {
+                    continue
+                  }
                 }
               }
               echo "::set-output name=haswrongifc::true"

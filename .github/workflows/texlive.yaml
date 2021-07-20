@@ -17,7 +17,7 @@ jobs:
           key: ${{ runner.os }}-texlive
       - name: Check coverage
         run: |
-          find . -regex '.*/[^/]*.ifc' -exec awk -f .github/workflows/find.awk .github/workflows/IFC4x3_RC3.exp '{}' \; | awk -f .github/workflows/count.awk > Report/coverageTable.tex
+          find . -regex '.*/[^/]*.ifc' -exec awk -f .github/workflows/find.awk .github/workflows/IFC4x3_RC4.exp '{}' \; | awk -f .github/workflows/count.awk > Report/coverageTable.tex
       - name: Install & compile
         run: |
           source .github/workflows/texlive_install.sh
