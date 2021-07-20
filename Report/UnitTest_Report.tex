@@ -58,6 +58,8 @@
 }
 \makeatother
 
+\newcommand{\pr}[1]{\href{https://github.com/bSI-InfraRoom/IFC-infra-unit-test/pull/#1}{\##1}}
+
 \begin{document}
 
 \maketitle
@@ -76,17 +78,18 @@ This Section is structured as follows:
   \item an overview over the dependencies between individual unit tests in \cref{sec:schematics}, and
   \item a table of content in \cref{sec:content}.
 \end{compactitem}
-\Cref{sec:project_setup,sec:alignment,sec:geotechnics,sec:domain_specifics,sec:earthworks,sec:geodetic_survey,sec:combinations,sec:georeferencing_and_dtms,sec:drainage_system,sec:other,sec:spatial_structure} are automatically generated from the \texttt{readme} files of individual unit tests.
-The grouping of individual unit tests under these sections is (almost) arbitrary.
+\Cref{sec:project_setup,sec:alignment,sec:linear_placement,sec:swept_geometry,sec:domain_specifics,sec:earthworks,sec:geodetic_survey,sec:combinations,sec:georeferencing_and_dtms,sec:drainage_system,sec:other,sec:spatial_structure} are automatically generated from the \texttt{readme} files of individual unit tests.
+The grouping of individual unit tests under these sections is (almost) arbitrary and should only serve for orientation.
 
-
+This document has been set up by \v{S}tefan Jaud, validation lead of the project.
+All content has been submitted to the project by participating software vendors (see Appendix A of the delivery).
 The originating documentation together with all mentioned files can be obtained
  from the project's official GitHub repository\footnote{\url{https://github.com/bSI-InfraRoom/IFC-infra-unit-test}}.
 
 \subsection{How to read the document}
 \label{sec:how_to}
 
-Each unit test is within its own section.
+Each unit test is within its own subsection with a link to the original data on the GitHub.
 The included figures are \emph{floating} in this document, so they may appear at the top of the page,
  even though they are mentioned later in the text.
 All figures are always flushed before the next section starts, so that there is no doubt of their assignment to the unit test.
@@ -94,13 +97,116 @@ All figures are always flushed before the next section starts, so that there is 
 \subsection{Status}
 \label{sec:status}
 
-\begin{tabularx}{\textwidth}{Ycccc}
-  \caption{An overview of the unit tests. The table lists the authoring software (Export) of the unit test, if it was checked by the technical team of the project (Checked), if it was successfully imported into another software solution, and if the unit tests stems from a storyline.}
+\Cref{tab:unit_tests} lists all unit tests and presents their status:
+\begin{compactitem}
+  \item the authoring software of the unit test (Export),
+  \item if it was checked by the technical team of the project (Ck.),
+  \item if it was successfully imported into another software solution (Import), and
+  \item if the unit tests stems from a storyline (SL).
+\end{compactitem}
+
+\begin{tabularx}{\textwidth}{rYlclc}
+  \caption{An overview of the status of the unit tests. See \cref{sec:status} for an explanation of the columns and entries.}
   \label{tab:unit_tests} \\
   \toprule
-    Unit test    & Export     & Checked       & Import      & SL \\
+    Section     & Unit test    &  Export     & Ck.       & Import      & SL \\
   \midrule
-    test \\
+  \endfirsthead
+  \caption[]{\emph{(cont.)} An overview of the status of the unit tests. See \cref{sec:status} for an explanation of the columns and entries.} \\
+  \toprule
+    Section     & Unit test    &  Export     & Ck.       & Import      & SL \\
+  \midrule
+  \endhead
+  \bottomrule
+  \multicolumn{6}{r}{\footnotesize(continued)}
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  % content
+    \labelcref{sec:project_setup_1} & Setup 1 & project team & \jaja  & TUM OIP & \nope \\
+    \labelcref{sec:project_setup_2} & Setup 2 & project team & \jaja  & TUM OIP & \nope \\
+  \midrule
+    \labelcref{sec:tin_1} & DTM 1 & 12d Solutions & \jaja  & TUM OIP & \nope \\
+    \labelcref{sec:georeferencing_1} & Georef. 1 & project team & \jaja  & TUM OIP & \nope \\
+    \labelcref{sec:georeferencing_3} & Georef. 2 & project team & \jaja  & TUM OIP & \nope \\
+    \labelcref{sec:georeferencing_4} & Georef. 3 & project team & \jaja  & TUM OIP & \nope \\
+    \labelcref{sec:georef_tin_1} & Georef.+DTM 1 & 12d Solutions & \jaja  & TUM OIP & \nope \\
+    \labelcref{sec:georef_tin_2} & Georef.+DTM 2 & 12d Solutions & \jaja  & TUM OIP & \nope \\
+    \labelcref{sec:georef_tin_3} & Georef.+DTM 3 & 12d Solutions & \jaja  & TUM OIP & \nope \\
+    \labelcref{sec:georef_tin_4} & Georef.+DTM 4 & 12d Solutions & \jaja  & TUM OIP & \nope \\
+  \midrule
+    \labelcref{sec:align_1} & Alignment 1 & 12d Solutions & \jaja  & Geometry Gym & \nope \\
+    \labelcref{sec:align_2} & Alignment 2 & 12d Solutions & \jaja  & Geometry Gym & \nope \\
+    \labelcref{sec:align_3} & Alignment 3 & 12d Solutions & \jaja  & Geometry Gym & \nope \\
+    \labelcref{sec:align_4} & Alignment 4 & 12d Solutions & \jaja  & Geometry Gym & \nope \\
+    \labelcref{sec:align_5} & Alignment 5 & 12d Solutions & \jaja  & Geometry Gym & \nope \\
+    \labelcref{sec:align_6} & Alignment 6 & 12d Solutions & \jaja  & Geometry Gym & \nope \\
+    \labelcref{sec:align_7} & Alignment 7 & 12d Solutions & \jaja  & Geometry Gym & \nope \\
+    \labelcref{sec:align_8} & Alignment 8 & 12d Solutions & \jaja  & Geometry Gym & \nope \\
+    \labelcref{sec:align_9} & Alignment 9 & 12d Solutions & \nope  & \pr{31}  & \nope \\
+    \labelcref{sec:align_10} & Alignment 10 & 12d Solutions & \nope  & \pr{38}  & \nope \\
+    \labelcref{sec:align_11} & Alignment 11 & 12d Solutions & \jaja  & Geometry Gym & \nope \\
+    \labelcref{sec:align_12} & Alignment 12 & Aplitop & \jaja  & project team  & \nope \\
+    \labelcref{sec:align_13} & Alignment 13 & TUM & \nope  & \pr{39}  & \nope \\
+    \labelcref{sec:align_14} & Alignment 14 & project team & \jaja  & Geometry Gym  & \jaja \\
+    \labelcref{sec:align_15} & Alignment 15 & Aplitop & \jaja  & -  & \nope \\
+    \labelcref{sec:align_16} & Alignment 16 & Aplitop & \nope  & \pr{96}  & \nope \\
+    \labelcref{sec:align_17} & Alignment 17 & 12d Solutions & \nope  & \pr{103}  & \nope \\
+    \labelcref{sec:align_18} & Alignment 18 & 12d Solutions & \nope  & \pr{107}  & \nope \\
+    \labelcref{sec:align_19} & Alignment 19 & ACCA & \jaja  & Geometry Gym  & \nope \\
+    \labelcref{sec:align_20} & Alignment 20 & ACCA & \jaja  & Geometry Gym  & \nope \\
+    \labelcref{sec:align_21} & Alignment 21 & TUM \& AutoDesk & \nope  & \pr{143}  & \nope \\
+  \midrule
+    \labelcref{sec:linear_1} & Linear Pos. 1 & ACCA & \jaja  & -  & \nope \\
+    \labelcref{sec:linear_2} & Linear Pos. 2 & ACCA & \jaja  & -  & \nope \\
+    \labelcref{sec:linear_3} & Linear Pos. 3 & ACCA & \jaja  & -  & \nope \\
+    \labelcref{sec:linear_4} & Linear Pos. 4 & ACCA & \jaja  & -  & \nope \\
+  \midrule
+    \labelcref{sec:spatial_1} & Spatial str. 1 & project team & \jaja  & FZK Viewer & \nope \\
+    \labelcref{sec:spatial_2} & Spatial str. 2 & project team & \jaja  & FZK Viewer & \jaja \\
+    \labelcref{sec:spatial_3} & Spatial str. 3 & project team & \jaja  & IFCTreeView & \jaja \\
+    \labelcref{sec:spatial_4} & Spatial str. 4 & project team & \jaja  & IFCTreeView & \jaja \\
+    \labelcref{sec:spatial_5} & Spatial str. 5 & project team & \jaja  & FZK Viewer & \nope \\
+    \labelcref{sec:spatial_6} & Spatial str. 6 & project team & \jaja  & FZK Viewer & \jaja \\
+    \labelcref{sec:spatial_7} & Spatial str. 7 & project team & \jaja  & \pr{116} & \jaja \\
+    \labelcref{sec:spatial_8} & Spatial str. 8 & TUM & \jaja  & \pr{65} & \nope \\
+  \midrule
+    \labelcref{sec:swept_1} & Swept Geom. 1 & project team & \jaja  & \pr{40} & \nope \\
+    \labelcref{sec:swept_2} & Swept Geom. 2 & project team & \jaja  & - & \jaja \\
+    \labelcref{sec:swept_3} & Swept Geom. 3 & Aplitop & \jaja  & \pr{106} & \nope \\
+    \labelcref{sec:swept_4} & Swept Geom. 4 & ACCA & \jaja  & Geometry Gym  & \nope \\
+    \labelcref{sec:swept_5} & Swept Geom. 5 & Allplan & \nope  & \pr{51} & \nope \\
+  \midrule
+    \labelcref{sec:road_1} & Road 1 & AKG Software & \jaja  & \pr{52} & \nope \\
+    \labelcref{sec:road_2} & Road 2 & AKG Software & \jaja  & \pr{52} & \nope \\
+    \labelcref{sec:road_3} & Road 3 & project team & \jaja  & - & \jaja \\
+    \labelcref{sec:road_4} & Road 4 & project team & \jaja  & - & \jaja \\
+    \labelcref{sec:road_5} & Road 5 & project team & \jaja  & - & \jaja \\
+    \labelcref{sec:marine_1} & Marine 1 & project team & \nope  & \pr{94} & \jaja \\
+    \labelcref{sec:marine_2} & Marine 2 & project team & \jaja  & - & \jaja \\
+  \midrule
+    \labelcref{sec:earth_0} & Earthworks 0 & 12d Solutions & \jaja  & TUM OIP & \nope \\
+    \labelcref{sec:earth_1} & Earthworks 1 & 12d Solutions & \jaja  & TUM OIP & \nope \\
+    \labelcref{sec:earth_2} & Earthworks 2 & 12d Solutions & \jaja  & TUM OIP & \nope \\
+    \labelcref{sec:earth_3} & Earthworks 3 & BricSys & \jaja  & 12d Solutions & \nope \\
+    \labelcref{sec:borehole_1} & Geotechnics 1 & Geometry Gym & \jaja  & - & \jaja \\
+  \midrule
+    \labelcref{sec:survey_1} & Geod. survey 1 & 12d Solutions & \jaja  & TUM OIP & \nope \\
+    \labelcref{sec:survey_2} & Geod. survey 2 & 12d Solutions & \jaja  & \pr{56} & \nope \\
+    \labelcref{sec:survey_3} & Geod. survey 3 & 12d Solutions & \jaja  & \pr{112} & \nope \\
+    \labelcref{sec:survey_4} & Geod. survey 4 & 12d Solutions & \jaja  & RDF Viewer & \nope \\
+  \midrule
+    \labelcref{sec:drainage_1} & Drainage 1 & project team & \jaja  & - & \jaja \\
+    \labelcref{sec:drainage_2} & Drainage 2 & project team & \jaja  & - & \jaja \\
+  \midrule
+    \labelcref{sec:align_dtm_1} & Combination 1 & 12d Solutions & \nope  & - & \nope \\
+    \labelcref{sec:align_dtm_2} & Combination 2 & Card-1 & \nope  & - & \nope \\
+    \labelcref{sec:georef_earth_1} & Combination 3 & 12d Solutions & \jaja  & - & \nope \\
+    \labelcref{sec:georef_earth_2} & Combination 4 & 12d Solutions & \nope  & - & \nope \\
+  \midrule
+    \labelcref{sec:other_1} & Cost items 1 & project team & \nope  & \pr{53} & \jaja \\
+    \labelcref{sec:other_2} & Properties 2 & ACCA & \nope  & \pr{120} & \nope \\
+    \labelcref{sec:other_3} & Properties 3 & ACCA & \nope  & \pr{121} & \nope \\
   \bottomrule
 \end{tabularx}
 
@@ -110,7 +216,7 @@ All figures are always flushed before the next section starts, so that there is 
 \Cref{tab:coverage} lists all IFC entities occurring in all accepted and approved unit tests.
 The number next to each entity shows how many times this entity occurs\footnotemark{}.
 
-\footnotetext{The content has been joined in Appendix C of the deliverable with the covered entities by the IFC Rail Phase 2 project but is also included here for completeness.}
+\footnotetext{The content has been joined in Appendix C of the deliverable with the covered entities by the IFC Rail Phase 2 project but is also included here for completeness and automatic updates in the future.}
 
 \begin{tabularx}{\textwidth}{rX}
   \caption{The covered entities of all unit test files combined.}\label{tab:coverage} \\
@@ -159,7 +265,7 @@ Each unit test has a link to the corresponding section of this document in the u
          fork sep = 3mm,    % distance from parent to branching point
                 }
     [Setup-1,name=boiler1,label=\labelcref{sec:project_setup_1}
-      [Road-6,name=road6,label=\labelcref{sec:road_6},pr
+      [Swept-3,name=swept3,label=\labelcref{sec:swept_3},pr
       ],
       [Road-2,name=road2,label=\labelcref{sec:road_2},pr
       ],
@@ -246,13 +352,13 @@ Each unit test has a link to the corresponding section of this document in the u
         ],
       ],   
       [Alignment-14,name=align14,label=\labelcref{sec:align_14},pr
-        [Road-4,name=road4,label=\labelcref{sec:road_4},pr
+        [Swept-2,name=swept2,label=\labelcref{sec:swept_2},pr
         ] { \node[star] at (.north east) {*}; },
         [Road-5,name=road5,label=\labelcref{sec:road_5}
         ] { \node[star] at (.north east) {*}; },
       ] { \node[star] at (.north east) {*}; },
       [Alignment-13,name=align13,label=\labelcref{sec:align_13},pr
-        [Road-3,name=road3,label=\labelcref{sec:road_3},pr
+        [Swept-1,name=swept1,label=\labelcref{sec:swept_1},pr
         ],
       ],
       [Alignment-12,name=align12,label=\labelcref{sec:align_12},pr
@@ -265,7 +371,7 @@ Each unit test has a link to the corresponding section of this document in the u
       ],
       [Alignment-19,name=align19,label=\labelcref{sec:align_19}
       ],
-      [FixRefSolid-1,name=fixed1,label=\labelcref{sec:earth_4}
+      [Swept-4,name=swept4,label=\labelcref{sec:swept_4}
       ],
       [Alignment-1,name=align1,label=\labelcref{sec:align_1}
         [Alignment-9,name=align9,label=\labelcref{sec:align_9},pr
@@ -422,7 +528,7 @@ Under review.%\markdownInput{../Alignment-12d-10/readme.md}
 
 \subsection{Alignment 12} % PR#96
 \label{sec:align_12}
-Under review.%\markdownInput{../Alignment-Aplitop-1/readme.md}
+\markdownInput{../Alignment-Aplitop-1/readme.md}
 \clearpage
 
 \subsection{Alignment 13} % PR#39
@@ -432,12 +538,12 @@ Under review.%\markdownInput{../UT-Alignment-3/readme.md}
 
 \subsection{Alignment 14} % PR#71 *
 \label{sec:align_14}
-Under review.%\markdownInput{../Alignment-INDOT/readme.md}
+\markdownInput{../Alignment-INDOT/readme.md}
 \clearpage
 
 \subsection{Alignment 15} % PR#96
 \label{sec:align_15}
-Under review.%\markdownInput{../Alignment-Aplitop-2/readme.md}
+\markdownInput{../Alignment-Aplitop-2/readme.md}
 \clearpage
 
 \subsection{Alignment 16} % PR#96
@@ -463,6 +569,35 @@ Under review.%\markdownInput{../Georeferencing-Alignment-12d-2/readme.md}
 \subsection{Alignment 20} % PR#123
 \label{sec:align_20}
 \markdownInput{../Alignment-ACCA-2/README.md}
+\clearpage
+
+\subsection{Alignment 21} % PR#143
+\label{sec:align_21}
+Under review.%\markdownInput{../Alignment-TUMAdsk-1/readme.md}
+\clearpage
+
+% -------------------------------------------------------------------------------
+\section{Linear Placement}
+\label{sec:linear_placement}
+
+\subsection{Linear Placement 1} 
+\label{sec:linear_1}
+\markdownInput{../LinearPlacement-1/README.md}
+\clearpage
+
+\subsection{Linear Placement 2} 
+\label{sec:linear_2}
+\markdownInput{../LinearPlacement-2/README.md}
+\clearpage
+
+\subsection{Linear Placement 3} 
+\label{sec:linear_3}
+\markdownInput{../LinearPlacement-3/README.md}
+\clearpage
+
+\subsection{Linear Placement 4} 
+\label{sec:linear_4}
+\markdownInput{../LinearPlacement-4/README.md}
 \clearpage
 
 % -------------------------------------------------------------------------------
@@ -510,6 +645,36 @@ Under review.%\markdownInput{../CrossDisciplinary-1/README.md}
 \clearpage
 
 % -------------------------------------------------------------------------------
+\section{Swept Geometry}
+\label{sec:swept_geometry}
+
+
+\subsection{Swept Geometry 1} % PR#40
+\label{sec:swept_1}
+Under review.%\markdownInput{../UT-Road-1/readme.md}
+\clearpage
+
+\subsection{Swept Geometry 2} % PR#71 *
+\label{sec:swept_2}
+\markdownInput{../SectionedSurface-INDOT/readme.md}
+\clearpage
+
+\subsection{Swept Geometry 3} % PR#106 *
+\label{sec:swept_3}
+Under review.%\markdownInput{../SectionedSurface-Aplitop-1/readme.md}
+\clearpage
+
+\subsection{Swept Geometry 4} % PR #128
+\label{sec:swept_4}
+\markdownInput{../FixedReferenceSweptAreaSolid-1/README.md}
+\clearpage
+
+\subsection{Swept Geometry 5} % PR#51
+\label{sec:bridge_1}
+Under review.%\markdownInput{../SectionedSolidHorizontal-1/readme.md}
+\clearpage
+
+% -------------------------------------------------------------------------------
 \section{Domain Specifics}
 \label{sec:domain_specifics}
 
@@ -523,29 +688,19 @@ Under review.%\markdownInput{../UT-IfcCourse/readme.md}
 Under review.%\markdownInput{../UT-IfcPavement/readme.md}
 \clearpage
 
-\subsection{Road 3} % PR#40
+\subsection{Road 3} % *
 \label{sec:road_3}
-Under review.%\markdownInput{../UT-Road-1/readme.md}
+\markdownInput{../MCON-1/readme.md}
 \clearpage
 
-\subsection{Road 4} % PR#71 *
+\subsection{Road 4} % *
 \label{sec:road_4}
-Under review.%\markdownInput{../SectionedSurface-INDOT/readme.md}
+\markdownInput{../MCON-2/readme.md}
 \clearpage
 
 \subsection{Road 5} % PR#88 *
 \label{sec:road_5}
 \markdownInput{../RumbleStrip-INDOT/readme.md}
-\clearpage
-
-\subsection{Road 6} % PR#106 *
-\label{sec:road_6}
-Under review.%\markdownInput{../SectionedSurface-Aplitop-1/readme.md}
-\clearpage
-
-\subsection{Bridge 1} % PR#51
-\label{sec:bridge_1}
-Under review.%\markdownInput{../SectionedSolidHorizontal-1/readme.md}
 \clearpage
 
 \subsection{Marine 1} % PR#94
@@ -559,7 +714,7 @@ Under review.%\markdownInput{../MarineFurniture-1/readme.md}
 \clearpage
 
 % -------------------------------------------------------------------------------
-\section{Earthworks}
+\section{Earthworks \& Geotechnics}
 \label{sec:earthworks}
 
 \subsection{Earthworks 0}
@@ -579,17 +734,8 @@ Under review.%\markdownInput{../MarineFurniture-1/readme.md}
 
 \subsection{Earthworks 3}
 \label{sec:earth_3}
-Under review.%\markdownInput{../UT-Earthworks-01/readme.md}
+\markdownInput{../Earthworks-01/readme.md}
 \clearpage
-
-\subsection{Earthworks 4} % PR #128
-\label{sec:earth_4}
-\markdownInput{../FixedReferenceSweptAreaSolid-1/README.md}
-\clearpage
-
-% -------------------------------------------------------------------------------
-\section{Geotechnics}
-\label{sec:geotechnics}
 
 \subsection{Borehole 1}
 \label{sec:borehole_1}
@@ -644,19 +790,19 @@ Under review.%\markdownInput{../Georeferencing-Survey-12d-3/readme.md}
 Under review.%\markdownInput{../Georeferencing-Alignment-Tin-12d-1/readme.md}
 \clearpage
 
-\subsection{Combination 2: Georeferencing and Earthworks}
+\subsection{Combination 2: Alignment and DTM} % PR#59
+\label{sec:align_dtm_2}
+Under review.%\markdownInput{../Alignment-Tin-1/readme.md}
+\clearpage
+
+\subsection{Combination 3: Georeferencing and Earthworks}
 \label{sec:georef_earth_1}
 \markdownInput{../Georeferencing-Earthworks-12d-1/readme.md}
 \clearpage
 
-\subsection{Combination 3: Georeferencing and Earthworks 2} % PR#50
+\subsection{Combination 4: Georeferencing and Earthworks 2} % PR#50
 \label{sec:georef_earth_2}
 Under review.%\markdownInput{../Georeferencing-Earthworks-12d-2/readme.md}
-\clearpage
-
-\subsection{Combination 4: Alignment and DTM}
-\label{sec:align_dtm_2}
-Under review.%\markdownInput{../Alignment-Tin-1/readme.md}
 \clearpage
 
 % -------------------------------------------------------------------------------
@@ -673,7 +819,7 @@ Under review.%\markdownInput{../UT-CostItem-COWI/readme.md}
 \markdownInput{../Properties-1/README.md}
 \clearpage
 
-\subsection{Other 2: Properties 2} % PR#121
+\subsection{Other 3: Properties 2} % PR#121
 \label{sec:other_3}
 \markdownInput{../Properties-2/README.md}
 \clearpage
